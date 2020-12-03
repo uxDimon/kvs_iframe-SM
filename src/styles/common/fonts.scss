@@ -1,0 +1,22 @@
+// 100: Thin
+// 200: Extra Light (Ultra Light)
+// 300: Light
+// 400: Normal
+// 500: Medium
+// 600: Semi Bold (Demi Bold)
+// 700: Bold
+// 800: Extra Bold (Ultra Bold)
+// 900: Black (Heavy)
+
+@font-face {
+	font-family: "PT Root UI";
+	src: local("PT Root UI Bold"), local("PTRootUI-Bold"), url("../fonts/Ptrootuibold.woff2") format("woff2"), url("../fonts/Ptrootuibold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: "PT Root UI";
+	src: local("PT Root UI Medium"), local("PTRootUI-Medium"), url("../fonts/Ptrootuimedium.woff2") format("woff2"), url("../fonts/Ptrootuimedium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+}
