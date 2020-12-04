@@ -5,5 +5,26 @@ block variables
     - var contactForm = true
 
 block content
-    main
-        h1 sborkaOtVasyana
+    main.main
+        nav.menu-primary
+            ul.menu-primary__list
+                li.menu-primary__item
+                    button(data-drop-control="drop1").menu-primary__linc.menu-primary__linc_control.active Диспетчеризация
+                        svg(width="16", height="16")
+                            use(xlink:href="./assets/images/sprite.svg#icon-arrow")
+                    ul(data-drop-container="drop1").menu-primary__drop-list.active
+                        li.menu-primary__drop-item
+                            a(href="#").menu-primary__drop-linc.active Обращения
+                        li.menu-primary__drop-item
+                            a(href="#").menu-primary__drop-linc Заявки на работы
+                        li.menu-primary__drop-item
+                            a(href="#").menu-primary__drop-linc Заказ платных услуг УК
+
+                li.menu-primary__item
+                    a(href="#").menu-primary__linc Платежные документы
+                li.menu-primary__item
+                    a(href="#").menu-primary__linc Подать показания
+                li.menu-primary__item
+                    a(href="#").menu-primary__linc Профиль собственника
+                li.menu-primary__item
+                    a(href="#").menu-primary__linc Маркетплейс

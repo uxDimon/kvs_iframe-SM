@@ -1,31 +1,60 @@
-:root {
-	--content-p-r: 0;
-}
+// Цвета
+$color-Black: #232930;
+$color-Grey5: #68717b;
+$color-Grey4: #969ba0;
+$color-Grey3: #dcdfe1;
+$color-Grey2: #ebedee;
+$color-Grey1: #f4f5f6;
+$color-wheat: #ffffff;
+$color-Orange: #f4691b;
+$color-Orange2: #ff8635;
+$color-Green: #99a30e;
 
-// Размеры
-$content-max-weight: 1240px;
 // Шрифт
 $font-family-root: "PT Root UI", sans-serif;
 
 @import "./common/fonts.scss";
-
-* {
-	box-sizing: border-box;
-	outline-offset: 4px;
-}
 
 // https://github.com/WICG/focus-visible
 .js-focus-visible :focus:not(.focus-visible) {
 	outline: none;
 }
 
-body {
-	font-family: $font-family-root;
+* {
+	box-sizing: border-box;
+	outline-offset: 4px;
 }
 
-@import "./common/header.scss";
+body {
+	font-family: $font-family-root;
+	font-weight: 500;
+	line-height: 1.35;
+	font-feature-settings: "pnum" on, "lnum" on, "salt" on;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: $color-Grey1;
+	height: 100vh;
+}
+
+.main {
+	width: 100%;
+	max-width: 1400px;
+	height: 100%;
+	max-height: 800px;
+	display: grid;
+	grid-template-columns: 260px 300px 1fr;
+	grid-template-rows: auto 1fr;
+	grid-column-gap: 16px;
+	grid-row-gap: 20px;
+	padding: 40px 25px 30px 25px;
+}
+
+@import "./common/menu-primary.scss";
+
 @import "./pages/index.scss";
-@import "./common/footer.scss";
 
 // @media screen and (max-width: 1274px) {
 

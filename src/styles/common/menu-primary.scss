@@ -1,0 +1,119 @@
+// Цвета
+$color-Black: #232930;
+$color-Grey5: #68717b;
+$color-Grey4: #969ba0;
+$color-Grey3: #dcdfe1;
+$color-Grey2: #ebedee;
+$color-Grey1: #f4f5f6;
+$color-wheat: #ffffff;
+$color-Orange: #f4691b;
+$color-Orange2: #ff8635;
+$color-Green: #99a30e;
+
+// Шрифт
+$font-family-root: "PT Root UI", sans-serif;
+
+// Главное меню
+.menu-primary {
+	grid-column: 1 / 2;
+	grid-row: 1 / -1;
+	overflow-y: auto;
+}
+
+.menu-primary__list {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-row-gap: 10px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.menu-primary__linc {
+	display: flex;
+	align-items: center;
+	min-height: 70px;
+	width: 100%;
+	margin: 0;
+	padding: 12px 24px;
+	border-radius: 4px;
+	border: 1px solid $color-Grey2;
+	background-color: $color-wheat;
+	font-family: $font-family-root;
+	color: $color-Black;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 1.33;
+	font-feature-settings: "pnum" on, "lnum" on, "salt" on;
+	text-decoration: none;
+	cursor: pointer;
+
+	transition: 200ms ease-in-out 0ms;
+	transition-property: background-color, border-color, color;
+
+	&:hover {
+		border-color: $color-Grey2;
+		background-color: $color-Grey2;
+		text-decoration: none;
+	}
+
+	&:active {
+		border-color: $color-Grey2;
+		background-color: $color-Grey3;
+	}
+
+	&:focus {
+		border-color: $color-Grey4;
+		outline: none;
+	}
+}
+
+.menu-primary__linc_control {
+	position: relative;
+	padding: 12px 24px 12px 30px;
+
+	svg {
+		--icon-color: #{$color-Black};
+
+		position: absolute;
+		top: 50%;
+		right: 15px;
+		transform: translateY(-50%) rotate(180deg);
+		transition: transform 200ms ease-in-out 0ms;
+	}
+}
+
+.menu-primary__linc.active {
+	background-color: $color-Orange;
+	border-color: $color-Orange;
+	color: $color-wheat;
+
+	svg {
+		--icon-color: #{$color-wheat};
+		transform: translateY(-50%) rotate(0);
+	}
+
+	&:focus {
+		border-color: $color-Black;
+	}
+}
+
+.menu-primary__drop-list {
+	margin: 0;
+	padding: 20px 0 10px 25px;
+	list-style: none;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-row-gap: 20px;
+}
+
+.menu-primary__drop-linc {
+	font-size: 18px;
+	line-height: 20px;
+	text-decoration: none;
+	color: $color-Black;
+}
+
+.menu-primary__drop-linc.active {
+	color: $color-Orange;
+}
