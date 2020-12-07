@@ -1,0 +1,105 @@
+// Цвета
+$color-Black: #232930;
+$color-Grey5: #68717b;
+$color-Grey4: #969ba0;
+$color-Grey3: #dcdfe1;
+$color-Grey2: #ebedee;
+$color-Grey1: #f4f5f6;
+$color-wheat: #ffffff;
+$color-Orange: #f4691b;
+$color-Orange2: #ff8635;
+$color-Green: #99a30e;
+
+// Шрифт
+$font-family-root: "PT Root UI", sans-serif;
+
+.menu-secondary {
+	grid-column: 2 / 3;
+	grid-row: 2 / -1;
+	overflow-y: auto;
+	padding-right: 4px;
+}
+
+.menu-secondary__list {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-row-gap: 0;
+	margin: 5px 0;
+	padding: 0;
+	list-style: none;
+}
+
+.menu-secondary__linc {
+	padding: 15px 5px 15px 18px;
+	position: relative;
+	cursor: pointer;
+
+	&::before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		width: 8px;
+		background-color: $color-Orange;
+		opacity: 0;
+	}
+
+	&:hover::before {
+		opacity: 0.15;
+	}
+}
+
+.menu-secondary__linc.active {
+	&::before {
+		opacity: 1;
+	}
+
+	&:hover::before {
+		opacity: 0.8;
+	}
+}
+
+// request-linc
+.request-linc {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-row-gap: 4px;
+}
+
+.request-linc__name {
+	font-size: 16px;
+	line-height: 20px;
+	color: $color-Black;
+}
+
+.request-linc__date-time,
+.request-linc__status {
+	font-size: 14px;
+	line-height: 18px;
+	color: $color-Grey5;
+}
+
+.request-linc__date-time {
+	display: grid;
+	grid-auto-flow: column;
+	grid-column-gap: 14px;
+	justify-content: start;
+}
+
+.request-linc__status {
+	display: flex;
+	align-items: center;
+
+	> svg {
+		margin-right: 8px;
+	}
+}
+
+.request-linc.active {
+	.request-linc__name {
+		color: $color-Orange;
+	}
+}
