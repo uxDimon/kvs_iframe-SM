@@ -94,7 +94,12 @@ $font-family-root: "PT Root UI", sans-serif;
 		transform: translateY(-50%) rotate(0);
 	}
 
-	&:focus-visible {
+	&:hover {
+		background-color: $color-Orange2;
+		border-color: $color-Orange2;
+	}
+
+	&.focus-visible {
 		border-color: $color-Black;
 	}
 }

@@ -63,6 +63,28 @@ body {
 	padding: 40px 25px 30px 25px;
 }
 
+.botton {
+	display: inline-flex;
+	align-items: center;
+	padding: 5px 25px;
+	min-height: 50px;
+	font-family: $font-family-root;
+	font-weight: bold;
+	font-size: 16px;
+	border: 1px solid $color-Orange;
+	background-color: $color-Orange;
+	color: $color-wheat;
+	cursor: pointer;
+	border-radius: 4px;
+	transition: 200ms ease-in-out 0ms;
+	transition-property: background-color, border-color;
+
+	&:hover {
+		background-color: $color-Orange2;
+		border-color: $color-Orange2;
+	}
+}
+
 @import "./common/menu-primary.scss";
 @import "./common/menu-secondary.scss";
 @import "./common/content.scss";

@@ -45,6 +45,7 @@ $font-family-root: "PT Root UI", sans-serif;
 		width: 8px;
 		background-color: $color-Orange;
 		opacity: 0;
+		transition: opacity 200ms ease-in-out 0ms;
 	}
 
 	&:hover::before {
