@@ -1,6 +1,7 @@
 // Класс для активации
 const activeClass = "active";
 const focusClass = "_focus";
+const hideClass = "_hide";
 
 // menu-primary аккардион меню
 const menuDropControl = document.querySelectorAll("[data-drop-control]");
@@ -82,5 +83,39 @@ if (allSwitch) {
 		switchInput.addEventListener("change", () => {
 			switchItem.classList.toggle(activeClass);
 		});
+	}
+}
+
+// tabs
+const allTabControl = document.querySelectorAll("[data-tab-control]");
+
+if (allTabControl) {
+	for (const controlWrap of allTabControl) {
+		const tabConteiner = document.querySelectorAll(`[data-tab-conteiner="${controlWrap.dataset.tabControl}"] [data-tab-conteiner-item]`);
+		const tabControl = controlWrap.querySelectorAll("[data-tab-control-item]");
+
+		function controlClass(itme = tabControl[0]) {
+			for (const control of tabControl) {
+				control.classList.remove(activeClass);
+			}
+			itme.classList.add(activeClass);
+		}
+
+		function conteinerClass(itme = tabConteiner[0]) {
+			for (const control of tabConteiner) {
+				control.classList.add(hideClass);
+			}
+			itme.classList.remove(hideClass);
+		}
+
+		controlClass();
+		conteinerClass();
+
+		for (const contol of tabControl) {
+			contol.addEventListener("click", () => {
+				controlClass(document.querySelector(`[data-tab-control-item="${contol.dataset.tabControlItem}"]`));
+				conteinerClass(document.querySelector(`[data-tab-conteiner-item="${contol.dataset.tabControlItem}"]`));
+			});
+		}
 	}
 }
