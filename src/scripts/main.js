@@ -33,7 +33,7 @@ if (menuDropControl) {
 	}
 }
 
-// chat-message
+// chat-message Скрыл в низ в окне чата
 const chatMessageWrap = document.querySelectorAll(".chat-body");
 
 for (const messageWrap of chatMessageWrap) {
@@ -64,4 +64,23 @@ for (const input of chatInput) {
 	input.addEventListener("blur", () => {
 		inputParent.parentElement.classList.remove(focusClass);
 	});
+}
+
+// switch переключения
+const allSwitch = document.querySelectorAll(".switch");
+
+if (allSwitch) {
+	for (const switchItem of allSwitch) {
+		const switchInput = switchItem.querySelector('input[type="checkbox"]');
+
+		if (switchInput.checked) {
+			switchItem.classList.add(activeClass);
+		} else {
+			switchItem.classList.remove(activeClass);
+		}
+
+		switchInput.addEventListener("change", () => {
+			switchItem.classList.toggle(activeClass);
+		});
+	}
 }

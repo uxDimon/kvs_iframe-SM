@@ -6,6 +6,16 @@ block variables
 
 block content
     main.main
+        header.header 
+            .header__top
+                h2.header__h Обращения
+                button.button.button__ghost Создать новое обращение
+            .header__bot
+                label.switch
+                    .switch__control
+                    .switch__text Показать закрытые
+                    input(type="checkbox", name="")
+
         nav.menu-primary
             ul.menu-primary__list
                 li.menu-primary__item
@@ -117,7 +127,7 @@ block content
                             input(type="file", name="file")
                         label.chat-footer__input-text
                             textarea(type="text", name="text", data-chat-message, placeholder="Введите сообщение")
-                    button(type="submit").botton Отправить
+                    button(type="submit").button Отправить
 
 
 

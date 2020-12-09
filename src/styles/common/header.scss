@@ -1,0 +1,33 @@
+// Цвета
+$color-Black: #232930;
+$color-Grey5: #68717b;
+$color-Grey4: #969ba0;
+$color-Grey3: #dcdfe1;
+$color-Grey2: #ebedee;
+$color-Grey1: #f4f5f6;
+$color-wheat: #ffffff;
+$color-Orange: #f4691b;
+$color-Orange2: #ff8635;
+$color-Green: #99a30e;
+
+// Шрифт
+$font-family-root: "PT Root UI", sans-serif;
+
+.header {
+	grid-column: 2 / -1;
+	grid-row: 1 / 2;
+}
+
+.header__top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 8px;
+}
+
+.header__h {
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 36px;
+	margin: 0;
+}
