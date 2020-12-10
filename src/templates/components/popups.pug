@@ -1,0 +1,41 @@
+.popups(data-popups-container='popups1')
+    .popups__container-wrap
+        button(data-popups-close).popups__close
+            svg(width="20", height="20")
+                use(xlink:href="./assets/images/sprite.svg#icon-close")
+
+        .popups__container
+            h2.popups__h Создайте новое обращение
+            form.popups__inputs
+                label.input
+                    input(type="text", name="name")
+                    span.input__placeholder Тема обращения*
+                    span.input__error Пожалуйста, заполните поле
+                
+                label.input.error
+                    input(type="text", name="name")
+                    span.input__placeholder Адрес*
+                    span.input__error Пожалуйста, заполните поле
+                
+                label.input
+                    input(type="tel", name="name")
+                    span.input__placeholder Адрес*
+                    span.input__error Пожалуйста, заполните поле
+                
+                label.input
+                    textarea(name="name")
+                    span.input__placeholder Сообщение*
+                    span.input__error Пожалуйста, заполните поле
+                
+                label.input
+                    .input__file
+                    input(type="file", name="name", onchange="uploadFile(this)")
+                    span.input__placeholder Файл
+                    span.input__error Пожалуйста, заполните поле
+
+                button(type="submit").button Отправить
+            
+    
+    div(data-popups-close).popups__close-area
+    
+        

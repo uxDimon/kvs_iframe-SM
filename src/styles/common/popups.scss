@@ -1,0 +1,90 @@
+// Цвета
+$color-Black: #232930;
+$color-Grey5: #68717b;
+$color-Grey4: #969ba0;
+$color-Grey3: #dcdfe1;
+$color-Grey2: #ebedee;
+$color-Grey1: #f4f5f6;
+$color-wheat: #ffffff;
+$color-Orange: #f4691b;
+$color-Orange2: #ff8635;
+$color-Green: #99a30e;
+
+// Шрифт
+$font-family-root: "PT Root UI", sans-serif;
+
+.popups {
+	display: flex;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.popups__container-wrap {
+	height: 100%;
+	width: 100%;
+	max-width: 880px;
+	background-color: $color-wheat;
+	position: relative;
+	padding: 0 48px;
+	flex-shrink: 0;
+}
+
+.popups__close {
+	position: absolute;
+	top: 18px;
+	right: 18px;
+	border: none;
+	margin: 0;
+	padding: 0;
+	background-color: transparent;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+
+	&:hover svg {
+		--icon-color: #{$color-Grey4};
+	}
+}
+
+.popups__container {
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+	padding: 38px 8px 38px 0;
+}
+
+.popups__h {
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 1.2;
+	margin: 0 0 36px 0;
+}
+
+.popups__inputs {
+	width: 100%;
+	max-width: 448px;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-row-gap: 28px;
+	justify-items: left;
+
+	.input {
+		width: 100%;
+	}
+}
+
+.popups__close-area {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(41, 47, 54, 0.8);
+}
+
+.popups.active {
+	visibility: visible;
+	opacity: 1;
+}

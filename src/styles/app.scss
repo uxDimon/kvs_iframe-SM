@@ -43,10 +43,6 @@ body {
 	font-feature-settings: "pnum" on, "lnum" on, "salt" on;
 	margin: 0;
 	padding: 0;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 	background-color: $color-Grey1;
 	height: 100vh;
 }
@@ -62,6 +58,7 @@ body {
 	grid-column-gap: 12px;
 	grid-row-gap: 20px;
 	padding: 40px 25px 30px 25px;
+	margin: 0 auto;
 }
 
 // button
@@ -158,10 +155,13 @@ body {
 		pointer-events: none;
 	}
 
-	input {
+	input,
+	textarea,
+	.input__file {
 		box-sizing: border-box;
 		min-width: 230px;
 		height: 48px;
+		width: 100%;
 		background-color: #f4f5f6;
 		border-radius: 3px 3px 0 0;
 		border: none;
@@ -182,14 +182,30 @@ body {
 		&:focus {
 			outline: none;
 			border-bottom: 2px solid #f4691b;
-			padding: 18px 12px 5px 12px;
+			padding-bottom: 5px;
+		}
+	}
+
+	input[type="file"] {
+		visibility: hidden;
+		position: absolute;
+	}
+
+	textarea {
+		min-height: 96px;
+		height: auto;
+		max-height: 96px * 2;
+		resize: vertical;
+
+		~ .input__placeholder {
+			top: 24px;
 		}
 	}
 
 	.input__error {
 		display: none;
 		position: absolute;
-		top: 52px;
+		top: calc(100% + 4px);
 		font-weight: 500;
 		font-size: 12px;
 		line-height: 12px;
@@ -197,7 +213,8 @@ body {
 	}
 
 	&.active .input__placeholder,
-	& input:focus ~ .input__placeholder {
+	& input:focus ~ .input__placeholder,
+	& textarea:focus ~ .input__placeholder {
 		top: 6px;
 		transform: translateY(0);
 		font-size: 12px;
@@ -205,9 +222,11 @@ body {
 	}
 
 	&.error {
-		input {
+		input,
+		textarea {
 			color: #d20a30;
-			border-color: #d20a30;
+			padding-bottom: 5px;
+			border-bottom: 2px solid #d20a30;
 
 			&:focus ~ .input__placeholder {
 				color: #d20a30;
@@ -228,6 +247,7 @@ body {
 @import "./common/menu-secondary.scss";
 @import "./common/content.scss";
 @import "./common/header.scss";
+@import "./common/popups.scss";
 
 @import "./pages/index.scss";
 

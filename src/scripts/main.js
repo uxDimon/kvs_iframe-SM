@@ -125,7 +125,7 @@ const inputWrapAll = document.querySelectorAll(".input");
 
 if (inputWrapAll) {
 	for (const inputWrap of inputWrapAll) {
-		const input = inputWrap.querySelector("input");
+		const input = inputWrap.querySelector("input, textarea");
 
 		input.addEventListener("change", () => {
 			if (input.value == "") {
@@ -134,5 +134,30 @@ if (inputWrapAll) {
 				inputWrap.classList.add(activeClass);
 			}
 		});
+	}
+}
+
+// input file
+function uploadFile(target) {
+	target.parentElement.querySelector(".input__file").innerHTML = target.files[0].name;
+}
+
+// popups
+const popupsControlAll = document.querySelectorAll("[data-popups-control]");
+
+if (popupsControlAll) {
+	for (const popupsControl of popupsControlAll) {
+		const popupsContainer = document.querySelector(`[data-popups-container="${popupsControl.dataset.popupsControl}"]`);
+		const popupsCloseAll = popupsContainer.querySelectorAll("[data-popups-close]");
+
+		popupsControl.addEventListener("click", () => {
+			popupsContainer.classList.add(activeClass);
+		});
+
+		for (const popupsClose of popupsCloseAll) {
+			popupsClose.addEventListener("click", () => {
+				popupsContainer.classList.remove(activeClass);
+			});
+		}
 	}
 }
