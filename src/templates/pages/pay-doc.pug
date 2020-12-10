@@ -1,14 +1,14 @@
 extends ../template
 
 block variables
-    - var title = 'Обращения'
+    - var title = 'Платежные документы'
     - var contactForm = true
 
 block content
     main.main
         header.header 
             .header__top
-                h2.header__h Обращения
+                h2.header__h Платежные документы
                 button(data-popups-control='popups1').button.button__ghost Создать новое обращение
             .header__bot
                 label.switch
@@ -19,20 +19,20 @@ block content
         nav.menu-primary
             ul.menu-primary__list
                 li.menu-primary__item
-                    button(data-drop-control="drop1").menu-primary__linc.menu-primary__linc_control.active Диспетчеризация
+                    button(data-drop-control="drop1").menu-primary__linc.menu-primary__linc_control Диспетчеризация
                         svg(width="16", height="16")
                             use(xlink:href="./assets/images/sprite.svg#icon-arrow")
-                    div(data-drop-container="drop1", data-drop-active="true").menu-primary__drop-list-wrap
+                    div(data-drop-container="drop1", data-drop-active="false").menu-primary__drop-list-wrap
                         ul.menu-primary__drop-list
                             li.menu-primary__drop-item
-                                a(href="index.html").menu-primary__drop-linc.active Обращения
+                                a(href="index.html").menu-primary__drop-linc Обращения
                             li.menu-primary__drop-item
                                 a(href="index.html").menu-primary__drop-linc Заявки на работы
                             li.menu-primary__drop-item
                                 a(href="index.html").menu-primary__drop-linc Заказ платных услуг УК
 
                 li.menu-primary__item
-                    a(href="pay-doc.html").menu-primary__linc Платежные документы
+                    a(href="pay-doc.html").menu-primary__linc.active Платежные документы
                 li.menu-primary__item
                     a(href="#").menu-primary__linc Подать показания
                 li.menu-primary__item
@@ -43,35 +43,24 @@ block content
         div(data-tab-control="tab-conteiner1").menu-secondary
             ul.menu-secondary__list
                 li.menu-secondary__iten
-                    a(tabindex="0", data-tab-control-item="item1").menu-secondary__linc.request-linc.active
-                        span.request-linc__name № 154 Пояснение по расчету
-                        .request-linc__date-time
-                            span 17.11.2020
-                            span 12:25
-                        .request-linc__status
-                            svg(width="13", height="13")
-                                use(xlink:href="./assets/images/sprite.svg#icon-time")
-                            span Новая заявка
+                    a(tabindex="0", data-tab-control-item="item1").menu-secondary__linc.pay-doc-linc.active
+                        .pay-doc-linc__text-wrap
+                            .pay-doc-linc__ls Л/сч 0100103001
+                            .pay-doc-linc__text Адрес: Дворцовая пл., д.3, кв.1
+                        .pay-doc-linc__text-wrap
+                            .pay-doc-linc__pay 3000 руб.
+                            .pay-doc-linc__text Сумма к оплате на 18.11.2020
+                        button.button.button_smol Оплатить
                 li.menu-secondary__iten
-                    a(tabindex="0", data-tab-control-item="item2").menu-secondary__linc.request-linc
-                        span.request-linc__name № 254 Пояснение по расчету
-                        .request-linc__date-time
-                            span 17.11.2020
-                            span 12:25
-                        .request-linc__status
-                            svg(width="13", height="13")
-                                use(xlink:href="./assets/images/sprite.svg#icon-trash")
-                            span Отменена
-                li.menu-secondary__iten
-                    a(tabindex="0", data-tab-control-item="item3").menu-secondary__linc.request-linc
-                        span.request-linc__name № 354 Пояснение по расчету
-                        .request-linc__date-time
-                            span 17.11.2020
-                            span 12:25
-                        .request-linc__status
-                            svg(width="13", height="13")
-                                use(xlink:href="./assets/images/sprite.svg#icon-ok")
-                            span Завершена
+                    a(tabindex="0", data-tab-control-item="item2").menu-secondary__linc.pay-doc-linc
+                        .pay-doc-linc__text-wrap
+                            .pay-doc-linc__ls Л/сч 0100103001
+                            .pay-doc-linc__text Адрес: Дворцовая пл., д.3, кв.1
+                        .pay-doc-linc__text-wrap
+                            .pay-doc-linc__pay.color-Green -23 руб.
+                            .pay-doc-linc__text Сумма к оплате на 18.11.2020
+                        button.button.button_smol Оплатить
+
 
         div(data-tab-conteiner="tab-conteiner1").content-wrap
             div(data-tab-conteiner-item="item1").chat

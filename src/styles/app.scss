@@ -63,7 +63,7 @@ body {
 
 // button
 .button {
-	display: inline-flex;
+	display: flex;
 	align-items: center;
 	padding: 5px 25px;
 	min-height: 50px;
@@ -95,10 +95,18 @@ body {
 	}
 }
 
+.button_smol {
+	font-weight: 500;
+	font-size: 14px;
+	min-height: 28px;
+	padding: 0 12px;
+}
+
 // burger
 .burger {
 	position: relative;
 	align-self: center;
+	z-index: 1;
 
 	&.active {
 		& > .burger__button {
@@ -342,6 +350,10 @@ body {
 
 ._hide {
 	display: none;
+}
+
+.color-Green {
+	color: $color-Green;
 }
 
 // @media screen and (max-width: 1274px) {

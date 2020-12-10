@@ -104,3 +104,39 @@ $font-family-root: "PT Root UI", sans-serif;
 		color: $color-Orange;
 	}
 }
+
+// pay-doc-linc
+.pay-doc-linc {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-row-gap: 15px;
+
+	> .button {
+		justify-self: start;
+	}
+
+	&.active {
+		.pay-doc-linc__ls {
+			color: $color-Orange;
+		}
+	}
+}
+
+.pay-doc-linc__ls {
+	font-size: 16px;
+	line-height: 20px;
+	margin-bottom: 4px;
+}
+
+.pay-doc-linc__text {
+	font-size: 14px;
+	line-height: 18px;
+	color: $color-Grey5;
+}
+
+.pay-doc-linc__pay {
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 30px;
+	color: $color-Orange;
+}
