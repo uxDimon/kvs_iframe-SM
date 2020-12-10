@@ -76,22 +76,39 @@ block content
         div(data-tab-conteiner="tab-conteiner1").content-wrap
             div(data-tab-conteiner-item="item1").chat
                 .chat-header
-                    span.chat-header__name № 154 Пояснение по расчету
+                    .chat-header__text
+                        span.chat-header__name № 154 Пояснение по расчету
 
-                    .chat-header__date-status-wrap
-                        .chat-header__date-time
-                            span 17.11.2020
-                            span 12:25
-                        .chat-header__status
-                            svg(width="13", height="13")
-                                use(xlink:href="./assets/images/sprite.svg#icon-time")
-                            span Новая заявка
+                        .chat-header__date-status-wrap
+                            .chat-header__date-time
+                                span 17.11.2020
+                                span 12:25
+                            .chat-header__status
+                                svg(width="13", height="13")
+                                    use(xlink:href="./assets/images/sprite.svg#icon-time")
+                                span Новая заявка
+                        
+                        .chat-header__contact
+                            span.chat-header__contact-text Адрес: 
+                                span.chat-header__contact-linc Дворцовая пл., д.3, кв.1
+                            span.chat-header__contact-text Телефон: 
+                                a(href="tel:+79213332211").chat-header__contact-linc +7 921 333 22 11
                     
-                    .chat-header__contact
-                        span.chat-header__contact-text Адрес: 
-                            span.chat-header__contact-linc Дворцовая пл., д.3, кв.1
-                        span.chat-header__contact-text Телефон: 
-                            a(href="tel:+79213332211").chat-header__contact-linc +7 921 333 22 11
+                    .burger.active
+                        button.burger__button
+                            svg(width="5", height="21").burger__icon
+                                use(xlink:href="./assets/images/sprite.svg#icon-point")
+                        ul.burger__list
+                            li.burger__list-item
+                                a(href="#").burger__list-linc
+                                    svg(width="13", height="13")
+                                        use(xlink:href="./assets/images/sprite.svg#icon-trash")
+                                    span Отменить заказ
+                            li.burger__list-item
+                                a(href="#").burger__list-linc
+                                    svg(width="13", height="13")
+                                        use(xlink:href="./assets/images/sprite.svg#icon-ok")
+                                    span Завершить заявку
 
                 .chat-body
                     .chat-message
@@ -221,15 +238,5 @@ block content
                         label.chat-footer__input-text
                             textarea(type="text", name="text", data-chat-message, placeholder="Введите сообщение")
                     button(type="submit").button Отправить
-
-    //- .tttlll
-        label.input
-            input(type="text", name="name")
-            span.input__placeholder Имя
-            span.input__error Пожалуйста, заполните поле
-        label.input.error
-            input(type="text", name="name")
-            span.input__placeholder Имя
-            span.input__error Пожалуйста, заполните поле
             
 

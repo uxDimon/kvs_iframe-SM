@@ -161,3 +161,14 @@ if (popupsControlAll) {
 		}
 	}
 }
+
+// burger
+const burgerButtonAll = document.querySelectorAll(".burger");
+
+if (burgerButtonAll) {
+	for (const burgerButton of burgerButtonAll) {
+		burgerButton.querySelector(".burger__button").addEventListener("click", (event) => {
+			burgerButton.classList.toggle(activeClass);
+		});
+	}
+}

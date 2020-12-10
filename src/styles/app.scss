@@ -95,6 +95,95 @@ body {
 	}
 }
 
+// burger
+.burger {
+	position: relative;
+	align-self: center;
+
+	&.active {
+		& > .burger__button {
+			background-color: #c4c4c4;
+
+			&::after {
+				content: "";
+				position: fixed;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background-color: transparent;
+				z-index: -1;
+				cursor: auto;
+			}
+		}
+
+		.burger__list {
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+}
+
+.burger__button {
+	width: 35px;
+	height: 35px;
+	position: relative;
+	border: none;
+	background-color: transparent;
+	margin: 0;
+	padding: 0;
+	border-radius: 35px;
+	cursor: pointer;
+	transition: 200ms ease-in-out 0ms;
+	transition-property: background-color;
+	z-index: 2;
+
+	&:hover {
+		background-color: $color-Grey3;
+	}
+}
+
+.burger__icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.burger__list {
+	position: absolute;
+	top: 100%;
+	right: 50%;
+	background-color: $color-wheat;
+	padding: 18px;
+	margin: 0;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+	list-style: none;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-row-gap: 12px;
+	z-index: 10;
+	visibility: hidden;
+	opacity: 0;
+	transition: 250ms ease-in-out 0ms;
+	transition-property: opacity, visibility;
+	cursor: auto;
+}
+
+.burger__list-linc {
+	display: grid;
+	grid-auto-flow: column;
+	grid-column-gap: 8px;
+	align-items: center;
+	color: $color-Black;
+	text-decoration: none;
+	justify-content: start;
+
+	span {
+		white-space: nowrap;
+	}
+}
+
 // switch
 .switch {
 	display: inline-grid;
