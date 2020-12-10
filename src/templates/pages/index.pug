@@ -5,7 +5,7 @@ block variables
     - var contactForm = true
 
 block content
-    main.main
+    //- main.main
         header.header 
             .header__top
                 h2.header__h Обращения
@@ -222,5 +222,14 @@ block content
                             textarea(type="text", name="text", data-chat-message, placeholder="Введите сообщение")
                     button(type="submit").button Отправить
 
-
+    .tttlll
+        label.input
+            input(type="text", name="name")
+            span.input__placeholder Имя
+            span.input__error Пожалуйста, заполните поле
+        label.input.error
+            input(type="text", name="name")
+            span.input__placeholder Имя
+            span.input__error Пожалуйста, заполните поле
+            
 

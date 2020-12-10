@@ -119,3 +119,20 @@ if (allTabControl) {
 		}
 	}
 }
+
+// input
+const inputWrapAll = document.querySelectorAll(".input");
+
+if (inputWrapAll) {
+	for (const inputWrap of inputWrapAll) {
+		const input = inputWrap.querySelector("input");
+
+		input.addEventListener("change", () => {
+			if (input.value == "") {
+				inputWrap.classList.remove(activeClass);
+			} else if (input.value != "") {
+				inputWrap.classList.add(activeClass);
+			}
+		});
+	}
+}
