@@ -240,3 +240,47 @@ a.chat-header__contact-linc:hover {
 		}
 	}
 }
+
+// doc-conteiner
+
+.doc-conteiner__head {
+	border-bottom: 1px solid #cfd0d1;
+	margin-bottom: 26px;
+	display: grid;
+	grid-auto-flow: column;
+	grid-column-gap: 58px;
+}
+
+.content-table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.015em;
+
+	tr {
+		border-bottom: 1px solid $color-Grey2;
+	}
+
+	td {
+		padding: 10px 25px;
+
+		&:last-child {
+			text-align: right;
+		}
+	}
+}
+
+.content-table__head {
+	background-color: $color-wheat;
+
+	th {
+		color: #68717b;
+		font-size: 12px;
+		line-height: 20px;
+		letter-spacing: 0.9px;
+		text-transform: uppercase;
+		text-align: left;
+		padding: 16px 25px;
+	}
+}

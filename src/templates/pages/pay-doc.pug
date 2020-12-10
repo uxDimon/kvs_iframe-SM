@@ -9,12 +9,6 @@ block content
         header.header 
             .header__top
                 h2.header__h Платежные документы
-                button(data-popups-control='popups1').button.button__ghost Создать новое обращение
-            .header__bot
-                label.switch
-                    .switch__control
-                    .switch__text Показать закрытые
-                    input(type="checkbox", name="")
 
         nav.menu-primary
             ul.menu-primary__list
@@ -63,171 +57,86 @@ block content
 
 
         div(data-tab-conteiner="tab-conteiner1").content-wrap
-            div(data-tab-conteiner-item="item1").chat
-                .chat-header
-                    .chat-header__text
-                        span.chat-header__name № 154 Пояснение по расчету
-
-                        .chat-header__date-status-wrap
-                            .chat-header__date-time
-                                span 17.11.2020
-                                span 12:25
-                            .chat-header__status
-                                svg(width="13", height="13")
-                                    use(xlink:href="./assets/images/sprite.svg#icon-time")
-                                span Новая заявка
-                        
-                        .chat-header__contact
-                            span.chat-header__contact-text Адрес: 
-                                span.chat-header__contact-linc Дворцовая пл., д.3, кв.1
-                            span.chat-header__contact-text Телефон: 
-                                a(href="tel:+79213332211").chat-header__contact-linc +7 921 333 22 11
-                    
-                    .burger
-                        button.burger__button
-                            svg(width="5", height="21").burger__icon
-                                use(xlink:href="./assets/images/sprite.svg#icon-point")
-                        ul.burger__list
-                            li.burger__list-item
-                                a(href="#").burger__list-linc
-                                    svg(width="13", height="13")
-                                        use(xlink:href="./assets/images/sprite.svg#icon-trash")
-                                    span Отменить заказ
-                            li.burger__list-item
-                                a(href="#", data-popups-control='popups2').burger__list-linc
-                                    svg(width="13", height="13")
-                                        use(xlink:href="./assets/images/sprite.svg#icon-ok")
-                                    span Завершить заявку
-
-                .chat-body
-                    .chat-message
-                        span.chat-message__date 17 ноября 2020
-                        .chat-message__message.chat-message__message_user
-                            .chat-message__text
-                                p Новое обращение: Пояснение по расчету.
-                                p Не понимаю откуда в квитанции такая сумма за октябрь. Поясните пожалуйста.
-                            .chat-message__time 11:53
-                        
-                        .chat-message__message.chat-message__message_user
-                            .chat-message__text
-                                p Отправлен файл: 0276566.pdf
-                            .chat-message__time 11:55
-                        
-                        span.chat-message__date 18 ноября 2020
-
-                        .chat-message__message.chat-message__message_admin
-                            .chat-message__text
-                                p Здравствуйте! Заявку №254 принял специалист: электрик Петров Н.А.
-                            .chat-message__time 8:12
-
-                        .chat-message__message.chat-message__message_user
-                            .chat-message__text
-                                p Дай Бог вам здоровья!
-                            .chat-message__time 14:25                        
-
-                form.chat-footer
-                    .chat-footer__input-wrpa
-                        label.chat-footer__input-file
-                            svg(width="20", height="18")
-                                use(xlink:href="./assets/images/sprite.svg#icon-clip")
-                            input(type="file", name="file")
-                        label.chat-footer__input-text
-                            textarea(type="text", name="text", data-chat-message, placeholder="Введите сообщение")
-                    button(type="submit").button Отправить
-            
-            div(data-tab-conteiner-item="item2").chat
-                .chat-header
-                    .chat-header__text
-                        span.chat-header__name № 254 Пояснение по расчету
-
-                        .chat-header__date-status-wrap
-                            .chat-header__date-time
-                                span 17.11.2020
-                                span 12:25
-                            .chat-header__status
-                                svg(width="13", height="13")
-                                    use(xlink:href="./assets/images/sprite.svg#icon-trash")
-                                span Отменена
-                        
-                        .chat-header__contact
-                            span.chat-header__contact-text Адрес: 
-                                span.chat-header__contact-linc Дворцовая пл., д.3, кв.1
-                            span.chat-header__contact-text Телефон: 
-                                a(href="tel:+79213332211").chat-header__contact-linc +7 921 333 22 11
-
-                .chat-body
-                    .chat-message
-                        span.chat-message__date 17 ноября 2020
-                        .chat-message__message.chat-message__message_user
-                            .chat-message__text
-                                p Новое обращение: Пояснение по расчету.
-                                p Не понимаю откуда в квитанции такая сумма за октябрь. Поясните пожалуйста.
-                            .chat-message__time 11:53
-                        
-                        .chat-message__message.chat-message__message_user
-                            .chat-message__text
-                                p Отправлен файл: 0276566.pdf
-                            .chat-message__time 11:55                      
-
-                form.chat-footer
-                    .chat-footer__input-wrpa
-                        label.chat-footer__input-file
-                            svg(width="20", height="18")
-                                use(xlink:href="./assets/images/sprite.svg#icon-clip")
-                            input(type="file", name="file")
-                        label.chat-footer__input-text
-                            textarea(type="text", name="text", data-chat-message, placeholder="Введите сообщение")
-                    button(type="submit").button Отправить
-            
-            div(data-tab-conteiner-item="item3").chat
-                .chat-header
-                    .chat-header__text
-                        span.chat-header__name № 354 Пояснение по расчету
-
-                        .chat-header__date-status-wrap
-                            .chat-header__date-time
-                                span 17.11.2020
-                                span 12:25
-                            .chat-header__status
-                                svg(width="13", height="13")
-                                    use(xlink:href="./assets/images/sprite.svg#icon-ok")
-                                span Завершена
-                        
-                        .chat-header__contact
-                            span.chat-header__contact-text Адрес: 
-                                span.chat-header__contact-linc Дворцовая пл., д.3, кв.1
-                            span.chat-header__contact-text Телефон: 
-                                a(href="tel:+79213332211").chat-header__contact-linc +7 921 333 22 11
-
-                .chat-body
-                    .chat-message
-                        span.chat-message__date 17 ноября 2020
-                        .chat-message__message.chat-message__message_user
-                            .chat-message__text
-                                p Новое обращение: Пояснение по расчету.
-                                p Не понимаю откуда в квитанции такая сумма за октябрь. Поясните пожалуйста.
-                            .chat-message__time 11:53
-                        
-                        .chat-message__message.chat-message__message_user
-                            .chat-message__text
-                                p Отправлен файл: 0276566.pdf
-                            .chat-message__time 11:55
-                        
-                        span.chat-message__date 18 ноября 2020
-
-                        .chat-message__message.chat-message__message_admin
-                            .chat-message__text
-                                p Здравствуйте! Заявку №254 принял специалист: электрик Петров Н.А.
-                            .chat-message__time 8:12                       
-
-                form.chat-footer
-                    .chat-footer__input-wrpa
-                        label.chat-footer__input-file
-                            svg(width="20", height="18")
-                                use(xlink:href="./assets/images/sprite.svg#icon-clip")
-                            input(type="file", name="file")
-                        label.chat-footer__input-text
-                            textarea(type="text", name="text", data-chat-message, placeholder="Введите сообщение")
-                    button(type="submit").button Отправить
-            
-
+            div(data-tab-conteiner-item="item1").doc-conteiner
+                .doc-conteiner__head
+                    button.doc-conteiner__head-button Квитанции
+                    button.doc-conteiner__head-button Платежи
+                
+                .doc-conteiner__body
+                    table.content-table
+                        tr.content-table__head
+                            th период квитанции
+                            th сумма
+                            th
+                        tr
+                            td Октябрь 2020
+                            td 3000 руб.
+                            td 
+                                .burger
+                                    button.burger__button
+                                        svg(width="5", height="21").burger__icon
+                                            use(xlink:href="./assets/images/sprite.svg#icon-point")
+                                    ul.burger__list
+                                        li.burger__list-item
+                                            a(href="#").burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-eye")
+                                                span Посмотреть
+                                        li.burger__list-item
+                                            a(href="#", data-popups-control='popups2').burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-download")
+                                                span Скачать
+                                        li.burger__list-item
+                                            a(href="#", data-popups-control='popups2').burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-print")
+                                                span Распечатать
+                        tr
+                            td Октябрь 2020
+                            td 2000 руб.
+                            td 
+                                .burger
+                                    button.burger__button
+                                        svg(width="5", height="21").burger__icon
+                                            use(xlink:href="./assets/images/sprite.svg#icon-point")
+                                    ul.burger__list
+                                        li.burger__list-item
+                                            a(href="#").burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-eye")
+                                                span Посмотреть
+                                        li.burger__list-item
+                                            a(href="#", data-popups-control='popups2').burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-download")
+                                                span Скачать
+                                        li.burger__list-item
+                                            a(href="#", data-popups-control='popups2').burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-print")
+                                                span Распечатать
+                        tr
+                            td Октябрь 2020
+                            td 4000 руб.
+                            td 
+                                .burger
+                                    button.burger__button
+                                        svg(width="5", height="21").burger__icon
+                                            use(xlink:href="./assets/images/sprite.svg#icon-point")
+                                    ul.burger__list
+                                        li.burger__list-item
+                                            a(href="#").burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-eye")
+                                                span Посмотреть
+                                        li.burger__list-item
+                                            a(href="#", data-popups-control='popups2').burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-download")
+                                                span Скачать
+                                        li.burger__list-item
+                                            a(href="#", data-popups-control='popups2').burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-print")
+                                                span Распечатать

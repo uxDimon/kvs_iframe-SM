@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Обращения</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="assets/images/fav.png">
+    <link rel="stylesheet" type="text/css" href="assets/styles/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/app.css">
+  </head>
+  <body>
+    <main class="main">
+      <header class="header"> 
+        <div class="header__top">
+          <h2 class="header__h">Обращения</h2>
+          <button class="button button__ghost" data-popups-control="popups1">Создать новое обращение</button>
+        </div>
+        <div class="header__bot">
+          <label class="switch">
+            <div class="switch__control"></div>
+            <div class="switch__text">Показать закрытые</div>
+            <input type="checkbox" name="">
+          </label>
+        </div>
+      </header>
+      <nav class="menu-primary">
+        <ul class="menu-primary__list">
+          <li class="menu-primary__item">
+            <button class="menu-primary__linc menu-primary__linc_control active" data-drop-control="drop1">Диспетчеризация
+              <svg width="16" height="16">
+                <use xlink:href="./assets/images/sprite.svg#icon-arrow"></use>
+              </svg>
+            </button>
+            <div class="menu-primary__drop-list-wrap" data-drop-container="drop1" data-drop-active="true">
+              <ul class="menu-primary__drop-list">
+                <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc active" href="index.html">Обращения</a></li>
+                <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="index.html">Заявки на работы</a></li>
+                <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="index.html">Заказ платных услуг УК</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu-primary__item"><a class="menu-primary__linc" href="pay-doc.html">Платежные документы</a></li>
+          <li class="menu-primary__item"><a class="menu-primary__linc" href="#">Подать показания</a></li>
+          <li class="menu-primary__item"><a class="menu-primary__linc" href="#">Профиль собственника</a></li>
+          <li class="menu-primary__item"><a class="menu-primary__linc" href="#">Маркетплейс</a></li>
+        </ul>
+      </nav>
+      <div class="menu-secondary" data-tab-control="tab-conteiner1">
+        <ul class="menu-secondary__list">
+          <li class="menu-secondary__iten"><a class="menu-secondary__linc request-linc active" tabindex="0" data-tab-control-item="item1"><span class="request-linc__name">№ 154 Пояснение по расчету</span>
+              <div class="request-linc__date-time"><span>17.11.2020</span><span>12:25</span></div>
+              <div class="request-linc__status">
+                <svg width="13" height="13">
+                  <use xlink:href="./assets/images/sprite.svg#icon-time"></use>
+                </svg><span>Новая заявка</span>
+              </div></a></li>
+          <li class="menu-secondary__iten"><a class="menu-secondary__linc request-linc" tabindex="0" data-tab-control-item="item2"><span class="request-linc__name">№ 254 Пояснение по расчету</span>
+              <div class="request-linc__date-time"><span>17.11.2020</span><span>12:25</span></div>
+              <div class="request-linc__status">
+                <svg width="13" height="13">
+                  <use xlink:href="./assets/images/sprite.svg#icon-trash"></use>
+                </svg><span>Отменена</span>
+              </div></a></li>
+          <li class="menu-secondary__iten"><a class="menu-secondary__linc request-linc" tabindex="0" data-tab-control-item="item3"><span class="request-linc__name">№ 354 Пояснение по расчету</span>
+              <div class="request-linc__date-time"><span>17.11.2020</span><span>12:25</span></div>
+              <div class="request-linc__status">
+                <svg width="13" height="13">
+                  <use xlink:href="./assets/images/sprite.svg#icon-ok"></use>
+                </svg><span>Завершена</span>
+              </div></a></li>
+        </ul>
+      </div>
+      <div class="content-wrap" data-tab-conteiner="tab-conteiner1">
+        <div class="chat" data-tab-conteiner-item="item1">
+          <div class="chat-header">
+            <div class="chat-header__text"><span class="chat-header__name">№ 154 Пояснение по расчету</span>
+              <div class="chat-header__date-status-wrap">
+                <div class="chat-header__date-time"><span>17.11.2020</span><span>12:25</span></div>
+                <div class="chat-header__status">
+                  <svg width="13" height="13">
+                    <use xlink:href="./assets/images/sprite.svg#icon-time"></use>
+                  </svg><span>Новая заявка</span>
+                </div>
+              </div>
+              <div class="chat-header__contact"><span class="chat-header__contact-text">Адрес: <span class="chat-header__contact-linc">Дворцовая пл., д.3, кв.1</span></span><span class="chat-header__contact-text">Телефон: <a class="chat-header__contact-linc" href="tel:+79213332211">+7 921 333 22 11</a></span></div>
+            </div>
+            <div class="burger">
+              <button class="burger__button">
+                <svg class="burger__icon" width="5" height="21">
+                  <use xlink:href="./assets/images/sprite.svg#icon-point"></use>
+                </svg>
+              </button>
+              <ul class="burger__list">
+                <li class="burger__list-item"><a class="burger__list-linc" href="#">
+                    <svg width="13" height="13">
+                      <use xlink:href="./assets/images/sprite.svg#icon-trash"></use>
+                    </svg><span>Отменить заказ</span></a></li>
+                <li class="burger__list-item"><a class="burger__list-linc" href="#" data-popups-control="popups2">
+                    <svg width="13" height="13">
+                      <use xlink:href="./assets/images/sprite.svg#icon-ok"></use>
+                    </svg><span>Завершить заявку</span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="chat-body">
+            <div class="chat-message"><span class="chat-message__date">17 ноября 2020</span>
+              <div class="chat-message__message chat-message__message_user">
+                <div class="chat-message__text">
+                  <p>Новое обращение: Пояснение по расчету.</p>
+                  <p>Не понимаю откуда в квитанции такая сумма за октябрь. Поясните пожалуйста.</p>
+                </div>
+                <div class="chat-message__time">11:53</div>
+              </div>
+              <div class="chat-message__message chat-message__message_user">
+                <div class="chat-message__text">
+                  <p>Отправлен файл: 0276566.pdf</p>
+                </div>
+                <div class="chat-message__time">11:55</div>
+              </div><span class="chat-message__date">18 ноября 2020</span>
+              <div class="chat-message__message chat-message__message_admin">
+                <div class="chat-message__text">
+                  <p>Здравствуйте! Заявку №254 принял специалист: электрик Петров Н.А.</p>
+                </div>
+                <div class="chat-message__time">8:12</div>
+              </div>
+              <div class="chat-message__message chat-message__message_user">
+                <div class="chat-message__text">
+                  <p>Дай Бог вам здоровья!</p>
+                </div>
+                <div class="chat-message__time">14:25                        </div>
+              </div>
+            </div>
+          </div>
+          <form class="chat-footer">
+            <div class="chat-footer__input-wrpa">
+              <label class="chat-footer__input-file">
+                <svg width="20" height="18">
+                  <use xlink:href="./assets/images/sprite.svg#icon-clip"></use>
+                </svg>
+                <input type="file" name="file">
+              </label>
+              <label class="chat-footer__input-text">
+                <textarea type="text" name="text" data-chat-message placeholder="Введите сообщение"></textarea>
+              </label>
+            </div>
+            <button class="button" type="submit">Отправить</button>
+          </form>
+        </div>
+        <div class="chat" data-tab-conteiner-item="item2">
+          <div class="chat-header">
+            <div class="chat-header__text"><span class="chat-header__name">№ 254 Пояснение по расчету</span>
+              <div class="chat-header__date-status-wrap">
+                <div class="chat-header__date-time"><span>17.11.2020</span><span>12:25</span></div>
+                <div class="chat-header__status">
+                  <svg width="13" height="13">
+                    <use xlink:href="./assets/images/sprite.svg#icon-trash"></use>
+                  </svg><span>Отменена</span>
+                </div>
+              </div>
+              <div class="chat-header__contact"><span class="chat-header__contact-text">Адрес: <span class="chat-header__contact-linc">Дворцовая пл., д.3, кв.1</span></span><span class="chat-header__contact-text">Телефон: <a class="chat-header__contact-linc" href="tel:+79213332211">+7 921 333 22 11</a></span></div>
+            </div>
+          </div>
+          <div class="chat-body">
+            <div class="chat-message"><span class="chat-message__date">17 ноября 2020</span>
+              <div class="chat-message__message chat-message__message_user">
+                <div class="chat-message__text">
+                  <p>Новое обращение: Пояснение по расчету.</p>
+                  <p>Не понимаю откуда в квитанции такая сумма за октябрь. Поясните пожалуйста.</p>
+                </div>
+                <div class="chat-message__time">11:53</div>
+              </div>
+              <div class="chat-message__message chat-message__message_user">
+                <div class="chat-message__text">
+                  <p>Отправлен файл: 0276566.pdf</p>
+                </div>
+                <div class="chat-message__time">11:55                      </div>
+              </div>
+            </div>
+          </div>
+          <form class="chat-footer">
+            <div class="chat-footer__input-wrpa">
+              <label class="chat-footer__input-file">
+                <svg width="20" height="18">
+                  <use xlink:href="./assets/images/sprite.svg#icon-clip"></use>
+                </svg>
+                <input type="file" name="file">
+              </label>
+              <label class="chat-footer__input-text">
+                <textarea type="text" name="text" data-chat-message placeholder="Введите сообщение"></textarea>
+              </label>
+            </div>
+            <button class="button" type="submit">Отправить</button>
+          </form>
+        </div>
+        <div class="chat" data-tab-conteiner-item="item3">
+          <div class="chat-header">
+            <div class="chat-header__text"><span class="chat-header__name">№ 354 Пояснение по расчету</span>
+              <div class="chat-header__date-status-wrap">
+                <div class="chat-header__date-time"><span>17.11.2020</span><span>12:25</span></div>
+                <div class="chat-header__status">
+                  <svg width="13" height="13">
+                    <use xlink:href="./assets/images/sprite.svg#icon-ok"></use>
+                  </svg><span>Завершена</span>
+                </div>
+              </div>
+              <div class="chat-header__contact"><span class="chat-header__contact-text">Адрес: <span class="chat-header__contact-linc">Дворцовая пл., д.3, кв.1</span></span><span class="chat-header__contact-text">Телефон: <a class="chat-header__contact-linc" href="tel:+79213332211">+7 921 333 22 11</a></span></div>
+            </div>
+          </div>
+          <div class="chat-body">
+            <div class="chat-message"><span class="chat-message__date">17 ноября 2020</span>
+              <div class="chat-message__message chat-message__message_user">
+                <div class="chat-message__text">
+                  <p>Новое обращение: Пояснение по расчету.</p>
+                  <p>Не понимаю откуда в квитанции такая сумма за октябрь. Поясните пожалуйста.</p>
+                </div>
+                <div class="chat-message__time">11:53</div>
+              </div>
+              <div class="chat-message__message chat-message__message_user">
+                <div class="chat-message__text">
+                  <p>Отправлен файл: 0276566.pdf</p>
+                </div>
+                <div class="chat-message__time">11:55</div>
+              </div><span class="chat-message__date">18 ноября 2020</span>
+              <div class="chat-message__message chat-message__message_admin">
+                <div class="chat-message__text">
+                  <p>Здравствуйте! Заявку №254 принял специалист: электрик Петров Н.А.</p>
+                </div>
+                <div class="chat-message__time">8:12                       </div>
+              </div>
+            </div>
+          </div>
+          <form class="chat-footer">
+            <div class="chat-footer__input-wrpa">
+              <label class="chat-footer__input-file">
+                <svg width="20" height="18">
+                  <use xlink:href="./assets/images/sprite.svg#icon-clip"></use>
+                </svg>
+                <input type="file" name="file">
+              </label>
+              <label class="chat-footer__input-text">
+                <textarea type="text" name="text" data-chat-message placeholder="Введите сообщение"></textarea>
+              </label>
+            </div>
+            <button class="button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <div class="popups" data-popups-container="popups1">
+      <div class="popups__container-wrap">
+        <button class="popups__close" data-popups-close>
+          <svg width="20" height="20">
+            <use xlink:href="./assets/images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="popups__container">
+          <h2 class="popups__h">Создайте новое обращение</h2>
+          <form class="popups__inputs">
+            <label class="input">
+              <input type="text" name="name"><span class="input__placeholder">Тема обращения*</span><span class="input__error">Пожалуйста, заполните поле</span>
+            </label>
+            <label class="input error">
+              <input type="text" name="name"><span class="input__placeholder">Адрес*</span><span class="input__error">Пожалуйста, заполните поле</span>
+            </label>
+            <label class="input">
+              <input type="tel" name="name"><span class="input__placeholder">Адрес*</span><span class="input__error">Пожалуйста, заполните поле</span>
+            </label>
+            <label class="input">
+              <textarea name="name"></textarea><span class="input__placeholder">Сообщение*</span><span class="input__error">Пожалуйста, заполните поле</span>
+            </label>
+            <label class="input">
+              <div class="input__file"></div>
+              <input type="file" name="name" onchange="uploadFile(this)"><span class="input__placeholder">Файл</span><span class="input__error">Пожалуйста, заполните поле</span>
+            </label>
+            <button class="button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+      <div class="popups__close-area" data-popups-close></div>
+    </div>
+    <div class="popups" data-popups-container="popups2">
+      <div class="popups__container-wrap">
+        <button class="popups__close" data-popups-close>
+          <svg width="20" height="20">
+            <use xlink:href="./assets/images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="popups__container">
+          <h2 class="popups__h">Создайте новое обращение</h2>
+          <p>Ваша заявка №254 от 17.11.2020 была отменена. Вы можете посмотреть ее в разделе закрытых сделок.</p>
+        </div>
+      </div>
+      <div class="popups__close-area" data-popups-close></div>
+    </div>
+    <script src="assets/scripts/imask.min.js"></script>
+    <script src="assets/scripts/accordion.min.js"></script>
+    <script src="assets/scripts/swiper-bundle.min.js"></script>
+    <script src="assets/scripts/medium-zoom.min.js"></script>
+    <script src="assets/scripts/focus-visible.js"></script>
+    <script src="assets/scripts/main.js"></script>
+  </body>
+</html>
