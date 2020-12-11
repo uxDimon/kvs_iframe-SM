@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Платежные документы</title>
+    <title>Подать показания по приборам лицевого счета</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,7 +16,7 @@
     <main class="main">
       <header class="header"> 
         <div class="header__top">
-          <h2 class="header__h">Платежные документы</h2>
+          <h2 class="header__h">Подать показания по приборам лицевого счета</h2>
         </div>
       </header>
       <nav class="menu-primary">
@@ -35,52 +35,50 @@
               </ul>
             </div>
           </li>
-          <li class="menu-primary__item"><a class="menu-primary__linc active" href="pay-doc.html">Платежные документы</a></li>
-          <li class="menu-primary__item"><a class="menu-primary__linc" href="give-evidence.html">Подать показания</a></li>
+          <li class="menu-primary__item"><a class="menu-primary__linc" href="pay-doc.html">Платежные документы</a></li>
+          <li class="menu-primary__item"><a class="menu-primary__linc active" href="give-evidence.html"> Подать показания</a></li>
           <li class="menu-primary__item"><a class="menu-primary__linc" href="profile.html">Профиль собственника</a></li>
           <li class="menu-primary__item"><a class="menu-primary__linc" href="marker.html">Маркетплейс</a></li>
         </ul>
       </nav>
       <div class="menu-secondary" data-tab-control="tab-conteiner1">
         <ul class="menu-secondary__list">
-          <li class="menu-secondary__iten"><a class="menu-secondary__linc pay-doc-linc active" tabindex="0" data-tab-control-item="item1">
-              <div class="pay-doc-linc__text-wrap">
-                <div class="pay-doc-linc__ls">Л/сч 0100103001</div>
-                <div class="pay-doc-linc__text">Адрес: Дворцовая пл., д.3, кв.1</div>
-              </div>
-              <div class="pay-doc-linc__text-wrap">
-                <div class="pay-doc-linc__pay">3000 руб.</div>
-                <div class="pay-doc-linc__text">Сумма к оплате на 18.11.2020</div>
-              </div>
-              <button class="button button_smol">Оплатить</button></a></li>
-          <li class="menu-secondary__iten"><a class="menu-secondary__linc pay-doc-linc" tabindex="0" data-tab-control-item="item2">
-              <div class="pay-doc-linc__text-wrap">
-                <div class="pay-doc-linc__ls">Л/сч 0100103001</div>
-                <div class="pay-doc-linc__text">Адрес: Дворцовая пл., д.3, кв.1</div>
-              </div>
-              <div class="pay-doc-linc__text-wrap">
-                <div class="pay-doc-linc__pay color-Green">-23 руб.</div>
-                <div class="pay-doc-linc__text">Сумма к оплате на 18.11.2020</div>
-              </div>
-              <button class="button button_smol">Оплатить</button></a></li>
+          <li class="menu-secondary__iten"><a class="menu-secondary__linc give-evidence-linc active" tabindex="0" data-tab-control-item="item1">
+              <div class="give-evidence-linc__h">Холодное водоснабжение</div>
+              <div class="give-evidence-linc__text">Заводской №: 8762719</div>
+              <div class="give-evidence-linc__text">Последняя проверка: 01.02.2016</div>
+              <div class="give-evidence-linc__text">Межпроверочный интервал: 6 лет</div></a></li>
+          <li class="menu-secondary__iten"><a class="menu-secondary__linc give-evidence-linc" tabindex="0" data-tab-control-item="item2">
+              <div class="give-evidence-linc__h">Горячее водоснабжение</div>
+              <div class="give-evidence-linc__text">Заводской №: 8762719</div>
+              <div class="give-evidence-linc__text">Последняя проверка: 01.02.2016</div>
+              <div class="give-evidence-linc__text">Межпроверочный интервал: 6 лет</div></a></li>
+          <li class="menu-secondary__iten"><a class="menu-secondary__linc give-evidence-linc" tabindex="0" data-tab-control-item="item3">
+              <div class="give-evidence-linc__h">Электроэнергия</div>
+              <div class="give-evidence-linc__text">Заводской №: 8762719</div>
+              <div class="give-evidence-linc__text">Последняя проверка: 01.02.2016</div>
+              <div class="give-evidence-linc__text">Межпроверочный интервал: 6 лет</div></a></li>
         </ul>
       </div>
       <div class="content-wrap" data-tab-conteiner="tab-conteiner1">
         <div class="doc-conteiner" data-tab-conteiner-item="item1">
-          <div class="doc-conteiner__head" data-tab-control="tab-conteiner2">
-            <button class="doc-conteiner__head-button active" data-tab-control-item="item1">Квитанции</button>
-            <button class="doc-conteiner__head-button" data-tab-control-item="item2">Платежи</button>
+          <div class="give-evidence__head">
+            <div class="give-evidence__head-wrap">
+              <h3 class="give-evidence__head-h">Прибор учета № 8762719</h3>
+              <div class="give-evidence__head-text">Внимание! Последние показания переданы 10.11.2020</div>
+            </div>
+            <button class="button button_smol">Подать показания</button>
           </div>
-          <div class="doc-conteiner__body" data-tab-conteiner="tab-conteiner2">
-            <table class="content-table" data-tab-conteiner-item="item1">
+          <div class="doc-conteiner__body">
+            <table class="content-table">
               <tr class="content-table__head">
-                <th>период квитанции</th>
-                <th>сумма</th>
+                <th>Дата</th>
+                <th>значение</th>
                 <th></th>
               </tr>
               <tr>
-                <td>Октябрь 2020</td>
-                <td>3000 руб.</td>
+                <td>11.11.2020</td>
+                <td>115</td>
                 <td class="burger_td"> 
                   <div class="burger">
                     <button class="burger__button">
@@ -106,9 +104,9 @@
                 </td>
               </tr>
               <tr>
-                <td>Октябрь 2020</td>
-                <td>2000 руб.</td>
-                <td class="burger_td"> 
+                <td>11.11.2020</td>
+                <td>115</td>
+                <td class="burger_td">
                   <div class="burger">
                     <button class="burger__button">
                       <svg class="burger__icon" width="5" height="21">
@@ -133,9 +131,9 @@
                 </td>
               </tr>
               <tr>
-                <td>Октябрь 2020</td>
-                <td>4000 руб.</td>
-                <td class="burger_td"> 
+                <td>11.11.2020</td>
+                <td>115</td>
+                <td class="burger_td">
                   <div class="burger">
                     <button class="burger__button">
                       <svg class="burger__icon" width="5" height="21">
@@ -160,9 +158,9 @@
                 </td>
               </tr>
               <tr>
-                <td>Октябрь 2020</td>
-                <td>4000 руб.</td>
-                <td class="burger_td"> 
+                <td>11.11.2020</td>
+                <td>115</td>
+                <td class="burger_td">
                   <div class="burger">
                     <button class="burger__button">
                       <svg class="burger__icon" width="5" height="21">
@@ -187,9 +185,9 @@
                 </td>
               </tr>
               <tr>
-                <td>Октябрь 2020</td>
-                <td>4000 руб.</td>
-                <td class="burger_td"> 
+                <td>11.11.2020</td>
+                <td>115</td>
+                <td class="burger_td">
                   <div class="burger">
                     <button class="burger__button">
                       <svg class="burger__icon" width="5" height="21">
@@ -214,9 +212,9 @@
                 </td>
               </tr>
               <tr>
-                <td>Октябрь 2020</td>
-                <td>4000 руб.</td>
-                <td class="burger_td"> 
+                <td>11.11.2020</td>
+                <td>115</td>
+                <td class="burger_td">
                   <div class="burger">
                     <button class="burger__button">
                       <svg class="burger__icon" width="5" height="21">
@@ -241,9 +239,9 @@
                 </td>
               </tr>
               <tr>
-                <td>Октябрь 2020</td>
-                <td>4000 руб.</td>
-                <td class="burger_td"> 
+                <td>11.11.2020</td>
+                <td>115</td>
+                <td class="burger_td">
                   <div class="burger">
                     <button class="burger__button">
                       <svg class="burger__icon" width="5" height="21">
@@ -268,9 +266,9 @@
                 </td>
               </tr>
               <tr>
-                <td>Октябрь 2020</td>
-                <td>4000 руб.</td>
-                <td class="burger_td"> 
+                <td>11.11.2020</td>
+                <td>115</td>
+                <td class="burger_td">
                   <div class="burger">
                     <button class="burger__button">
                       <svg class="burger__icon" width="5" height="21">
@@ -295,9 +293,36 @@
                 </td>
               </tr>
               <tr>
-                <td>Октябрь 2020</td>
-                <td>4000 руб.</td>
-                <td class="burger_td"> 
+                <td>11.11.2020</td>
+                <td>115</td>
+                <td class="burger_td">
+                  <div class="burger">
+                    <button class="burger__button">
+                      <svg class="burger__icon" width="5" height="21">
+                        <use xlink:href="./assets/images/sprite.svg#icon-point"></use>
+                      </svg>
+                    </button>
+                    <ul class="burger__list">
+                      <li class="burger__list-item"><a class="burger__list-linc" href="#">
+                          <svg width="13" height="13">
+                            <use xlink:href="./assets/images/sprite.svg#icon-eye"></use>
+                          </svg><span>Посмотреть</span></a></li>
+                      <li class="burger__list-item"><a class="burger__list-linc" href="#" data-popups-control="popups2">
+                          <svg width="13" height="13">
+                            <use xlink:href="./assets/images/sprite.svg#icon-download"></use>
+                          </svg><span>Скачать</span></a></li>
+                      <li class="burger__list-item"><a class="burger__list-linc" href="#" data-popups-control="popups2">
+                          <svg width="13" height="13">
+                            <use xlink:href="./assets/images/sprite.svg#icon-print"></use>
+                          </svg><span>Распечатать</span></a></li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>11.11.2020</td>
+                <td>115</td>
+                <td class="burger_td">
                   <div class="burger">
                     <button class="burger__button">
                       <svg class="burger__icon" width="5" height="21">
@@ -322,27 +347,179 @@
                 </td>
               </tr>
             </table>
-            <div class="content-text" data-tab-conteiner-item="item2">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo molestias error nobis? Excepturi repudiandae voluptatum dolores optio deserunt dolor, soluta quia rerum consequatur pariatur repellendus laborum nostrum eligendi nihil magnam?</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo molestias error nobis? Excepturi repudiandae voluptatum dolores optio deserunt dolor, soluta quia rerum consequatur pariatur repellendus laborum nostrum eligendi nihil magnam?</p>
-            </div>
           </div>
         </div>
         <div class="doc-conteiner" data-tab-conteiner-item="item2">
-          <div class="doc-conteiner__head" data-tab-control="tab-conteiner3">
-            <button class="doc-conteiner__head-button active" data-tab-control-item="item1">Квитанции</button>
-            <button class="doc-conteiner__head-button" data-tab-control-item="item2">Платежи</button>
+          <div class="give-evidence__head">
+            <div class="give-evidence__head-wrap">
+              <h3 class="give-evidence__head-h">Прибор учета № 8762719</h3>
+              <div class="give-evidence__head-text">Внимание! Последние показания переданы 10.11.2020</div>
+            </div>
+            <button class="button button_smol">Подать показания</button>
           </div>
-          <div class="doc-conteiner__body" data-tab-conteiner="tab-conteiner3">
-            <table class="content-table" data-tab-conteiner-item="item1">
+          <div class="doc-conteiner__body">
+            <table class="content-table">
               <tr class="content-table__head">
-                <th>период квитанции</th>
-                <th>сумма</th>
+                <th>Дата</th>
+                <th>значение</th>
                 <th></th>
               </tr>
               <tr>
-                <td>Октябрь 2020</td>
-                <td>3000 руб.</td>
+                <td>11.11.2020</td>
+                <td>115</td>
+                <td class="burger_td"> 
+                  <div class="burger">
+                    <button class="burger__button">
+                      <svg class="burger__icon" width="5" height="21">
+                        <use xlink:href="./assets/images/sprite.svg#icon-point"></use>
+                      </svg>
+                    </button>
+                    <ul class="burger__list">
+                      <li class="burger__list-item"><a class="burger__list-linc" href="#">
+                          <svg width="13" height="13">
+                            <use xlink:href="./assets/images/sprite.svg#icon-eye"></use>
+                          </svg><span>Посмотреть</span></a></li>
+                      <li class="burger__list-item"><a class="burger__list-linc" href="#" data-popups-control="popups2">
+                          <svg width="13" height="13">
+                            <use xlink:href="./assets/images/sprite.svg#icon-download"></use>
+                          </svg><span>Скачать</span></a></li>
+                      <li class="burger__list-item"><a class="burger__list-linc" href="#" data-popups-control="popups2">
+                          <svg width="13" height="13">
+                            <use xlink:href="./assets/images/sprite.svg#icon-print"></use>
+                          </svg><span>Распечатать</span></a></li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>11.11.2020</td>
+                <td>115</td>
+                <td class="burger_td"> 
+                  <div class="burger">
+                    <button class="burger__button">
+                      <svg class="burger__icon" width="5" height="21">
+                        <use xlink:href="./assets/images/sprite.svg#icon-point"></use>
+                      </svg>
+                    </button>
+                    <ul class="burger__list">
+                      <li class="burger__list-item"><a class="burger__list-linc" href="#">
+                          <svg width="13" height="13">
+                            <use xlink:href="./assets/images/sprite.svg#icon-eye"></use>
+                          </svg><span>Посмотреть</span></a></li>
+                      <li class="burger__list-item"><a class="burger__list-linc" href="#" data-popups-control="popups2">
+                          <svg width="13" height="13">
+                            <use xlink:href="./assets/images/sprite.svg#icon-download"></use>
+                          </svg><span>Скачать</span></a></li>
+                      <li class="burger__list-item"><a class="burger__list-linc" href="#" data-popups-control="popups2">
+                          <svg width="13" height="13">
+                            <use xlink:href="./assets/images/sprite.svg#icon-print"></use>
+                          </svg><span>Распечатать</span></a></li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>11.11.2020</td>
+                <td>115</td>
+                <td class="burger_td"> 
+                  <div class="burger">
+                    <button class="burger__button">
+                      <svg class="burger__icon" width="5" height="21">
+                        <use xlink:href="./assets/images/sprite.svg#icon-point"></use>
+                      </svg>
+                    </button>
+                    <ul class="burger__list">
+                      <li class="burger__list-item"><a class="burger__list-linc" href="#">
+                          <svg width="13" height="13">
+                            <use xlink:href="./assets/images/sprite.svg#icon-eye"></use>
+                          </svg><span>Посмотреть</span></a></li>
+                      <li class="burger__list-item"><a class="burger__list-linc" href="#" data-popups-control="popups2">
+                          <svg width="13" height="13">
+                            <use xlink:href="./assets/images/sprite.svg#icon-download"></use>
+                          </svg><span>Скачать</span></a></li>
+                      <li class="burger__list-item"><a class="burger__list-linc" href="#" data-popups-control="popups2">
+                          <svg width="13" height="13">
+                            <use xlink:href="./assets/images/sprite.svg#icon-print"></use>
+                          </svg><span>Распечатать</span></a></li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>11.11.2020</td>
+                <td>115</td>
+                <td class="burger_td"> 
+                  <div class="burger">
+                    <button class="burger__button">
+                      <svg class="burger__icon" width="5" height="21">
+                        <use xlink:href="./assets/images/sprite.svg#icon-point"></use>
+                      </svg>
+                    </button>
+                    <ul class="burger__list">
+                      <li class="burger__list-item"><a class="burger__list-linc" href="#">
+                          <svg width="13" height="13">
+                            <use xlink:href="./assets/images/sprite.svg#icon-eye"></use>
+                          </svg><span>Посмотреть</span></a></li>
+                      <li class="burger__list-item"><a class="burger__list-linc" href="#" data-popups-control="popups2">
+                          <svg width="13" height="13">
+                            <use xlink:href="./assets/images/sprite.svg#icon-download"></use>
+                          </svg><span>Скачать</span></a></li>
+                      <li class="burger__list-item"><a class="burger__list-linc" href="#" data-popups-control="popups2">
+                          <svg width="13" height="13">
+                            <use xlink:href="./assets/images/sprite.svg#icon-print"></use>
+                          </svg><span>Распечатать</span></a></li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>11.11.2020</td>
+                <td>115</td>
+                <td class="burger_td"> 
+                  <div class="burger">
+                    <button class="burger__button">
+                      <svg class="burger__icon" width="5" height="21">
+                        <use xlink:href="./assets/images/sprite.svg#icon-point"></use>
+                      </svg>
+                    </button>
+                    <ul class="burger__list">
+                      <li class="burger__list-item"><a class="burger__list-linc" href="#">
+                          <svg width="13" height="13">
+                            <use xlink:href="./assets/images/sprite.svg#icon-eye"></use>
+                          </svg><span>Посмотреть</span></a></li>
+                      <li class="burger__list-item"><a class="burger__list-linc" href="#" data-popups-control="popups2">
+                          <svg width="13" height="13">
+                            <use xlink:href="./assets/images/sprite.svg#icon-download"></use>
+                          </svg><span>Скачать</span></a></li>
+                      <li class="burger__list-item"><a class="burger__list-linc" href="#" data-popups-control="popups2">
+                          <svg width="13" height="13">
+                            <use xlink:href="./assets/images/sprite.svg#icon-print"></use>
+                          </svg><span>Распечатать</span></a></li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="doc-conteiner" data-tab-conteiner-item="item3">
+          <div class="give-evidence__head">
+            <div class="give-evidence__head-wrap">
+              <h3 class="give-evidence__head-h">Прибор учета № 8762719</h3>
+              <div class="give-evidence__head-text">Внимание! Последние показания переданы 10.11.2020</div>
+            </div>
+            <button class="button button_smol">Подать показания</button>
+          </div>
+          <div class="doc-conteiner__body">
+            <table class="content-table">
+              <tr class="content-table__head">
+                <th>Дата</th>
+                <th>значение</th>
+                <th></th>
+              </tr>
+              <tr>
+                <td>11.11.2020</td>
+                <td>115</td>
                 <td class="burger_td">
                   <div class="burger">
                     <button class="burger__button">
@@ -368,8 +545,8 @@
                 </td>
               </tr>
               <tr>
-                <td>Октябрь 2020</td>
-                <td>2000 руб.</td>
+                <td>11.11.2020</td>
+                <td>115</td>
                 <td class="burger_td">
                   <div class="burger">
                     <button class="burger__button">
@@ -395,12 +572,6 @@
                 </td>
               </tr>
             </table>
-            <div class="content-text" data-tab-conteiner-item="item2">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo molestias error nobis? Excepturi repudiandae voluptatum dolores optio deserunt dolor, soluta quia rerum consequatur pariatur repellendus laborum nostrum eligendi nihil magnam?</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo molestias error nobis? Excepturi repudiandae voluptatum dolores optio deserunt dolor, soluta quia rerum consequatur pariatur repellendus laborum nostrum eligendi nihil magnam?</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo molestias error nobis? Excepturi repudiandae voluptatum dolores optio deserunt dolor, soluta quia rerum consequatur pariatur repellendus laborum nostrum eligendi nihil magnam?</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo molestias error nobis? Excepturi repudiandae voluptatum dolores optio deserunt dolor, soluta quia rerum consequatur pariatur repellendus laborum nostrum eligendi nihil magnam?</p>
-            </div>
           </div>
         </div>
       </div>

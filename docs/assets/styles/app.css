@@ -49,11 +49,14 @@ body {
 .button {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 5px 25px;
   min-height: 50px;
+  min-width: 178px;
   font-family: "PT Root UI", sans-serif;
   font-weight: bold;
   font-size: 16px;
+  text-align: center;
   border: 1px solid #f4691b;
   background-color: #f4691b;
   color: #ffffff;
@@ -77,12 +80,12 @@ body {
   font-weight: 500;
   font-size: 14px;
   min-height: 28px;
+  min-width: auto;
   padding: 0 12px; }
 
 .burger {
   position: relative;
   align-self: center;
-  z-index: 1;
   display: inline-block; }
   .burger.active > .burger__button {
     background-color: #c4c4c4; }
@@ -459,6 +462,20 @@ body {
   line-height: 30px;
   color: #f4691b; }
 
+.profile-linc {
+  display: block; }
+
+.profile-linc__h {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 4px; }
+
+.profile-linc__text {
+  font-size: 14px;
+  line-height: 18px;
+  color: #68717b;
+  margin-bottom: 16px; }
+
 .content-wrap {
   grid-column: 3 / -1;
   grid-row: 2 / -1;
@@ -641,12 +658,42 @@ a.chat-header__contact-linc:hover {
     .chat-footer__input-text > textarea:focus {
       outline: none; }
 
+.doc-conteiner {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100%; }
+
+.doc-conteiner__body {
+  overflow-y: auto; }
+
 .doc-conteiner__head {
   border-bottom: 1px solid #cfd0d1;
   margin-bottom: 26px;
   display: grid;
   grid-auto-flow: column;
-  grid-column-gap: 58px; }
+  grid-column-gap: 58px;
+  justify-content: start; }
+
+.doc-conteiner__head-button {
+  font-family: "PT Root UI", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #232930;
+  background-color: transparent;
+  border-radius: 0;
+  margin: 0 0 -1px 0;
+  padding: 0 0 8px 0;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: 150ms ease-in-out 0ms;
+  transition-property: color, border-color; }
+  .doc-conteiner__head-button:hover {
+    border-color: #969ba0; }
+  .doc-conteiner__head-button.active {
+    color: #f4691b;
+    border-color: #f4691b; }
 
 .content-table {
   width: 100%;
@@ -658,8 +705,6 @@ a.chat-header__contact-linc:hover {
     border-bottom: 1px solid #ebedee; }
   .content-table td {
     padding: 10px 25px; }
-    .content-table td:last-child {
-      text-align: right; }
 
 .content-table__head {
   background-color: #ffffff; }
@@ -672,13 +717,174 @@ a.chat-header__contact-linc:hover {
     text-align: left;
     padding: 16px 25px; }
 
+.burger_td {
+  text-align: right; }
+
+.give-evidence-linc {
+  display: block; }
+  .give-evidence-linc.active .give-evidence-linc__h {
+    color: #f4691b; }
+
+.give-evidence-linc__h {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 4px; }
+
+.give-evidence-linc__text {
+  font-size: 14px;
+  line-height: 18px;
+  color: #68717b; }
+
+.give-evidence__head {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 20px;
+  justify-content: stretch;
+  margin-bottom: 16px; }
+  .give-evidence__head .button {
+    align-self: end;
+    justify-self: end; }
+
+.give-evidence__head-h {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 4px; }
+
+.give-evidence__head-text {
+  font-size: 14px;
+  line-height: 18px;
+  color: #68717b; }
+
+.profile-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 28px; }
+
+.profile-content__head {
+  min-height: 72px;
+  width: 100%;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border: 1px solid #ebedee;
+  border-radius: 4px;
+  margin: 0;
+  padding: 10px 20px;
+  font-family: "PT Root UI", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 200ms ease-in-out 0ms; }
+  .profile-content__head:hover {
+    background-color: #ebedee; }
+  .profile-content__head svg {
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%) rotate(180deg);
+    --icon-color: #f4691b;
+    transition: transform 200ms ease-in-out 0ms; }
+  .profile-content__head.active svg {
+    transform: translateY(-50%) rotate(0); }
+
+.profile-content__content {
+  overflow: hidden;
+  transition: height 300ms ease-in-out 0ms;
+  box-sizing: border-box; }
+  .profile-content__content > *:first-child {
+    margin-top: 18px; }
+
+.profile-content__h {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 0 18px 0; }
+
+.profile-content__input-wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 28px; }
+
+.market-content__wrap {
+  grid-column: 2 / -1;
+  grid-row: 2 / -1;
+  overflow-y: auto;
+  padding-right: 4px; }
+
+.market-content__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 100px);
+  justify-content: start;
+  grid-column-gap: 38px;
+  grid-row-gap: 48px; }
+
+.market-content__iten {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #232930;
+  text-decoration: none; }
+  .market-content__iten:hover {
+    color: #f4691b; }
+
+.market-content__iten-img {
+  border-radius: 4px;
+  margin-bottom: 6px; }
+
+.market-content h1,
+.market-content h2,
+.market-content h3,
+.market-content p,
+.market-content ul {
+  margin: 18px 0; }
+
+.market-content ul {
+  padding-left: 20px; }
+
+.market-content .button {
+  margin-top: 28px; }
+
+.market-content ._smol {
+  margin: 10px 0 0 0; }
+
+.market-content p._smol {
+  font-size: 14px;
+  line-height: 24px; }
+
+.market-content > *:first-child {
+  margin-top: 0; }
+
+.market-content > *:last-child {
+  margin-bottom: 0; }
+
+.market-link-back {
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4691b;
+  text-decoration: none;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: start;
+  grid-column-gap: 4px; }
+  .market-link-back > svg {
+    transform: rotate(-90deg);
+    --icon-color: #f4691b; }
+
 .header {
   grid-column: 2 / -1;
   grid-row: 1 / 2; }
 
 .header__top {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-columns: auto;
+  grid-auto-flow: column;
   align-items: center;
+  grid-column-gap: 30px;
   justify-content: space-between;
   margin-bottom: 8px; }
 

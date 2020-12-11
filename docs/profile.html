@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Профиль собственника</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="assets/images/fav.png">
+    <link rel="stylesheet" type="text/css" href="assets/styles/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/app.css">
+  </head>
+  <body>
+    <main class="main">
+      <header class="header"> 
+        <div class="header__top">
+          <h2 class="header__h">Профиль</h2>
+          <button class="button button__ghost">Подключить лицевой счет</button>
+          <button class="button button__ghost">Выйти из личного кабинета</button>
+        </div>
+      </header>
+      <nav class="menu-primary">
+        <ul class="menu-primary__list">
+          <li class="menu-primary__item">
+            <button class="menu-primary__linc menu-primary__linc_control" data-drop-control="drop1">Диспетчеризация
+              <svg width="16" height="16">
+                <use xlink:href="./assets/images/sprite.svg#icon-arrow"></use>
+              </svg>
+            </button>
+            <div class="menu-primary__drop-list-wrap" data-drop-container="drop1" data-drop-active="false">
+              <ul class="menu-primary__drop-list">
+                <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="index.html">Обращения</a></li>
+                <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="index.html">Заявки на работы</a></li>
+                <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="index.html">Заказ платных услуг УК</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu-primary__item"><a class="menu-primary__linc" href="pay-doc.html">Платежные документы</a></li>
+          <li class="menu-primary__item"><a class="menu-primary__linc" href="give-evidence.html">Подать показания</a></li>
+          <li class="menu-primary__item"><a class="menu-primary__linc active" href="profile.html">Профиль собственника</a></li>
+          <li class="menu-primary__item"><a class="menu-primary__linc" href="marker.html">Маркетплейс</a></li>
+        </ul>
+      </nav>
+      <div class="menu-secondary" data-tab-control="tab-conteiner1">
+        <ul class="menu-secondary__list">
+          <li class="menu-secondary__iten"><a class="menu-secondary__linc profile-linc active" tabindex="0" data-tab-control-item="item1">
+              <div class="profile-linc__h">Л/сч 0100103001</div>
+              <div class="profile-linc__text">Адрес: Дворцовая пл., д.3, кв.1</div>
+              <button class="button button_smol">Редактировать данные</button></a></li>
+          <li class="menu-secondary__iten"><a class="menu-secondary__linc profile-linc" tabindex="0" data-tab-control-item="item2">
+              <div class="profile-linc__h">Л/сч 0100103002</div>
+              <div class="profile-linc__text">Адрес: Дворцовая пл., д.3, кв.1</div>
+              <button class="button button_smol">Редактировать данные</button></a></li>
+        </ul>
+      </div>
+      <div class="content-wrap" data-tab-conteiner="tab-conteiner1">
+        <div class="profile-content" data-tab-conteiner-item="item1">
+          <div class="profile-content__wrap">
+            <button class="profile-content__head" data-drop-control="cDrop1">О лицевом счете 01000103001
+              <svg width="16" height="16">
+                <use xlink:href="./assets/images/sprite.svg#icon-arrow"></use>
+              </svg>
+            </button>
+            <div class="profile-content__content" data-drop-container="cDrop1" data-drop-active="true">
+              <h3 class="profile-content__h">Информация об автомобилях</h3>
+              <table class="content-table">
+                <tr class="content-table__head">
+                  <th>номер</th>
+                  <th>марка</th>
+                </tr>
+                <tr>
+                  <td>С 320 АВ</td>
+                  <td>Honda Fit</td>
+                </tr>
+                <tr>
+                  <td>О 758 ОР</td>
+                  <td>Toyota Corona</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="profile-content__wrap">
+            <button class="profile-content__head" data-drop-control="cDrop2">О доме Дворцовая пл., д.3
+              <svg width="16" height="16">
+                <use xlink:href="./assets/images/sprite.svg#icon-arrow"></use>
+              </svg>
+            </button>
+            <div class="profile-content__content" data-drop-container="cDrop2" data-drop-active="true">
+              <div class="profile-content__input-wrap">
+                <label class="input">
+                  <input type="text" name="name" value="Жилой дом"><span class="input__placeholder">Тип постройки</span><span class="input__error">Пожалуйста, заполните поле</span>
+                </label>
+                <label class="input">
+                  <input type="text" name="name" value="1904"><span class="input__placeholder">Год постройки</span><span class="input__error">Пожалуйста, заполните поле</span>
+                </label>
+                <label class="input">
+                  <input type="text" name="name" value="Бетон"><span class="input__placeholder">Материал стен</span><span class="input__error">Пожалуйста, заполните поле</span>
+                </label>
+                <label class="input">
+                  <input type="text" name="name" value="855"><span class="input__placeholder">Общая площадь</span><span class="input__error">Пожалуйста, заполните поле</span>
+                </label>
+                <label class="input">
+                  <input type="text" name="name" value="640"><span class="input__placeholder">Площадь жилая</span><span class="input__error">Пожалуйста, заполните поле</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="profile-content__wrap">
+            <button class="profile-content__head" data-drop-control="cDrop3">Об управляющей компании «КВС-Сервис»
+              <svg width="16" height="16">
+                <use xlink:href="./assets/images/sprite.svg#icon-arrow"></use>
+              </svg>
+            </button>
+            <div class="profile-content__content" data-drop-container="cDrop3" data-drop-active="false">
+              <h3 class="profile-content__h">Информация об автомобилях</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam veniam assumenda amet officiis libero. Adipisci tenetur doloribus ipsum nulla modi? Cupiditate, molestias. Porro sed hic provident tempora laudantium quia voluptate.</p>
+            </div>
+          </div>
+        </div>
+        <div class="profile-content" data-tab-conteiner-item="item2">
+          <div class="profile-content__wrap">
+            <button class="profile-content__head" data-drop-control="cDrop1">О лицевом счете 01000103002
+              <svg width="16" height="16">
+                <use xlink:href="./assets/images/sprite.svg#icon-arrow"></use>
+              </svg>
+            </button>
+            <div class="profile-content__content" data-drop-container="cDrop1" data-drop-active="true">
+              <h3 class="profile-content__h">Информация об автомобилях</h3>
+              <table class="content-table">
+                <tr class="content-table__head">
+                  <th>номер</th>
+                  <th>марка</th>
+                </tr>
+                <tr>
+                  <td>С 320 АВ</td>
+                  <td>Honda Fit</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="profile-content__wrap">
+            <button class="profile-content__head" data-drop-control="cDrop2">О доме Дворцовая пл., д.3
+              <svg width="16" height="16">
+                <use xlink:href="./assets/images/sprite.svg#icon-arrow"></use>
+              </svg>
+            </button>
+            <div class="profile-content__content" data-drop-container="cDrop2" data-drop-active="true">
+              <div class="profile-content__input-wrap">
+                <label class="input">
+                  <input type="text" name="name" value="Жилой дом"><span class="input__placeholder">Тип постройки</span><span class="input__error">Пожалуйста, заполните поле</span>
+                </label>
+                <label class="input">
+                  <input type="text" name="name" value="1904"><span class="input__placeholder">Год постройки</span><span class="input__error">Пожалуйста, заполните поле</span>
+                </label>
+                <label class="input">
+                  <input type="text" name="name" value="Бетон"><span class="input__placeholder">Материал стен</span><span class="input__error">Пожалуйста, заполните поле</span>
+                </label>
+                <label class="input">
+                  <input type="text" name="name" value="855"><span class="input__placeholder">Общая площадь</span><span class="input__error">Пожалуйста, заполните поле</span>
+                </label>
+                <label class="input">
+                  <input type="text" name="name" value="640"><span class="input__placeholder">Площадь жилая</span><span class="input__error">Пожалуйста, заполните поле</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="profile-content__wrap">
+            <button class="profile-content__head" data-drop-control="cDrop3">Об управляющей компании «КВС-Сервис»
+              <svg width="16" height="16">
+                <use xlink:href="./assets/images/sprite.svg#icon-arrow"></use>
+              </svg>
+            </button>
+            <div class="profile-content__content" data-drop-container="cDrop3" data-drop-active="false">
+              <h3 class="profile-content__h">Информация об автомобилях</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam veniam assumenda amet officiis libero. Adipisci tenetur doloribus ipsum nulla modi? Cupiditate, molestias. Porro sed hic provident tempora laudantium quia voluptate.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="popups" data-popups-container="popups1">
+      <div class="popups__container-wrap">
+        <button class="popups__close" data-popups-close>
+          <svg width="20" height="20">
+            <use xlink:href="./assets/images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="popups__container">
+          <h2 class="popups__h">Создайте новое обращение</h2>
+          <form class="popups__inputs">
+            <label class="input">
+              <input type="text" name="name"><span class="input__placeholder">Тема обращения*</span><span class="input__error">Пожалуйста, заполните поле</span>
+            </label>
+            <label class="input error">
+              <input type="text" name="name"><span class="input__placeholder">Адрес*</span><span class="input__error">Пожалуйста, заполните поле</span>
+            </label>
+            <label class="input">
+              <input type="tel" name="name"><span class="input__placeholder">Адрес*</span><span class="input__error">Пожалуйста, заполните поле</span>
+            </label>
+            <label class="input">
+              <textarea name="name"></textarea><span class="input__placeholder">Сообщение*</span><span class="input__error">Пожалуйста, заполните поле</span>
+            </label>
+            <label class="input">
+              <div class="input__file"></div>
+              <input type="file" name="name" onchange="uploadFile(this)"><span class="input__placeholder">Файл</span><span class="input__error">Пожалуйста, заполните поле</span>
+            </label>
+            <button class="button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+      <div class="popups__close-area" data-popups-close></div>
+    </div>
+    <div class="popups" data-popups-container="popups2">
+      <div class="popups__container-wrap">
+        <button class="popups__close" data-popups-close>
+          <svg width="20" height="20">
+            <use xlink:href="./assets/images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="popups__container">
+          <h2 class="popups__h">Создайте новое обращение</h2>
+          <p>Ваша заявка №254 от 17.11.2020 была отменена. Вы можете посмотреть ее в разделе закрытых сделок.</p>
+        </div>
+      </div>
+      <div class="popups__close-area" data-popups-close></div>
+    </div>
+    <script src="assets/scripts/imask.min.js"></script>
+    <script src="assets/scripts/accordion.min.js"></script>
+    <script src="assets/scripts/swiper-bundle.min.js"></script>
+    <script src="assets/scripts/medium-zoom.min.js"></script>
+    <script src="assets/scripts/focus-visible.js"></script>
+    <script src="assets/scripts/main.js"></script>
+  </body>
+</html>
