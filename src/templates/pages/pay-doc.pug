@@ -28,7 +28,7 @@ block content
                 li.menu-primary__item
                     a(href="pay-doc.html").menu-primary__linc.active Платежные документы
                 li.menu-primary__item
-                    a(href="#").menu-primary__linc Подать показания
+                    a(href="give-evidence.html").menu-primary__linc Подать показания
                 li.menu-primary__item
                     a(href="#").menu-primary__linc Профиль собственника
                 li.menu-primary__item
@@ -58,12 +58,12 @@ block content
 
         div(data-tab-conteiner="tab-conteiner1").content-wrap
             div(data-tab-conteiner-item="item1").doc-conteiner
-                .doc-conteiner__head
-                    button.doc-conteiner__head-button Квитанции
-                    button.doc-conteiner__head-button Платежи
+                div(data-tab-control="tab-conteiner2").doc-conteiner__head
+                    button(data-tab-control-item="item1").doc-conteiner__head-button.active Квитанции
+                    button(data-tab-control-item="item2").doc-conteiner__head-button Платежи
                 
-                .doc-conteiner__body
-                    table.content-table
+                .doc-conteiner__body(data-tab-conteiner="tab-conteiner2")
+                    table.content-table(data-tab-conteiner-item="item1")
                         tr.content-table__head
                             th период квитанции
                             th сумма
@@ -140,3 +140,75 @@ block content
                                                 svg(width="13", height="13")
                                                     use(xlink:href="./assets/images/sprite.svg#icon-print")
                                                 span Распечатать
+                    div(data-tab-conteiner-item="item2").content-text
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo molestias error nobis? Excepturi repudiandae voluptatum dolores optio deserunt dolor, soluta quia rerum consequatur pariatur repellendus laborum nostrum eligendi nihil magnam?
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo molestias error nobis? Excepturi repudiandae voluptatum dolores optio deserunt dolor, soluta quia rerum consequatur pariatur repellendus laborum nostrum eligendi nihil magnam?
+            
+            div(data-tab-conteiner-item="item2").doc-conteiner
+                div(data-tab-control="tab-conteiner3").doc-conteiner__head
+                    button(data-tab-control-item="item1").doc-conteiner__head-button.active Квитанции
+                    button(data-tab-control-item="item2").doc-conteiner__head-button Платежи
+                
+                .doc-conteiner__body(data-tab-conteiner="tab-conteiner3")
+                    table.content-table(data-tab-conteiner-item="item1")
+                        tr.content-table__head
+                            th период квитанции
+                            th сумма
+                            th
+                        tr
+                            td Октябрь 2020
+                            td 3000 руб.
+                            td 
+                                .burger
+                                    button.burger__button
+                                        svg(width="5", height="21").burger__icon
+                                            use(xlink:href="./assets/images/sprite.svg#icon-point")
+                                    ul.burger__list
+                                        li.burger__list-item
+                                            a(href="#").burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-eye")
+                                                span Посмотреть
+                                        li.burger__list-item
+                                            a(href="#", data-popups-control='popups2').burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-download")
+                                                span Скачать
+                                        li.burger__list-item
+                                            a(href="#", data-popups-control='popups2').burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-print")
+                                                span Распечатать
+                        tr
+                            td Октябрь 2020
+                            td 2000 руб.
+                            td 
+                                .burger
+                                    button.burger__button
+                                        svg(width="5", height="21").burger__icon
+                                            use(xlink:href="./assets/images/sprite.svg#icon-point")
+                                    ul.burger__list
+                                        li.burger__list-item
+                                            a(href="#").burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-eye")
+                                                span Посмотреть
+                                        li.burger__list-item
+                                            a(href="#", data-popups-control='popups2').burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-download")
+                                                span Скачать
+                                        li.burger__list-item
+                                            a(href="#", data-popups-control='popups2').burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-print")
+                                                span Распечатать
+                    
+                    div(data-tab-conteiner-item="item2").content-text
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo molestias error nobis? Excepturi repudiandae voluptatum dolores optio deserunt dolor, soluta quia rerum consequatur pariatur repellendus laborum nostrum eligendi nihil magnam?
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo molestias error nobis? Excepturi repudiandae voluptatum dolores optio deserunt dolor, soluta quia rerum consequatur pariatur repellendus laborum nostrum eligendi nihil magnam?
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo molestias error nobis? Excepturi repudiandae voluptatum dolores optio deserunt dolor, soluta quia rerum consequatur pariatur repellendus laborum nostrum eligendi nihil magnam?
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo molestias error nobis? Excepturi repudiandae voluptatum dolores optio deserunt dolor, soluta quia rerum consequatur pariatur repellendus laborum nostrum eligendi nihil magnam?
+
+
+

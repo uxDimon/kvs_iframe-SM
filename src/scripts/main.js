@@ -91,8 +91,8 @@ const allTabControl = document.querySelectorAll("[data-tab-control]");
 
 if (allTabControl) {
 	for (const controlWrap of allTabControl) {
-		const tabConteiner = document.querySelectorAll(`[data-tab-conteiner="${controlWrap.dataset.tabControl}"] [data-tab-conteiner-item]`);
-		const tabControl = controlWrap.querySelectorAll("[data-tab-control-item]");
+		const tabConteiner = document.querySelectorAll(`[data-tab-conteiner="${controlWrap.dataset.tabControl}"] > [data-tab-conteiner-item]`);
+		const tabControl = document.querySelectorAll(`[data-tab-control="${controlWrap.dataset.tabControl}"] [data-tab-control-item]`);
 
 		function controlClass(itme = tabControl[0]) {
 			for (const control of tabControl) {
@@ -113,8 +113,8 @@ if (allTabControl) {
 
 		for (const contol of tabControl) {
 			contol.addEventListener("click", () => {
-				controlClass(document.querySelector(`[data-tab-control-item="${contol.dataset.tabControlItem}"]`));
-				conteinerClass(document.querySelector(`[data-tab-conteiner-item="${contol.dataset.tabControlItem}"]`));
+				conteinerClass(document.querySelector(`[data-tab-conteiner="${controlWrap.dataset.tabControl}"] > [data-tab-conteiner-item="${contol.dataset.tabControlItem}"]`));
+				controlClass(document.querySelector(`[data-tab-control="${controlWrap.dataset.tabControl}"] [data-tab-control-item="${contol.dataset.tabControlItem}"]`));
 			});
 		}
 	}

@@ -1,0 +1,343 @@
+extends ../template
+
+block variables
+    - var title = 'Подать показания по приборам лицевого счета'
+    - var contactForm = true
+
+block content
+    main.main
+        header.header 
+            .header__top
+                h2.header__h Подать показания по приборам лицевого счета
+
+        nav.menu-primary
+            ul.menu-primary__list
+                li.menu-primary__item
+                    button(data-drop-control="drop1").menu-primary__linc.menu-primary__linc_control Диспетчеризация
+                        svg(width="16", height="16")
+                            use(xlink:href="./assets/images/sprite.svg#icon-arrow")
+                    div(data-drop-container="drop1", data-drop-active="false").menu-primary__drop-list-wrap
+                        ul.menu-primary__drop-list
+                            li.menu-primary__drop-item
+                                a(href="index.html").menu-primary__drop-linc Обращения
+                            li.menu-primary__drop-item
+                                a(href="index.html").menu-primary__drop-linc Заявки на работы
+                            li.menu-primary__drop-item
+                                a(href="index.html").menu-primary__drop-linc Заказ платных услуг УК
+
+                li.menu-primary__item
+                    a(href="pay-doc.html").menu-primary__linc Платежные документы
+                li.menu-primary__item
+                    a(href="give-evidence.html").menu-primary__linc.active  Подать показания
+                li.menu-primary__item
+                    a(href="#").menu-primary__linc Профиль собственника
+                li.menu-primary__item
+                    a(href="#").menu-primary__linc Маркетплейс
+        
+        div(data-tab-control="tab-conteiner1").menu-secondary
+            ul.menu-secondary__list
+                li.menu-secondary__iten
+                    a(tabindex="0", data-tab-control-item="item1").menu-secondary__linc.give-evidence-linc.active
+                        .give-evidence-linc__h Холодное водоснабжение
+                        .give-evidence-linc__text Заводской №: 8762719
+                        .give-evidence-linc__text Последняя проверка: 01.02.2016
+                        .give-evidence-linc__text Межпроверочный интервал: 6 лет
+                li.menu-secondary__iten
+                    a(tabindex="0", data-tab-control-item="item2").menu-secondary__linc.give-evidence-linc
+                        .give-evidence-linc__h Горячее водоснабжение
+                        .give-evidence-linc__text Заводской №: 8762719
+                        .give-evidence-linc__text Последняя проверка: 01.02.2016
+                        .give-evidence-linc__text Межпроверочный интервал: 6 лет
+                li.menu-secondary__iten
+                    a(tabindex="0", data-tab-control-item="item3").menu-secondary__linc.give-evidence-linc
+                        .give-evidence-linc__h Электроэнергия
+                        .give-evidence-linc__text Заводской №: 8762719
+                        .give-evidence-linc__text Последняя проверка: 01.02.2016
+                        .give-evidence-linc__text Межпроверочный интервал: 6 лет
+
+
+        div(data-tab-conteiner="tab-conteiner1").content-wrap
+            div(data-tab-conteiner-item="item1").doc-conteiner
+                .give-evidence__head
+                    .give-evidence__head-wrap
+                        h3.give-evidence__head-h Прибор учета № 8762719
+                        .give-evidence__head-text Внимание! Последние показания переданы 10.11.2020
+                    button.button.button_smol Подать показания
+
+                .doc-conteiner__body
+                    table.content-table
+                        tr.content-table__head
+                            th Дата
+                            th значение
+                            th
+                        tr
+                            td 11.11.2020
+                            td 115
+                            td 
+                                .burger
+                                    button.burger__button
+                                        svg(width="5", height="21").burger__icon
+                                            use(xlink:href="./assets/images/sprite.svg#icon-point")
+                                    ul.burger__list
+                                        li.burger__list-item
+                                            a(href="#").burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-eye")
+                                                span Посмотреть
+                                        li.burger__list-item
+                                            a(href="#", data-popups-control='popups2').burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-download")
+                                                span Скачать
+                                        li.burger__list-item
+                                            a(href="#", data-popups-control='popups2').burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-print")
+                                                span Распечатать
+                        tr
+                            td 11.11.2020
+                            td 115
+                            td 
+                                .burger
+                                    button.burger__button
+                                        svg(width="5", height="21").burger__icon
+                                            use(xlink:href="./assets/images/sprite.svg#icon-point")
+                                    ul.burger__list
+                                        li.burger__list-item
+                                            a(href="#").burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-eye")
+                                                span Посмотреть
+                                        li.burger__list-item
+                                            a(href="#", data-popups-control='popups2').burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-download")
+                                                span Скачать
+                                        li.burger__list-item
+                                            a(href="#", data-popups-control='popups2').burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-print")
+                                                span Распечатать
+                        tr
+                            td 11.11.2020
+                            td 115
+                            td 
+                                .burger
+                                    button.burger__button
+                                        svg(width="5", height="21").burger__icon
+                                            use(xlink:href="./assets/images/sprite.svg#icon-point")
+                                    ul.burger__list
+                                        li.burger__list-item
+                                            a(href="#").burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-eye")
+                                                span Посмотреть
+                                        li.burger__list-item
+                                            a(href="#", data-popups-control='popups2').burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-download")
+                                                span Скачать
+                                        li.burger__list-item
+                                            a(href="#", data-popups-control='popups2').burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-print")
+                                                span Распечатать
+
+            div(data-tab-conteiner-item="item2").doc-conteiner
+                .give-evidence__head
+                    .give-evidence__head-wrap
+                        h3.give-evidence__head-h Прибор учета № 8762719
+                        .give-evidence__head-text Внимание! Последние показания переданы 10.11.2020
+                    button.button.button_smol Подать показания
+
+                .doc-conteiner__body
+                    table.content-table
+                        tr.content-table__head
+                            th Дата
+                            th значение
+                            th
+                        tr
+                            td 11.11.2020
+                            td 115
+                            td 
+                                .burger
+                                    button.burger__button
+                                        svg(width="5", height="21").burger__icon
+                                            use(xlink:href="./assets/images/sprite.svg#icon-point")
+                                    ul.burger__list
+                                        li.burger__list-item
+                                            a(href="#").burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-eye")
+                                                span Посмотреть
+                                        li.burger__list-item
+                                            a(href="#", data-popups-control='popups2').burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-download")
+                                                span Скачать
+                                        li.burger__list-item
+                                            a(href="#", data-popups-control='popups2').burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-print")
+                                                span Распечатать
+                        tr
+                            td 11.11.2020
+                            td 115
+                            td 
+                                .burger
+                                    button.burger__button
+                                        svg(width="5", height="21").burger__icon
+                                            use(xlink:href="./assets/images/sprite.svg#icon-point")
+                                    ul.burger__list
+                                        li.burger__list-item
+                                            a(href="#").burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-eye")
+                                                span Посмотреть
+                                        li.burger__list-item
+                                            a(href="#", data-popups-control='popups2').burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-download")
+                                                span Скачать
+                                        li.burger__list-item
+                                            a(href="#", data-popups-control='popups2').burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-print")
+                                                span Распечатать
+                        tr
+                            td 11.11.2020
+                            td 115
+                            td 
+                                .burger
+                                    button.burger__button
+                                        svg(width="5", height="21").burger__icon
+                                            use(xlink:href="./assets/images/sprite.svg#icon-point")
+                                    ul.burger__list
+                                        li.burger__list-item
+                                            a(href="#").burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-eye")
+                                                span Посмотреть
+                                        li.burger__list-item
+                                            a(href="#", data-popups-control='popups2').burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-download")
+                                                span Скачать
+                                        li.burger__list-item
+                                            a(href="#", data-popups-control='popups2').burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-print")
+                                                span Распечатать
+
+                        tr
+                            td 11.11.2020
+                            td 115
+                            td 
+                                .burger
+                                    button.burger__button
+                                        svg(width="5", height="21").burger__icon
+                                            use(xlink:href="./assets/images/sprite.svg#icon-point")
+                                    ul.burger__list
+                                        li.burger__list-item
+                                            a(href="#").burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-eye")
+                                                span Посмотреть
+                                        li.burger__list-item
+                                            a(href="#", data-popups-control='popups2').burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-download")
+                                                span Скачать
+                                        li.burger__list-item
+                                            a(href="#", data-popups-control='popups2').burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-print")
+                                                span Распечатать
+
+                        tr
+                            td 11.11.2020
+                            td 115
+                            td 
+                                .burger
+                                    button.burger__button
+                                        svg(width="5", height="21").burger__icon
+                                            use(xlink:href="./assets/images/sprite.svg#icon-point")
+                                    ul.burger__list
+                                        li.burger__list-item
+                                            a(href="#").burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-eye")
+                                                span Посмотреть
+                                        li.burger__list-item
+                                            a(href="#", data-popups-control='popups2').burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-download")
+                                                span Скачать
+                                        li.burger__list-item
+                                            a(href="#", data-popups-control='popups2').burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-print")
+                                                span Распечатать
+
+            div(data-tab-conteiner-item="item3").doc-conteiner
+                .give-evidence__head
+                    .give-evidence__head-wrap
+                        h3.give-evidence__head-h Прибор учета № 8762719
+                        .give-evidence__head-text Внимание! Последние показания переданы 10.11.2020
+                    button.button.button_smol Подать показания
+
+                .doc-conteiner__body
+                    table.content-table
+                        tr.content-table__head
+                            th Дата
+                            th значение
+                            th
+                        tr
+                            td 11.11.2020
+                            td 115
+                            td 
+                                .burger
+                                    button.burger__button
+                                        svg(width="5", height="21").burger__icon
+                                            use(xlink:href="./assets/images/sprite.svg#icon-point")
+                                    ul.burger__list
+                                        li.burger__list-item
+                                            a(href="#").burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-eye")
+                                                span Посмотреть
+                                        li.burger__list-item
+                                            a(href="#", data-popups-control='popups2').burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-download")
+                                                span Скачать
+                                        li.burger__list-item
+                                            a(href="#", data-popups-control='popups2').burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-print")
+                                                span Распечатать
+                        tr
+                            td 11.11.2020
+                            td 115
+                            td 
+                                .burger
+                                    button.burger__button
+                                        svg(width="5", height="21").burger__icon
+                                            use(xlink:href="./assets/images/sprite.svg#icon-point")
+                                    ul.burger__list
+                                        li.burger__list-item
+                                            a(href="#").burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-eye")
+                                                span Посмотреть
+                                        li.burger__list-item
+                                            a(href="#", data-popups-control='popups2').burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-download")
+                                                span Скачать
+                                        li.burger__list-item
+                                            a(href="#", data-popups-control='popups2').burger__list-linc
+                                                svg(width="13", height="13")
+                                                    use(xlink:href="./assets/images/sprite.svg#icon-print")
+                                                span Распечатать
+

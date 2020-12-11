@@ -19,8 +19,12 @@ $font-family-root: "PT Root UI", sans-serif;
 }
 
 .header__top {
-	display: flex;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-auto-columns: auto;
+	grid-auto-flow: column;
 	align-items: center;
+	grid-column-gap: 30px;
 	justify-content: space-between;
 	margin-bottom: 8px;
 }
