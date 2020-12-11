@@ -140,3 +140,21 @@ $font-family-root: "PT Root UI", sans-serif;
 	line-height: 30px;
 	color: $color-Orange;
 }
+
+// profile-linc
+.profile-linc {
+	display: block;
+}
+
+.profile-linc__h {
+	font-size: 16px;
+	line-height: 20px;
+	margin-bottom: 4px;
+}
+
+.profile-linc__text {
+	font-size: 14px;
+	line-height: 18px;
+	color: $color-Grey5;
+	margin-bottom: 16px;
+}

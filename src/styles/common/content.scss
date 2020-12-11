@@ -290,10 +290,6 @@ a.chat-header__contact-linc:hover {
 
 	td {
 		padding: 10px 25px;
-
-		&:last-child {
-			text-align: right;
-		}
 	}
 }
 
@@ -309,6 +305,10 @@ a.chat-header__contact-linc:hover {
 		text-align: left;
 		padding: 16px 25px;
 	}
+}
+
+.burger_td {
+	text-align: right;
 }
 
 // give-evidence
@@ -358,4 +358,72 @@ a.chat-header__contact-linc:hover {
 	font-size: 14px;
 	line-height: 18px;
 	color: #68717b;
+}
+
+// profile-content
+.profile-content {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-row-gap: 38px;
+}
+
+.profile-content__head {
+	min-height: 72px;
+	width: 100%;
+	background-color: $color-wheat;
+	box-sizing: border-box;
+	border: 1px solid $color-Grey2;
+	border-radius: 4px;
+	margin: 0;
+	padding: 10px 20px;
+	font-family: $font-family-root;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 25px;
+	text-align: left;
+	cursor: pointer;
+	position: relative;
+	transition: background-color 200ms ease-in-out 0ms;
+
+	&:hover {
+		background-color: $color-Grey2;
+	}
+
+	svg {
+		position: absolute;
+		top: 50%;
+		right: 25px;
+		transform: translateY(-50%) rotate(180deg);
+		--icon-color: #{$color-Orange};
+		transition: transform 200ms ease-in-out 0ms;
+	}
+
+	&.active {
+		svg {
+			transform: translateY(-50%) rotate(0);
+		}
+	}
+}
+
+.profile-content__content {
+	overflow: hidden;
+	transition: height 300ms ease-in-out 0ms;
+	box-sizing: border-box;
+
+	> *:first-child {
+		margin-top: 28px;
+	}
+}
+
+.profile-content__h {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 20px;
+	margin: 0 0 18px 0;
+}
+
+.profile-content__input-wrap {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-row-gap: 28px;
 }

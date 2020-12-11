@@ -127,12 +127,18 @@ if (inputWrapAll) {
 	for (const inputWrap of inputWrapAll) {
 		const input = inputWrap.querySelector("input, textarea");
 
-		input.addEventListener("change", () => {
+		function inputF() {
 			if (input.value == "") {
 				inputWrap.classList.remove(activeClass);
 			} else if (input.value != "") {
 				inputWrap.classList.add(activeClass);
 			}
+		}
+
+		inputF();
+
+		input.addEventListener("change", () => {
+			inputF();
 		});
 	}
 }

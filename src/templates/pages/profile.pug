@@ -1,0 +1,163 @@
+extends ../template
+
+block variables
+    - var title = 'Профиль собственника'
+    - var contactForm = true
+
+block content
+    main.main
+        header.header 
+            .header__top
+                h2.header__h Профиль
+                button.button.button__ghost Подключить лицевой счет
+                button.button.button__ghost Выйти из личного кабинета
+
+        nav.menu-primary
+            ul.menu-primary__list
+                li.menu-primary__item
+                    button(data-drop-control="drop1").menu-primary__linc.menu-primary__linc_control Диспетчеризация
+                        svg(width="16", height="16")
+                            use(xlink:href="./assets/images/sprite.svg#icon-arrow")
+                    div(data-drop-container="drop1", data-drop-active="false").menu-primary__drop-list-wrap
+                        ul.menu-primary__drop-list
+                            li.menu-primary__drop-item
+                                a(href="index.html").menu-primary__drop-linc Обращения
+                            li.menu-primary__drop-item
+                                a(href="index.html").menu-primary__drop-linc Заявки на работы
+                            li.menu-primary__drop-item
+                                a(href="index.html").menu-primary__drop-linc Заказ платных услуг УК
+
+                li.menu-primary__item
+                    a(href="pay-doc.html").menu-primary__linc Платежные документы
+                li.menu-primary__item
+                    a(href="give-evidence.html").menu-primary__linc Подать показания
+                li.menu-primary__item
+                    a(href="profile.html").menu-primary__linc.active Профиль собственника
+                li.menu-primary__item
+                    a(href="#").menu-primary__linc Маркетплейс
+        
+        div(data-tab-control="tab-conteiner1").menu-secondary
+            ul.menu-secondary__list
+                li.menu-secondary__iten
+                    a(tabindex="0", data-tab-control-item="item1").menu-secondary__linc.profile-linc.active
+                        .profile-linc__h Л/сч 0100103001
+                        .profile-linc__text Адрес: Дворцовая пл., д.3, кв.1
+                        button.button.button_smol Редактировать данные
+                li.menu-secondary__iten
+                    a(tabindex="0", data-tab-control-item="item2").menu-secondary__linc.profile-linc
+                        .profile-linc__h Л/сч 0100103002
+                        .profile-linc__text Адрес: Дворцовая пл., д.3, кв.1
+                        button.button.button_smol Редактировать данные
+
+        div(data-tab-conteiner="tab-conteiner1").content-wrap
+            div(data-tab-conteiner-item="item1").profile-content
+                .profile-content__wrap
+                    button(data-drop-control="cDrop1").profile-content__head О лицевом счете 01000103001
+                        svg(width="16", height="16")
+                            use(xlink:href="./assets/images/sprite.svg#icon-arrow")
+
+                    div(data-drop-container="cDrop1", data-drop-active="true").profile-content__content
+                        h3.profile-content__h Информация об автомобилях
+                        table.content-table
+                            tr.content-table__head
+                                th номер
+                                th марка
+                            tr
+                                td С 320 АВ
+                                td Honda Fit
+                            tr
+                                td О 758 ОР
+                                td Toyota Corona
+                
+                .profile-content__wrap
+                    button(data-drop-control="cDrop2").profile-content__head О доме Дворцовая пл., д.3
+                        svg(width="16", height="16")
+                            use(xlink:href="./assets/images/sprite.svg#icon-arrow")
+
+                    div(data-drop-container="cDrop2", data-drop-active="true").profile-content__content
+                        .profile-content__input-wrap
+                            label.input
+                                input(type="text", name="name", value="Жилой дом")
+                                span.input__placeholder Тип постройки
+                                span.input__error Пожалуйста, заполните поле
+                            label.input
+                                input(type="text", name="name", value="1904")
+                                span.input__placeholder Год постройки
+                                span.input__error Пожалуйста, заполните поле
+                            label.input
+                                input(type="text", name="name", value="Бетон")
+                                span.input__placeholder Материал стен
+                                span.input__error Пожалуйста, заполните поле
+                            label.input
+                                input(type="text", name="name", value="855")
+                                span.input__placeholder Общая площадь
+                                span.input__error Пожалуйста, заполните поле
+                            label.input
+                                input(type="text", name="name", value="640")
+                                span.input__placeholder Площадь жилая
+                                span.input__error Пожалуйста, заполните поле
+
+
+                .profile-content__wrap
+                    button(data-drop-control="cDrop3").profile-content__head Об управляющей компании «КВС-Сервис»
+                        svg(width="16", height="16")
+                            use(xlink:href="./assets/images/sprite.svg#icon-arrow")
+
+                    div(data-drop-container="cDrop3", data-drop-active="false").profile-content__content
+                        h3.profile-content__h Информация об автомобилях
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam veniam assumenda amet officiis libero. Adipisci tenetur doloribus ipsum nulla modi? Cupiditate, molestias. Porro sed hic provident tempora laudantium quia voluptate.
+
+            div(data-tab-conteiner-item="item2").profile-content
+                .profile-content__wrap
+                    button(data-drop-control="cDrop1").profile-content__head О лицевом счете 01000103002
+                        svg(width="16", height="16")
+                            use(xlink:href="./assets/images/sprite.svg#icon-arrow")
+
+                    div(data-drop-container="cDrop1", data-drop-active="true").profile-content__content
+                        h3.profile-content__h Информация об автомобилях
+                        table.content-table
+                            tr.content-table__head
+                                th номер
+                                th марка
+                            tr
+                                td С 320 АВ
+                                td Honda Fit
+                
+                .profile-content__wrap
+                    button(data-drop-control="cDrop2").profile-content__head О доме Дворцовая пл., д.3
+                        svg(width="16", height="16")
+                            use(xlink:href="./assets/images/sprite.svg#icon-arrow")
+
+                    div(data-drop-container="cDrop2", data-drop-active="true").profile-content__content
+                        .profile-content__input-wrap
+                            label.input
+                                input(type="text", name="name", value="Жилой дом")
+                                span.input__placeholder Тип постройки
+                                span.input__error Пожалуйста, заполните поле
+                            label.input
+                                input(type="text", name="name", value="1904")
+                                span.input__placeholder Год постройки
+                                span.input__error Пожалуйста, заполните поле
+                            label.input
+                                input(type="text", name="name", value="Бетон")
+                                span.input__placeholder Материал стен
+                                span.input__error Пожалуйста, заполните поле
+                            label.input
+                                input(type="text", name="name", value="855")
+                                span.input__placeholder Общая площадь
+                                span.input__error Пожалуйста, заполните поле
+                            label.input
+                                input(type="text", name="name", value="640")
+                                span.input__placeholder Площадь жилая
+                                span.input__error Пожалуйста, заполните поле
+
+
+                .profile-content__wrap
+                    button(data-drop-control="cDrop3").profile-content__head Об управляющей компании «КВС-Сервис»
+                        svg(width="16", height="16")
+                            use(xlink:href="./assets/images/sprite.svg#icon-arrow")
+
+                    div(data-drop-container="cDrop3", data-drop-active="false").profile-content__content
+                        h3.profile-content__h Информация об автомобилях
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam veniam assumenda amet officiis libero. Adipisci tenetur doloribus ipsum nulla modi? Cupiditate, molestias. Porro sed hic provident tempora laudantium quia voluptate.
+
