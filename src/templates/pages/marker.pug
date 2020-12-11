@@ -1,0 +1,72 @@
+extends ../template
+
+block variables
+    - var title = 'Маркетплейс'
+    - var contactForm = true
+
+block content
+    main.main
+        header.header 
+            .header__top
+                h2.header__h Маркетплейс
+
+        nav.menu-primary
+            ul.menu-primary__list
+                li.menu-primary__item
+                    button(data-drop-control="drop1").menu-primary__linc.menu-primary__linc_control Диспетчеризация
+                        svg(width="16", height="16")
+                            use(xlink:href="./assets/images/sprite.svg#icon-arrow")
+                    div(data-drop-container="drop1", data-drop-active="false").menu-primary__drop-list-wrap
+                        ul.menu-primary__drop-list
+                            li.menu-primary__drop-item
+                                a(href="index.html").menu-primary__drop-linc Обращения
+                            li.menu-primary__drop-item
+                                a(href="index.html").menu-primary__drop-linc Заявки на работы
+                            li.menu-primary__drop-item
+                                a(href="index.html").menu-primary__drop-linc Заказ платных услуг УК
+
+                li.menu-primary__item
+                    a(href="pay-doc.html").menu-primary__linc Платежные документы
+                li.menu-primary__item
+                    a(href="give-evidence.html").menu-primary__linc Подать показания
+                li.menu-primary__item
+                    a(href="profile.html").menu-primary__linc Профиль собственника
+                li.menu-primary__item
+                    a(href="marker.html").menu-primary__linc.active Маркетплейс
+        
+        .market-content__wrap
+            .market-content__list
+                a(href="marker-item.html").market-content__iten
+                    img(src="./assets/images/img-1.jpg", alt="Доставка продуктов", width="100", height="100").market-content__iten-img 
+                    .market-content__iten-text Доставка продуктов
+                a(href="marker-item.html").market-content__iten
+                    img(src="./assets/images/img-1.jpg", alt="Доставка продуктов", width="100", height="100").market-content__iten-img 
+                    .market-content__iten-text Доставка продуктов
+                a(href="marker-item.html").market-content__iten
+                    img(src="./assets/images/img-1.jpg", alt="Доставка продуктов", width="100", height="100").market-content__iten-img 
+                    .market-content__iten-text Доставка продуктов
+                a(href="marker-item.html").market-content__iten
+                    img(src="./assets/images/img-1.jpg", alt="Доставка продуктов", width="100", height="100").market-content__iten-img 
+                    .market-content__iten-text Доставка продуктов
+                a(href="marker-item.html").market-content__iten
+                    img(src="./assets/images/img-1.jpg", alt="Доставка продуктов", width="100", height="100").market-content__iten-img 
+                    .market-content__iten-text Доставка продуктов
+                a(href="marker-item.html").market-content__iten
+                    img(src="./assets/images/img-1.jpg", alt="Доставка продуктов", width="100", height="100").market-content__iten-img 
+                    .market-content__iten-text Доставка продуктов
+                a(href="marker-item.html").market-content__iten
+                    img(src="./assets/images/img-1.jpg", alt="Доставка продуктов", width="100", height="100").market-content__iten-img 
+                    .market-content__iten-text Доставка продуктов
+                a(href="marker-item.html").market-content__iten
+                    img(src="./assets/images/img-1.jpg", alt="Доставка продуктов", width="100", height="100").market-content__iten-img 
+                    .market-content__iten-text Доставка продуктов
+                a(href="marker-item.html").market-content__iten
+                    img(src="./assets/images/img-1.jpg", alt="Доставка продуктов", width="100", height="100").market-content__iten-img 
+                    .market-content__iten-text Доставка продуктов
+                a(href="marker-item.html").market-content__iten
+                    img(src="./assets/images/img-1.jpg", alt="Доставка продуктов", width="100", height="100").market-content__iten-img 
+                    .market-content__iten-text Доставка продуктов
+                a(href="marker-item.html").market-content__iten
+                    img(src="./assets/images/img-1.jpg", alt="Доставка продуктов", width="100", height="100").market-content__iten-img 
+                    .market-content__iten-text Доставка продуктов
+

@@ -1,0 +1,60 @@
+extends ../template
+
+block variables
+    - var title = 'Маркетплейс'
+    - var contactForm = true
+
+block content
+    main.main
+        header.header 
+            .header__top
+                a(href="marker.html").market-link-back
+                    svg(width="16", height="16")
+                        use(xlink:href="./assets/images/sprite.svg#icon-arrow")
+                    span Назад
+
+        nav.menu-primary
+            ul.menu-primary__list
+                li.menu-primary__item
+                    button(data-drop-control="drop1").menu-primary__linc.menu-primary__linc_control Диспетчеризация
+                        svg(width="16", height="16")
+                            use(xlink:href="./assets/images/sprite.svg#icon-arrow")
+                    div(data-drop-container="drop1", data-drop-active="false").menu-primary__drop-list-wrap
+                        ul.menu-primary__drop-list
+                            li.menu-primary__drop-item
+                                a(href="index.html").menu-primary__drop-linc Обращения
+                            li.menu-primary__drop-item
+                                a(href="index.html").menu-primary__drop-linc Заявки на работы
+                            li.menu-primary__drop-item
+                                a(href="index.html").menu-primary__drop-linc Заказ платных услуг УК
+
+                li.menu-primary__item
+                    a(href="pay-doc.html").menu-primary__linc Платежные документы
+                li.menu-primary__item
+                    a(href="give-evidence.html").menu-primary__linc Подать показания
+                li.menu-primary__item
+                    a(href="profile.html").menu-primary__linc Профиль собственника
+                li.menu-primary__item
+                    a(href="marker.html").menu-primary__linc.active Маркетплейс
+        
+        .market-content__wrap
+            .market-content
+                h2 Прокат велосипедов
+                p Внимание жителей домов управляющей компании «КВС-Сервис»!
+                p В течение всего лета с 01.06.202 по 31.08.2020 для вас действует скидка 5% на прокат велосипедов и самокатов по промокоду
+                p KVSSERVIS
+                p Скажите его на кассе и получите скидку 5%!
+                img(src="./assets/images/img-2.jpg", alt="Прокат велосипедов", width="384", height="215")
+                
+                ul
+                    li Работает 24х7
+                    li Высококлассные профессионалы
+                    li Жителям домов Дворцовая пл.д.3 - скидка 10%
+                    li Бонус! Диагностика компьютера бесплатно!
+
+                button.button Заказать
+
+                p._smol Ваш заказ создастся в разделе «Заказ платных услуг» (Диспетчеризация)
+
+
+
