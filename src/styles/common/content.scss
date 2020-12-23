@@ -419,6 +419,7 @@ a.chat-header__contact-linc:hover {
 	overflow: hidden;
 	transition: height 300ms ease-in-out 0ms;
 	box-sizing: border-box;
+	padding-left: 9px;
 
 	> *:first-child {
 		margin-top: 18px;
@@ -519,5 +520,125 @@ a.chat-header__contact-linc:hover {
 	> svg {
 		transform: rotate(-90deg);
 		--icon-color: #{$color-Orange};
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	.give-evidence__head {
+		grid-auto-flow: row;
+		row-gap: 15px;
+		margin-bottom: 24px;
+	}
+	.give-evidence__head .button {
+		min-height: 28px;
+		justify-self: flex-start;
+	}
+	.give-evidence__head-h {
+		margin-top: 0;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.chat-footer__button {
+		min-width: 100px;
+		padding: 6px 11px;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.content-wrap {
+		grid-column: 2 / -1;
+		grid-row: 3 / -1;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.chat-header {
+		column-gap: 10px;
+		padding: 10px 12px;
+	}
+	.chat-header__date-time {
+		column-gap: 10px;
+	}
+	.chat-header__status {
+		margin: 0;
+	}
+	.chat-header__date-status-wrap {
+		flex-wrap: nowrap;
+	}
+	.content-wrap {
+		grid-column: auto;
+		grid-row: auto;
+		margin-right: -5px;
+	}
+	.chat-footer__input-file {
+		svg {
+			width: 15px;
+			height: 14px;
+		}
+	}
+	.chat-footer__input-text {
+		height: 40px;
+		margin: 0;
+		margin-right: -20px;
+	}
+	.content-table th {
+		padding: 16px 10px;
+	}
+	.content-table td {
+		padding: 16px 8px;
+	}
+	.profile-content__head {
+		min-height: 45px;
+		font-size: 18px;
+		line-height: 23px;
+		padding: 11px 10px;
+
+		svg {
+			right: 10px;
+		}
+		span {
+			&:first-of-type {
+				display: none;
+			}
+		}
+	}
+	.profile-content {
+		row-gap: 20px;
+	}
+	.profile-content__input-wrap {
+		row-gap: 20px;
+	}
+	.profile-content__content {
+		padding-left: 0;
+	}
+	.market-content__wrap {
+		grid-column: auto;
+		grid-row: auto;
+		margin-right: -10px;
+	}
+	.market-content {
+		font-size: 14px;
+    	line-height: 17px;
+	}
+	.market-content__list {
+		grid-template-columns: repeat(auto-fit, 90px);
+		column-gap: 9px;
+		row-gap: 30px;
+	}
+	.market-content__iten {
+		font-size: 14px;
+		line-height: 18px;
+	}
+	.market-content__iten-img {
+		width: 90px;
+		height: 90px;
+	}
+	.market-content__img {
+		max-width: 100%;
+		object-fit: cover;
+	}
+	.chat-footer {
+		column-gap: 5px;
 	}
 }

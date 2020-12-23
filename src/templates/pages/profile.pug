@@ -6,6 +6,28 @@ block variables
 
 block content
     main.main
+        .menu-primery--mobile
+            button(data-drop-control="drop5").menu-primary__linc.menu-primary__linc_control.active 
+                span Профиль собственника
+                svg(width="16", height="16")
+                            use(xlink:href="./assets/images/sprite.svg#icon-arrow")
+            div(data-drop-container="drop5", data-drop-active="false").menu-primary__drop-list-wrap
+                ul.menu-primary__drop-list
+                    li.menu-primary__drop-item
+                        a(href="index.html").menu-primary__drop-linc Обращения
+                    li.menu-primary__drop-item
+                        a(href="index.html").menu-primary__drop-linc Заявки на работы
+                    li.menu-primary__drop-item
+                        a(href="index.html").menu-primary__drop-linc Заказ платных услуг УК
+                    li.menu-primary__drop-item
+                        a(href="pay-doc.html").menu-primary__drop-linc Платежные документы
+                    li.menu-primary__drop-item
+                        a(href="give-evidence.html").menu-primary__drop-linc Подать показания
+                    li.menu-primary__drop-item
+                        a(href="profile.html").menu-primary__drop-linc Профиль собственника
+                    li.menu-primary__drop-item
+                        a(href="marker.html").menu-primary__drop-linc Маркетплейс
+
         header.header 
             .header__top
                 h2.header__h Профиль
@@ -37,13 +59,17 @@ block content
                     a(href="marker.html").menu-primary__linc Маркетплейс
         
         div(data-tab-control="tab-conteiner1").menu-secondary
-            ul.menu-secondary__list
-                li.menu-secondary__iten
+            button.menu-secondary__btn(data-drop-control="drop3")
+                span № 254 Пояснение по расчету...
+                svg(width="16", height="16")
+                    use(xlink:href="./assets/images/sprite.svg#icon-arrow")
+            ul.menu-secondary__list(data-drop-container="drop3", data-drop-active="false")
+                li.menu-secondary__item
                     a(tabindex="0", data-tab-control-item="item1").menu-secondary__linc.profile-linc.active
                         .profile-linc__h Л/сч 0100103001
                         .profile-linc__text Адрес: Дворцовая пл., д.3, кв.1
                         button.button.button_smol Редактировать данные
-                li.menu-secondary__iten
+                li.menu-secondary__item
                     a(tabindex="0", data-tab-control-item="item2").menu-secondary__linc.profile-linc
                         .profile-linc__h Л/сч 0100103002
                         .profile-linc__text Адрес: Дворцовая пл., д.3, кв.1
@@ -52,11 +78,13 @@ block content
         div(data-tab-conteiner="tab-conteiner1").content-wrap
             div(data-tab-conteiner-item="item1").profile-content
                 .profile-content__wrap
-                    button(data-drop-control="cDrop1").profile-content__head О лицевом счете 01000103001
+                    button(data-drop-control="cDrop9").profile-content__head 
+                        span О лицевом счете 
+                        span 01000103001
                         svg(width="16", height="16")
                             use(xlink:href="./assets/images/sprite.svg#icon-arrow")
 
-                    div(data-drop-container="cDrop1", data-drop-active="true").profile-content__content
+                    div(data-drop-container="cDrop9", data-drop-active="true").profile-content__content
                         h3.profile-content__h Информация об автомобилях
                         table.content-table
                             tr.content-table__head
@@ -70,11 +98,11 @@ block content
                                 td Toyota Corona
                 
                 .profile-content__wrap
-                    button(data-drop-control="cDrop2").profile-content__head О доме Дворцовая пл., д.3
+                    button(data-drop-control="cDrop8").profile-content__head О доме Дворцовая пл., д.3
                         svg(width="16", height="16")
                             use(xlink:href="./assets/images/sprite.svg#icon-arrow")
 
-                    div(data-drop-container="cDrop2", data-drop-active="true").profile-content__content
+                    div(data-drop-container="cDrop8", data-drop-active="true").profile-content__content
                         .profile-content__input-wrap
                             label.input
                                 input(type="text", name="name", value="Жилой дом")
@@ -99,11 +127,11 @@ block content
 
 
                 .profile-content__wrap
-                    button(data-drop-control="cDrop3").profile-content__head Об управляющей компании «КВС-Сервис»
+                    button(data-drop-control="cDrop7").profile-content__head Об управляющей компании «КВС-Сервис»
                         svg(width="16", height="16")
                             use(xlink:href="./assets/images/sprite.svg#icon-arrow")
 
-                    div(data-drop-container="cDrop3", data-drop-active="false").profile-content__content
+                    div(data-drop-container="cDrop7", data-drop-active="false").profile-content__content
                         h3.profile-content__h Информация об автомобилях
                         p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam veniam assumenda amet officiis libero. Adipisci tenetur doloribus ipsum nulla modi? Cupiditate, molestias. Porro sed hic provident tempora laudantium quia voluptate.
 
