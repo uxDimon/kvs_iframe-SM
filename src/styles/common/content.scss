@@ -523,6 +523,21 @@ a.chat-header__contact-linc:hover {
 	}
 }
 
+@media screen and (max-width: 1050px) {
+	.give-evidence__head {
+		grid-auto-flow: row;
+		row-gap: 15px;
+		margin-bottom: 24px;
+	}
+	.give-evidence__head .button {
+		min-height: 28px;
+		justify-self: flex-start;
+	}
+	.give-evidence__head-h {
+		margin-top: 0;
+	}
+}
+
 @media screen and (max-width: 1000px) {
 	.chat-footer__button {
 		min-width: 100px;
@@ -573,18 +588,6 @@ a.chat-header__contact-linc:hover {
 	.content-table td {
 		padding: 16px 8px;
 	}
-	.give-evidence__head {
-		grid-auto-flow: row;
-		row-gap: 15px;
-		margin-bottom: 24px;
-	}
-	.give-evidence__head .button {
-		min-height: 28px;
-		justify-self: flex-start;
-	}
-	.give-evidence__head-h {
-		margin-top: 0;
-	}
 	.profile-content__head {
 		min-height: 45px;
 		font-size: 18px;
@@ -599,6 +602,12 @@ a.chat-header__contact-linc:hover {
 				display: none;
 			}
 		}
+	}
+	.profile-content {
+		row-gap: 20px;
+	}
+	.profile-content__input-wrap {
+		row-gap: 20px;
 	}
 	.profile-content__content {
 		padding-left: 0;

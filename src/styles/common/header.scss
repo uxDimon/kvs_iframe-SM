@@ -58,6 +58,9 @@ $font-family-root: "PT Root UI", sans-serif;
 		row-gap: 15px;
 		margin-bottom: 0;
 	}
+	.header__bot {
+		margin-top: 30px;
+	}
 	.header__ls {
 		.menu-primary__linc_control {
 			min-height: 40px;
@@ -72,9 +75,6 @@ $font-family-root: "PT Root UI", sans-serif;
 	.header {
 		grid-column: auto;
 		grid-row: auto;
-	}
-	.header__bot {
-		margin-top: 30px;
 	}
 	.header__h {
 		font-size: 24px;
