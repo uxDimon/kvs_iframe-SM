@@ -60,18 +60,18 @@ block content
         
         div(data-tab-control="tab-conteiner1").menu-secondary
             button.menu-secondary__btn(data-drop-control="drop3")
-                span № 254 Пояснение по расчету...
+                span(data-name-set="name2") № 254 Пояснение по расчету...
                 svg(width="16", height="16")
                     use(xlink:href="./assets/images/sprite.svg#icon-arrow")
             ul.menu-secondary__list(data-drop-container="drop3", data-drop-active="false")
                 li.menu-secondary__item
-                    a(tabindex="0", data-tab-control-item="item1").menu-secondary__linc.profile-linc.active
-                        .profile-linc__h Л/сч 0100103001
+                    a(tabindex="0", data-tab-control-item="item1", data-name-control="name2").menu-secondary__linc.profile-linc.active
+                        .profile-linc__h(data-name-get) Л/сч 0100103001
                         .profile-linc__text Адрес: Дворцовая пл., д.3, кв.1
                         button.button.button_smol Редактировать данные
                 li.menu-secondary__item
-                    a(tabindex="0", data-tab-control-item="item2").menu-secondary__linc.profile-linc
-                        .profile-linc__h Л/сч 0100103002
+                    a(tabindex="0", data-tab-control-item="item2", data-name-control="name2").menu-secondary__linc.profile-linc
+                        .profile-linc__h(data-name-get) Л/сч 0100103002
                         .profile-linc__text Адрес: Дворцовая пл., д.3, кв.1
                         button.button.button_smol Редактировать данные
 

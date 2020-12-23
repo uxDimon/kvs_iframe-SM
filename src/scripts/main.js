@@ -178,3 +178,25 @@ if (burgerButtonAll) {
 		});
 	}
 }
+
+// name-control
+const nameControl = document.querySelectorAll("[data-name-set]");
+if (nameControl) {
+	for (const nameSet of nameControl) {
+		const maneControlList = document.querySelectorAll(`[data-name-control="${nameSet.dataset.nameSet}"]`);
+
+		function remuveNameControl(maneControl) {
+			const nameGet = maneControl.querySelector("[data-name-get]").textContent;
+			nameSet.innerHTML = nameGet;
+		}
+
+		remuveNameControl(document.querySelector(`[data-name-control="${nameSet.dataset.nameSet}"]`));
+
+		for (const maneControl of maneControlList) {
+			maneControl.addEventListener("click", () => {
+				remuveNameControl(maneControl);
+				nameSet.click();
+			});
+		}
+	}
+}

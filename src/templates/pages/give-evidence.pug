@@ -68,25 +68,25 @@ block content
         
         div(data-tab-control="tab-conteiner1").menu-secondary
             button.menu-secondary__btn(data-drop-control="drop3")
-                span № 254 Пояснение по расчету...
+                span(data-name-set="name2") № 254 Пояснение по расчету...
                 svg(width="16", height="16")
                     use(xlink:href="./assets/images/sprite.svg#icon-arrow")
             ul.menu-secondary__list(data-drop-container="drop3", data-drop-active="false")
                 li.menu-secondary__iten
-                    a(tabindex="0", data-tab-control-item="item1").menu-secondary__linc.give-evidence-linc.active
-                        .give-evidence-linc__h Холодное водоснабжение
+                    a(tabindex="0", data-tab-control-item="item1", data-name-control="name2").menu-secondary__linc.give-evidence-linc.active
+                        .give-evidence-linc__h(data-name-get) Холодное водоснабжение
                         .give-evidence-linc__text Заводской №: 8762719
                         .give-evidence-linc__text Последняя проверка: 01.02.2016
                         .give-evidence-linc__text Межпроверочный интервал: 6 лет
                 li.menu-secondary__iten
-                    a(tabindex="0", data-tab-control-item="item2").menu-secondary__linc.give-evidence-linc
-                        .give-evidence-linc__h Горячее водоснабжение
+                    a(tabindex="0", data-tab-control-item="item2", data-name-control="name2").menu-secondary__linc.give-evidence-linc
+                        .give-evidence-linc__h(data-name-get) Горячее водоснабжение
                         .give-evidence-linc__text Заводской №: 8762719
                         .give-evidence-linc__text Последняя проверка: 01.02.2016
                         .give-evidence-linc__text Межпроверочный интервал: 6 лет
                 li.menu-secondary__iten
-                    a(tabindex="0", data-tab-control-item="item3").menu-secondary__linc.give-evidence-linc
-                        .give-evidence-linc__h Электроэнергия
+                    a(tabindex="0", data-tab-control-item="item3", data-name-control="name2").menu-secondary__linc.give-evidence-linc
+                        .give-evidence-linc__h(data-name-get) Электроэнергия
                         .give-evidence-linc__text Заводской №: 8762719
                         .give-evidence-linc__text Последняя проверка: 01.02.2016
                         .give-evidence-linc__text Межпроверочный интервал: 6 лет

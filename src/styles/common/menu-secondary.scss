@@ -18,6 +18,7 @@ $font-family-root: "PT Root UI", sans-serif;
 	grid-row: 2 / -1;
 	overflow-y: auto;
 	padding-right: 4px;
+	z-index: 10;
 }
 
 .menu-secondary__list {
@@ -223,5 +224,4 @@ $font-family-root: "PT Root UI", sans-serif;
 		grid-row: auto;
 		padding-right: 0;
 	}
-	
 }

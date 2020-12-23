@@ -64,13 +64,13 @@ block content
         
         div(data-tab-control="tab-conteiner1").menu-secondary
             button.menu-secondary__btn(data-drop-control="drop3")
-                span № 254 Пояснение по расчету...
+                span(data-name-set="name2") № 254 Пояснение по расчету...
                 svg(width="16", height="16")
                     use(xlink:href="./assets/images/sprite.svg#icon-arrow")
             ul.menu-secondary__list(data-drop-container="drop3", data-drop-active="false")
                 li.menu-secondary__iten
-                    a(tabindex="0", data-tab-control-item="item1").menu-secondary__linc.request-linc.active
-                        span.request-linc__name № 154 Пояснение по расчету
+                    a(tabindex="0", data-tab-control-item="item1", data-name-control="name2").menu-secondary__linc.request-linc.active
+                        span(data-name-get).request-linc__name № 154 Пояснение по расчету
                         .request-linc__date-time
                             span 17.11.2020
                             span 12:25
@@ -79,8 +79,8 @@ block content
                                 use(xlink:href="./assets/images/sprite.svg#icon-time")
                             span Новая заявка
                 li.menu-secondary__iten
-                    a(tabindex="0", data-tab-control-item="item2").menu-secondary__linc.request-linc
-                        span.request-linc__name № 254 Пояснение по расчету
+                    a(tabindex="0", data-tab-control-item="item2", data-name-control="name2").menu-secondary__linc.request-linc
+                        span(data-name-get).request-linc__name № 254 Пояснение по расчету
                         .request-linc__date-time
                             span 17.11.2020
                             span 12:25
@@ -89,8 +89,8 @@ block content
                                 use(xlink:href="./assets/images/sprite.svg#icon-trash")
                             span Отменена
                 li.menu-secondary__iten
-                    a(tabindex="0", data-tab-control-item="item3").menu-secondary__linc.request-linc
-                        span.request-linc__name № 354 Пояснение по расчету
+                    a(tabindex="0", data-tab-control-item="item3", data-name-control="name2").menu-secondary__linc.request-linc
+                        span(data-name-get).request-linc__name № 354 Пояснение по расчету
                         .request-linc__date-time
                             span 17.11.2020
                             span 12:25
