@@ -14,6 +14,24 @@
   </head>
   <body>
     <main class="main">
+      <div class="menu-primery--mobile">
+        <button class="menu-primary__linc menu-primary__linc_control active" data-drop-control="drop5"> <span>Платежные документы</span>
+          <svg width="16" height="16">
+            <use xlink:href="./assets/images/sprite.svg#icon-arrow"></use>
+          </svg>
+        </button>
+        <div class="menu-primary__drop-list-wrap" data-drop-container="drop5" data-drop-active="false">
+          <ul class="menu-primary__drop-list">
+            <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="index.html">Обращения</a></li>
+            <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="index.html">Заявки на работы</a></li>
+            <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="index.html">Заказ платных услуг УК</a></li>
+            <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="pay-doc.html">Платежные документы</a></li>
+            <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="give-evidence.html">Подать показания</a></li>
+            <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="profile.html">Профиль собственника</a></li>
+            <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="marker.html">Маркетплейс</a></li>
+          </ul>
+        </div>
+      </div>
       <header class="header"> 
         <div class="header__top">
           <h2 class="header__h">Платежные документы</h2>
@@ -42,10 +60,15 @@
         </ul>
       </nav>
       <div class="menu-secondary" data-tab-control="tab-conteiner1">
-        <ul class="menu-secondary__list">
-          <li class="menu-secondary__iten"><a class="menu-secondary__linc pay-doc-linc active" tabindex="0" data-tab-control-item="item1">
+        <button class="menu-secondary__btn" data-drop-control="drop3"><span data-name-set="name1">№ 254 Пояснение по расчету...</span>
+          <svg width="16" height="16">
+            <use xlink:href="./assets/images/sprite.svg#icon-arrow"></use>
+          </svg>
+        </button>
+        <ul class="menu-secondary__list" data-drop-container="drop3" data-drop-active="false">
+          <li class="menu-secondary__item"><a class="menu-secondary__linc pay-doc-linc active" tabindex="0" data-tab-control-item="item1" data-name-control="name1">
               <div class="pay-doc-linc__text-wrap">
-                <div class="pay-doc-linc__ls">Л/сч 0100103001</div>
+                <div class="pay-doc-linc__ls" data-name-get>Л/сч 0100103002</div>
                 <div class="pay-doc-linc__text">Адрес: Дворцовая пл., д.3, кв.1</div>
               </div>
               <div class="pay-doc-linc__text-wrap">
@@ -53,9 +76,9 @@
                 <div class="pay-doc-linc__text">Сумма к оплате на 18.11.2020</div>
               </div>
               <button class="button button_smol">Оплатить</button></a></li>
-          <li class="menu-secondary__iten"><a class="menu-secondary__linc pay-doc-linc" tabindex="0" data-tab-control-item="item2">
+          <li class="menu-secondary__item"><a class="menu-secondary__linc pay-doc-linc" tabindex="0" data-tab-control-item="item2" data-name-control="name1">
               <div class="pay-doc-linc__text-wrap">
-                <div class="pay-doc-linc__ls">Л/сч 0100103001</div>
+                <div class="pay-doc-linc__ls" data-name-get>Л/сч 0100103001</div>
                 <div class="pay-doc-linc__text">Адрес: Дворцовая пл., д.3, кв.1</div>
               </div>
               <div class="pay-doc-linc__text-wrap">
@@ -422,7 +445,7 @@
               <input type="text" name="name"><span class="input__placeholder">Адрес*</span><span class="input__error">Пожалуйста, заполните поле</span>
             </label>
             <label class="input">
-              <input type="tel" name="name"><span class="input__placeholder">Адрес*</span><span class="input__error">Пожалуйста, заполните поле</span>
+              <input type="tel" name="name"><span class="input__placeholder">Телефон*</span><span class="input__error">Пожалуйста, заполните поле</span>
             </label>
             <label class="input">
               <textarea name="name"></textarea><span class="input__placeholder">Сообщение*</span><span class="input__error">Пожалуйста, заполните поле</span>

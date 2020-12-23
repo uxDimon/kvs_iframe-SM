@@ -14,9 +14,40 @@
   </head>
   <body>
     <main class="main">
+      <div class="menu-primery--mobile">
+        <button class="menu-primary__linc menu-primary__linc_control active" data-drop-control="drop5"><span>Подать показания</span>
+          <svg width="16" height="16">
+            <use xlink:href="./assets/images/sprite.svg#icon-arrow"></use>
+          </svg>
+        </button>
+        <div class="menu-primary__drop-list-wrap" data-drop-container="drop5" data-drop-active="false">
+          <ul class="menu-primary__drop-list">
+            <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="index.html">Обращения</a></li>
+            <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="index.html">Заявки на работы</a></li>
+            <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="index.html">Заказ платных услуг УК</a></li>
+            <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="pay-doc.html">Платежные документы</a></li>
+            <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="give-evidence.html">Подать показания</a></li>
+            <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="profile.html">Профиль собственника</a></li>
+            <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="marker.html">Маркетплейс</a></li>
+          </ul>
+        </div>
+      </div>
       <header class="header"> 
         <div class="header__top">
           <h2 class="header__h">Подать показания по приборам лицевого счета</h2>
+          <div class="header__ls">
+            <button class="menu-primary__linc menu-primary__linc_control" data-drop-control="dropls">0100103001
+              <svg width="16" height="16">
+                <use xlink:href="./assets/images/sprite.svg#icon-arrow"></use>
+              </svg>
+            </button>
+            <div class="menu-primary__drop-list-wrap" data-drop-container="dropls" data-drop-active="false">
+              <ul class="menu-primary__drop-list">
+                <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="#">0100103001</a></li>
+                <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="#">0100103001</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </header>
       <nav class="menu-primary">
@@ -42,19 +73,24 @@
         </ul>
       </nav>
       <div class="menu-secondary" data-tab-control="tab-conteiner1">
-        <ul class="menu-secondary__list">
-          <li class="menu-secondary__iten"><a class="menu-secondary__linc give-evidence-linc active" tabindex="0" data-tab-control-item="item1">
-              <div class="give-evidence-linc__h">Холодное водоснабжение</div>
+        <button class="menu-secondary__btn" data-drop-control="drop3"><span data-name-set="name2">№ 254 Пояснение по расчету...</span>
+          <svg width="16" height="16">
+            <use xlink:href="./assets/images/sprite.svg#icon-arrow"></use>
+          </svg>
+        </button>
+        <ul class="menu-secondary__list" data-drop-container="drop3" data-drop-active="false">
+          <li class="menu-secondary__iten"><a class="menu-secondary__linc give-evidence-linc active" tabindex="0" data-tab-control-item="item1" data-name-control="name2">
+              <div class="give-evidence-linc__h" data-name-get>Холодное водоснабжение</div>
               <div class="give-evidence-linc__text">Заводской №: 8762719</div>
               <div class="give-evidence-linc__text">Последняя проверка: 01.02.2016</div>
               <div class="give-evidence-linc__text">Межпроверочный интервал: 6 лет</div></a></li>
-          <li class="menu-secondary__iten"><a class="menu-secondary__linc give-evidence-linc" tabindex="0" data-tab-control-item="item2">
-              <div class="give-evidence-linc__h">Горячее водоснабжение</div>
+          <li class="menu-secondary__iten"><a class="menu-secondary__linc give-evidence-linc" tabindex="0" data-tab-control-item="item2" data-name-control="name2">
+              <div class="give-evidence-linc__h" data-name-get>Горячее водоснабжение</div>
               <div class="give-evidence-linc__text">Заводской №: 8762719</div>
               <div class="give-evidence-linc__text">Последняя проверка: 01.02.2016</div>
               <div class="give-evidence-linc__text">Межпроверочный интервал: 6 лет</div></a></li>
-          <li class="menu-secondary__iten"><a class="menu-secondary__linc give-evidence-linc" tabindex="0" data-tab-control-item="item3">
-              <div class="give-evidence-linc__h">Электроэнергия</div>
+          <li class="menu-secondary__iten"><a class="menu-secondary__linc give-evidence-linc" tabindex="0" data-tab-control-item="item3" data-name-control="name2">
+              <div class="give-evidence-linc__h" data-name-get>Электроэнергия</div>
               <div class="give-evidence-linc__text">Заводской №: 8762719</div>
               <div class="give-evidence-linc__text">Последняя проверка: 01.02.2016</div>
               <div class="give-evidence-linc__text">Межпроверочный интервал: 6 лет</div></a></li>
@@ -593,7 +629,7 @@
               <input type="text" name="name"><span class="input__placeholder">Адрес*</span><span class="input__error">Пожалуйста, заполните поле</span>
             </label>
             <label class="input">
-              <input type="tel" name="name"><span class="input__placeholder">Адрес*</span><span class="input__error">Пожалуйста, заполните поле</span>
+              <input type="tel" name="name"><span class="input__placeholder">Телефон*</span><span class="input__error">Пожалуйста, заполните поле</span>
             </label>
             <label class="input">
               <textarea name="name"></textarea><span class="input__placeholder">Сообщение*</span><span class="input__error">Пожалуйста, заполните поле</span>

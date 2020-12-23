@@ -14,6 +14,24 @@
   </head>
   <body>
     <main class="main">
+      <div class="menu-primery--mobile">
+        <button class="menu-primary__linc menu-primary__linc_control active" data-drop-control="drop5"> <span>Обращения</span>
+          <svg width="16" height="16">
+            <use xlink:href="./assets/images/sprite.svg#icon-arrow"></use>
+          </svg>
+        </button>
+        <div class="menu-primary__drop-list-wrap" data-drop-container="drop5" data-drop-active="false">
+          <ul class="menu-primary__drop-list">
+            <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="index.html">Обращения</a></li>
+            <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="index.html">Заявки на работы</a></li>
+            <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="index.html">Заказ платных услуг УК</a></li>
+            <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="pay-doc.html">Платежные документы</a></li>
+            <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="give-evidence.html">Подать показания</a></li>
+            <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="profile.html">Профиль собственника</a></li>
+            <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="marker.html">Маркетплейс</a></li>
+          </ul>
+        </div>
+      </div>
       <header class="header"> 
         <div class="header__top">
           <h2 class="header__h">Обращения</h2>
@@ -50,22 +68,27 @@
         </ul>
       </nav>
       <div class="menu-secondary" data-tab-control="tab-conteiner1">
-        <ul class="menu-secondary__list">
-          <li class="menu-secondary__iten"><a class="menu-secondary__linc request-linc active" tabindex="0" data-tab-control-item="item1"><span class="request-linc__name">№ 154 Пояснение по расчету</span>
+        <button class="menu-secondary__btn" data-drop-control="drop3"><span data-name-set="name2">№ 254 Пояснение по расчету...</span>
+          <svg width="16" height="16">
+            <use xlink:href="./assets/images/sprite.svg#icon-arrow"></use>
+          </svg>
+        </button>
+        <ul class="menu-secondary__list" data-drop-container="drop3" data-drop-active="false">
+          <li class="menu-secondary__iten"><a class="menu-secondary__linc request-linc active" tabindex="0" data-tab-control-item="item1" data-name-control="name2"><span class="request-linc__name" data-name-get>№ 154 Пояснение по расчету</span>
               <div class="request-linc__date-time"><span>17.11.2020</span><span>12:25</span></div>
               <div class="request-linc__status">
                 <svg width="13" height="13">
                   <use xlink:href="./assets/images/sprite.svg#icon-time"></use>
                 </svg><span>Новая заявка</span>
               </div></a></li>
-          <li class="menu-secondary__iten"><a class="menu-secondary__linc request-linc" tabindex="0" data-tab-control-item="item2"><span class="request-linc__name">№ 254 Пояснение по расчету</span>
+          <li class="menu-secondary__iten"><a class="menu-secondary__linc request-linc" tabindex="0" data-tab-control-item="item2" data-name-control="name2"><span class="request-linc__name" data-name-get>№ 254 Пояснение по расчету</span>
               <div class="request-linc__date-time"><span>17.11.2020</span><span>12:25</span></div>
               <div class="request-linc__status">
                 <svg width="13" height="13">
                   <use xlink:href="./assets/images/sprite.svg#icon-trash"></use>
                 </svg><span>Отменена</span>
               </div></a></li>
-          <li class="menu-secondary__iten"><a class="menu-secondary__linc request-linc" tabindex="0" data-tab-control-item="item3"><span class="request-linc__name">№ 354 Пояснение по расчету</span>
+          <li class="menu-secondary__iten"><a class="menu-secondary__linc request-linc" tabindex="0" data-tab-control-item="item3" data-name-control="name2"><span class="request-linc__name" data-name-get>№ 354 Пояснение по расчету</span>
               <div class="request-linc__date-time"><span>17.11.2020</span><span>12:25</span></div>
               <div class="request-linc__status">
                 <svg width="13" height="13">
@@ -147,7 +170,7 @@
                 <textarea type="text" name="text" data-chat-message placeholder="Введите сообщение"></textarea>
               </label>
             </div>
-            <button class="button" type="submit">Отправить</button>
+            <button class="button chat-footer__button" type="submit">Отправить</button>
           </form>
         </div>
         <div class="chat" data-tab-conteiner-item="item2">
@@ -193,7 +216,7 @@
                 <textarea type="text" name="text" data-chat-message placeholder="Введите сообщение"></textarea>
               </label>
             </div>
-            <button class="button" type="submit">Отправить</button>
+            <button class="button chat-footer__button" type="submit">Отправить</button>
           </form>
         </div>
         <div class="chat" data-tab-conteiner-item="item3">
@@ -245,7 +268,7 @@
                 <textarea type="text" name="text" data-chat-message placeholder="Введите сообщение"></textarea>
               </label>
             </div>
-            <button class="button" type="submit">Отправить</button>
+            <button class="button chat-footer__button" type="submit">Отправить</button>
           </form>
         </div>
       </div>
@@ -267,7 +290,7 @@
               <input type="text" name="name"><span class="input__placeholder">Адрес*</span><span class="input__error">Пожалуйста, заполните поле</span>
             </label>
             <label class="input">
-              <input type="tel" name="name"><span class="input__placeholder">Адрес*</span><span class="input__error">Пожалуйста, заполните поле</span>
+              <input type="tel" name="name"><span class="input__placeholder">Телефон*</span><span class="input__error">Пожалуйста, заполните поле</span>
             </label>
             <label class="input">
               <textarea name="name"></textarea><span class="input__placeholder">Сообщение*</span><span class="input__error">Пожалуйста, заполните поле</span>

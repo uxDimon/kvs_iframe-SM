@@ -14,6 +14,24 @@
   </head>
   <body>
     <main class="main">
+      <div class="menu-primery--mobile">
+        <button class="menu-primary__linc menu-primary__linc_control active" data-drop-control="drop5"> <span>Профиль собственника</span>
+          <svg width="16" height="16">
+            <use xlink:href="./assets/images/sprite.svg#icon-arrow"></use>
+          </svg>
+        </button>
+        <div class="menu-primary__drop-list-wrap" data-drop-container="drop5" data-drop-active="false">
+          <ul class="menu-primary__drop-list">
+            <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="index.html">Обращения</a></li>
+            <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="index.html">Заявки на работы</a></li>
+            <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="index.html">Заказ платных услуг УК</a></li>
+            <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="pay-doc.html">Платежные документы</a></li>
+            <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="give-evidence.html">Подать показания</a></li>
+            <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="profile.html">Профиль собственника</a></li>
+            <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="marker.html">Маркетплейс</a></li>
+          </ul>
+        </div>
+      </div>
       <header class="header"> 
         <div class="header__top">
           <h2 class="header__h">Профиль</h2>
@@ -44,13 +62,18 @@
         </ul>
       </nav>
       <div class="menu-secondary" data-tab-control="tab-conteiner1">
-        <ul class="menu-secondary__list">
-          <li class="menu-secondary__iten"><a class="menu-secondary__linc profile-linc active" tabindex="0" data-tab-control-item="item1">
-              <div class="profile-linc__h">Л/сч 0100103001</div>
+        <button class="menu-secondary__btn" data-drop-control="drop3"><span data-name-set="name2">№ 254 Пояснение по расчету...</span>
+          <svg width="16" height="16">
+            <use xlink:href="./assets/images/sprite.svg#icon-arrow"></use>
+          </svg>
+        </button>
+        <ul class="menu-secondary__list" data-drop-container="drop3" data-drop-active="false">
+          <li class="menu-secondary__item"><a class="menu-secondary__linc profile-linc active" tabindex="0" data-tab-control-item="item1" data-name-control="name2">
+              <div class="profile-linc__h" data-name-get>Л/сч 0100103001</div>
               <div class="profile-linc__text">Адрес: Дворцовая пл., д.3, кв.1</div>
               <button class="button button_smol">Редактировать данные</button></a></li>
-          <li class="menu-secondary__iten"><a class="menu-secondary__linc profile-linc" tabindex="0" data-tab-control-item="item2">
-              <div class="profile-linc__h">Л/сч 0100103002</div>
+          <li class="menu-secondary__item"><a class="menu-secondary__linc profile-linc" tabindex="0" data-tab-control-item="item2" data-name-control="name2">
+              <div class="profile-linc__h" data-name-get>Л/сч 0100103002</div>
               <div class="profile-linc__text">Адрес: Дворцовая пл., д.3, кв.1</div>
               <button class="button button_smol">Редактировать данные</button></a></li>
         </ul>
@@ -58,12 +81,12 @@
       <div class="content-wrap" data-tab-conteiner="tab-conteiner1">
         <div class="profile-content" data-tab-conteiner-item="item1">
           <div class="profile-content__wrap">
-            <button class="profile-content__head" data-drop-control="cDrop1">О лицевом счете 01000103001
+            <button class="profile-content__head" data-drop-control="cDrop9"> <span>О лицевом счете </span><span>01000103001</span>
               <svg width="16" height="16">
                 <use xlink:href="./assets/images/sprite.svg#icon-arrow"></use>
               </svg>
             </button>
-            <div class="profile-content__content" data-drop-container="cDrop1" data-drop-active="true">
+            <div class="profile-content__content" data-drop-container="cDrop9" data-drop-active="true">
               <h3 class="profile-content__h">Информация об автомобилях</h3>
               <table class="content-table">
                 <tr class="content-table__head">
@@ -82,12 +105,12 @@
             </div>
           </div>
           <div class="profile-content__wrap">
-            <button class="profile-content__head" data-drop-control="cDrop2">О доме Дворцовая пл., д.3
+            <button class="profile-content__head" data-drop-control="cDrop8">О доме Дворцовая пл., д.3
               <svg width="16" height="16">
                 <use xlink:href="./assets/images/sprite.svg#icon-arrow"></use>
               </svg>
             </button>
-            <div class="profile-content__content" data-drop-container="cDrop2" data-drop-active="true">
+            <div class="profile-content__content" data-drop-container="cDrop8" data-drop-active="true">
               <div class="profile-content__input-wrap">
                 <label class="input">
                   <input type="text" name="name" value="Жилой дом"><span class="input__placeholder">Тип постройки</span><span class="input__error">Пожалуйста, заполните поле</span>
@@ -108,12 +131,12 @@
             </div>
           </div>
           <div class="profile-content__wrap">
-            <button class="profile-content__head" data-drop-control="cDrop3">Об управляющей компании «КВС-Сервис»
+            <button class="profile-content__head" data-drop-control="cDrop7">Об управляющей компании «КВС-Сервис»
               <svg width="16" height="16">
                 <use xlink:href="./assets/images/sprite.svg#icon-arrow"></use>
               </svg>
             </button>
-            <div class="profile-content__content" data-drop-container="cDrop3" data-drop-active="false">
+            <div class="profile-content__content" data-drop-container="cDrop7" data-drop-active="false">
               <h3 class="profile-content__h">Информация об автомобилях</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam veniam assumenda amet officiis libero. Adipisci tenetur doloribus ipsum nulla modi? Cupiditate, molestias. Porro sed hic provident tempora laudantium quia voluptate.</p>
             </div>
@@ -197,7 +220,7 @@
               <input type="text" name="name"><span class="input__placeholder">Адрес*</span><span class="input__error">Пожалуйста, заполните поле</span>
             </label>
             <label class="input">
-              <input type="tel" name="name"><span class="input__placeholder">Адрес*</span><span class="input__error">Пожалуйста, заполните поле</span>
+              <input type="tel" name="name"><span class="input__placeholder">Телефон*</span><span class="input__error">Пожалуйста, заполните поле</span>
             </label>
             <label class="input">
               <textarea name="name"></textarea><span class="input__placeholder">Сообщение*</span><span class="input__error">Пожалуйста, заполните поле</span>
