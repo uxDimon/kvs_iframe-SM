@@ -6,6 +6,28 @@ block variables
 
 block content
     main.main
+        .menu-primery--mobile
+            button(data-drop-control="drop5").menu-primary__linc.menu-primary__linc_control.active 
+                span Обращения
+                svg(width="16", height="16")
+                            use(xlink:href="./assets/images/sprite.svg#icon-arrow")
+            div(data-drop-container="drop5", data-drop-active="false").menu-primary__drop-list-wrap
+                ul.menu-primary__drop-list
+                    li.menu-primary__drop-item
+                        a(href="index.html").menu-primary__drop-linc Обращения
+                    li.menu-primary__drop-item
+                        a(href="index.html").menu-primary__drop-linc Заявки на работы
+                    li.menu-primary__drop-item
+                        a(href="index.html").menu-primary__drop-linc Заказ платных услуг УК
+                    li.menu-primary__drop-item
+                        a(href="pay-doc.html").menu-primary__drop-linc Платежные документы
+                    li.menu-primary__drop-item
+                        a(href="give-evidence.html").menu-primary__drop-linc Подать показания
+                    li.menu-primary__drop-item
+                        a(href="profile.html").menu-primary__drop-linc Профиль собственника
+                    li.menu-primary__drop-item
+                        a(href="marker.html").menu-primary__drop-linc Маркетплейс
+
         header.header 
             .header__top
                 h2.header__h Обращения
@@ -41,7 +63,11 @@ block content
                     a(href="marker.html").menu-primary__linc Маркетплейс
         
         div(data-tab-control="tab-conteiner1").menu-secondary
-            ul.menu-secondary__list
+            button.menu-secondary__btn(data-drop-control="drop3")
+                span № 254 Пояснение по расчету...
+                svg(width="16", height="16")
+                    use(xlink:href="./assets/images/sprite.svg#icon-arrow")
+            ul.menu-secondary__list(data-drop-container="drop3", data-drop-active="false")
                 li.menu-secondary__iten
                     a(tabindex="0", data-tab-control-item="item1").menu-secondary__linc.request-linc.active
                         span.request-linc__name № 154 Пояснение по расчету
@@ -144,7 +170,7 @@ block content
                             input(type="file", name="file")
                         label.chat-footer__input-text
                             textarea(type="text", name="text", data-chat-message, placeholder="Введите сообщение")
-                    button(type="submit").button Отправить
+                    button(type="submit").button.chat-footer__button Отправить
             
             div(data-tab-conteiner-item="item2").chat
                 .chat-header
@@ -188,7 +214,7 @@ block content
                             input(type="file", name="file")
                         label.chat-footer__input-text
                             textarea(type="text", name="text", data-chat-message, placeholder="Введите сообщение")
-                    button(type="submit").button Отправить
+                    button(type="submit").button.chat-footer__button Отправить
             
             div(data-tab-conteiner-item="item3").chat
                 .chat-header
@@ -239,6 +265,6 @@ block content
                             input(type="file", name="file")
                         label.chat-footer__input-text
                             textarea(type="text", name="text", data-chat-message, placeholder="Введите сообщение")
-                    button(type="submit").button Отправить
+                    button(type="submit").button.chat-footer__button Отправить
             
 

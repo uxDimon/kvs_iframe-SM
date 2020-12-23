@@ -26,6 +26,7 @@ $font-family-root: "PT Root UI", sans-serif;
 	align-items: center;
 	grid-column-gap: 30px;
 	justify-content: space-between;
+	align-items: flex-start;
 	margin-bottom: 8px;
 }
 
@@ -34,4 +35,49 @@ $font-family-root: "PT Root UI", sans-serif;
 	font-size: 30px;
 	line-height: 36px;
 	margin: 0;
+}
+
+.header__ls {
+	position: relative;
+	.menu-primary__linc_control {
+		min-height: 48px;
+		padding-right: 59px;
+	}
+	.menu-primary__drop-list-wrap {
+		position: absolute;
+		width: 100%;
+		background-color: $color-wheat;
+		border-radius: 0 0 4px 4px;
+		z-index: 3;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.header__top {
+		grid-auto-flow: row;
+		row-gap: 15px;
+		margin-bottom: 0;
+	}
+	.header__ls {
+		.menu-primary__linc_control {
+			min-height: 40px;
+			font-size: 16px;
+			line-height: 20px;
+			padding: 9px 10px 11px;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.header {
+		grid-column: auto;
+		grid-row: auto;
+	}
+	.header__bot {
+		margin-top: 30px;
+	}
+	.header__h {
+		font-size: 24px;
+		line-height: 30px;
+	}
 }

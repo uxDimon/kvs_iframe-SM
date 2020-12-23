@@ -91,3 +91,34 @@ $font-family-root: "PT Root UI", sans-serif;
 	visibility: visible;
 	opacity: 1;
 }
+
+@media screen and (max-width: 768px) {
+	.popups__container-wrap {
+		padding: 0 16px;
+		z-index: 1001;
+		margin-top: 20px;
+		border-radius: 10px;
+	}
+	.popups__container {
+		padding-right: 0;
+	}
+	.popups__h {
+		font-size: 24px;
+		line-height: 28px;
+		margin-bottom: 20px;
+	}
+	.popups__inputs {
+		row-gap: 20px;
+
+		.button {
+			width: 100%;
+			font-size: 18px;
+			line-height: 28px;
+		}
+	}
+	.popups__close-area {
+		position: absolute;
+		top: 0;
+		z-index: 1000;
+	}
+}
