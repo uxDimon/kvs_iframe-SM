@@ -135,29 +135,39 @@ block content
                                     svg(width="13", height="13")
                                         use(xlink:href="./assets/images/sprite.svg#icon-ok")
                                     span Завершить заявку
+                            li.burger__list-item
+                                a(href="#", data-popups-control='popups2').burger__list-linc
+                                    svg(width="13", height="13")
+                                        use(xlink:href="./assets/images/sprite.svg#icon-ok_or")
+                                    span Оплатить заявку
 
                 .chat-body
                     .chat-message
                         span.chat-message__date 17 ноября 2020
                         .chat-message__message.chat-message__message_user
+                            .chat-message__autor Пользователь
                             .chat-message__text
                                 p Новое обращение: Пояснение по расчету.
                                 p Не понимаю откуда в квитанции такая сумма за октябрь. Поясните пожалуйста.
                             .chat-message__time 11:53
                         
                         .chat-message__message.chat-message__message_user
+                            .chat-message__autor Пользователь
                             .chat-message__text
-                                p Отправлен файл: 0276566.pdf
+                                p Отправлен файл: 
+                                    a(href="#") 0276566.pdf
                             .chat-message__time 11:55
                         
                         span.chat-message__date 18 ноября 2020
 
                         .chat-message__message.chat-message__message_admin
+                            .chat-message__autor Админ
                             .chat-message__text
                                 p Здравствуйте! Заявку №254 принял специалист: электрик Петров Н.А.
                             .chat-message__time 8:12
 
                         .chat-message__message.chat-message__message_user
+                            .chat-message__autor Пользователь
                             .chat-message__text
                                 p Дай Бог вам здоровья!
                             .chat-message__time 14:25                        
@@ -196,14 +206,17 @@ block content
                     .chat-message
                         span.chat-message__date 17 ноября 2020
                         .chat-message__message.chat-message__message_user
+                            .chat-message__autor Пользователь
                             .chat-message__text
                                 p Новое обращение: Пояснение по расчету.
                                 p Не понимаю откуда в квитанции такая сумма за октябрь. Поясните пожалуйста.
                             .chat-message__time 11:53
                         
                         .chat-message__message.chat-message__message_user
+                            .chat-message__autor Пользователь
                             .chat-message__text
-                                p Отправлен файл: 0276566.pdf
+                                p Отправлен файл: 
+                                    a(href="#") 0276566.pdf
                             .chat-message__time 11:55                      
 
                 form.chat-footer
@@ -240,19 +253,23 @@ block content
                     .chat-message
                         span.chat-message__date 17 ноября 2020
                         .chat-message__message.chat-message__message_user
+                            .chat-message__autor Пользователь
                             .chat-message__text
                                 p Новое обращение: Пояснение по расчету.
                                 p Не понимаю откуда в квитанции такая сумма за октябрь. Поясните пожалуйста.
                             .chat-message__time 11:53
                         
                         .chat-message__message.chat-message__message_user
+                            .chat-message__autor Пользователь
                             .chat-message__text
-                                p Отправлен файл: 0276566.pdf
+                                p Отправлен файл: 
+                                    a(href="#") 0276566.pdf
                             .chat-message__time 11:55
                         
                         span.chat-message__date 18 ноября 2020
 
                         .chat-message__message.chat-message__message_admin
+                            .chat-message__autor Админ
                             .chat-message__text
                                 p Здравствуйте! Заявку №254 принял специалист: электрик Петров Н.А.
                             .chat-message__time 8:12                       

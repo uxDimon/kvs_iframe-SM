@@ -31,6 +31,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f5f6;
+  color: #232930;
   height: 100vh; }
 
 .main {
@@ -204,6 +205,7 @@ body {
     pointer-events: none; }
   .input input,
   .input textarea,
+  .input select,
   .input .input__file {
     box-sizing: border-box;
     min-width: 230px;
@@ -222,15 +224,27 @@ body {
     transition: background-color 200ms ease-in-out 0ms, border-color 200ms ease-in 0ms; }
     .input input:hover,
     .input textarea:hover,
+    .input select:hover,
     .input .input__file:hover {
       background-color: #ebedee;
       border-color: #c4c4c4; }
     .input input:focus,
     .input textarea:focus,
+    .input select:focus,
     .input .input__file:focus {
       outline: none;
       border-bottom: 2px solid #f4691b;
       padding-bottom: 5px; }
+  .input select {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L9 1' stroke='%23232930'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+    background-size: 10px; }
+  .input .select-none {
+    display: none; }
   .input input[type="file"] {
     visibility: hidden;
     position: absolute; }
@@ -664,6 +678,11 @@ a.chat-header__contact-linc:hover {
   line-height: 18px;
   margin: 5px 0; }
 
+.chat-message__autor {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #68717b; }
+
 .chat-message__message {
   padding: 12px 18px;
   border-radius: 4px;
@@ -676,6 +695,8 @@ a.chat-header__contact-linc:hover {
   grid-row-gap: 10px; }
   .chat-message__text p {
     margin: 0; }
+  .chat-message__text a {
+    color: #232930; }
 
 .chat-message__time {
   font-size: 12px;
@@ -843,7 +864,8 @@ a.chat-header__contact-linc:hover {
 .profile-content {
   display: grid;
   grid-template-columns: 1fr;
-  grid-row-gap: 28px; }
+  grid-row-gap: 28px;
+  position: relative; }
 
 .profile-content__head {
   min-height: 72px;
@@ -861,7 +883,8 @@ a.chat-header__contact-linc:hover {
   text-align: left;
   cursor: pointer;
   position: relative;
-  transition: background-color 200ms ease-in-out 0ms; }
+  transition: background-color 200ms ease-in-out 0ms;
+  z-index: 10; }
   .profile-content__head:hover {
     background-color: #ebedee; }
   .profile-content__head svg {

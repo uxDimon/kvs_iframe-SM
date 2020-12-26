@@ -88,11 +88,16 @@
         <div class="popups__container">
           <h2 class="popups__h">Создайте новое обращение</h2>
           <form class="popups__inputs">
-            <label class="input">
+            <label class="input error">
               <input type="text" name="name"><span class="input__placeholder">Тема обращения*</span><span class="input__error">Пожалуйста, заполните поле</span>
             </label>
-            <label class="input error">
-              <input type="text" name="name"><span class="input__placeholder">Адрес*</span><span class="input__error">Пожалуйста, заполните поле</span>
+            <label class="input">
+              <select name="name">
+                <option class="select-none" value=""></option>
+                <option value="nul">№ 354</option>
+                <option value="nul">№ 356</option>
+                <option value="nul">№ 358</option>
+              </select><span class="input__placeholder">Адрес*</span><span class="input__error">Пожалуйста, заполните поле</span>
             </label>
             <label class="input">
               <input type="tel" name="name"><span class="input__placeholder">Телефон*</span><span class="input__error">Пожалуйста, заполните поле</span>

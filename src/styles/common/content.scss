@@ -142,6 +142,12 @@ a.chat-header__contact-linc:hover {
 	margin: 5px 0;
 }
 
+.chat-message__autor {
+	font-size: 14px;
+	margin-bottom: 6px;
+	color: $color-Grey5;
+}
+
 .chat-message__message {
 	padding: 12px 18px;
 	border-radius: 4px;
@@ -156,6 +162,10 @@ a.chat-header__contact-linc:hover {
 
 	p {
 		margin: 0;
+	}
+
+	a {
+		color: $color-Black;
 	}
 }
 
@@ -375,6 +385,7 @@ a.chat-header__contact-linc:hover {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-row-gap: 28px;
+	position: relative;
 }
 
 .profile-content__head {
@@ -394,6 +405,7 @@ a.chat-header__contact-linc:hover {
 	cursor: pointer;
 	position: relative;
 	transition: background-color 200ms ease-in-out 0ms;
+	z-index: 10;
 
 	&:hover {
 		background-color: $color-Grey2;
@@ -619,7 +631,7 @@ a.chat-header__contact-linc:hover {
 	}
 	.market-content {
 		font-size: 14px;
-    	line-height: 17px;
+		line-height: 17px;
 	}
 	.market-content__list {
 		grid-template-columns: repeat(auto-fit, 90px);

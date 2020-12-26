@@ -7,13 +7,18 @@
         .popups__container
             h2.popups__h Создайте новое обращение
             form.popups__inputs
-                label.input
+                label.input.error
                     input(type="text", name="name")
                     span.input__placeholder Тема обращения*
                     span.input__error Пожалуйста, заполните поле
                 
-                label.input.error
-                    input(type="text", name="name")
+                label.input
+                    select(name="name")
+                        option(value="").select-none
+                        option(value="nul") № 354
+                        option(value="nul") № 356
+                        option(value="nul") № 358
+
                     span.input__placeholder Адрес*
                     span.input__error Пожалуйста, заполните поле
                 

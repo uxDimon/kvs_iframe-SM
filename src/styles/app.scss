@@ -44,6 +44,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: $color-Grey1;
+	color: $color-Black;
 	height: 100vh;
 }
 
@@ -258,13 +259,14 @@ body {
 
 	input,
 	textarea,
+	select,
 	.input__file {
 		box-sizing: border-box;
 		min-width: 230px;
 		height: 48px;
 		width: 100%;
 		// background-color: #f4f5f6;
-		background-color:$color-wheat;
+		background-color: $color-wheat;
 		border-radius: 3px 3px 0 0;
 		border: none;
 		border-bottom: 1px solid #cfd0d1;
@@ -286,6 +288,18 @@ body {
 			border-bottom: 2px solid #f4691b;
 			padding-bottom: 5px;
 		}
+	}
+
+	select {
+		appearance: none;
+		background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L9 1' stroke='%23232930'/%3E%3C/svg%3E");
+		background-repeat: no-repeat;
+		background-position: calc(100% - 10px) center;
+		background-size: 10px;
+	}
+
+	.select-none {
+		display: none;
 	}
 
 	input[type="file"] {
