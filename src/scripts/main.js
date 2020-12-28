@@ -4,20 +4,20 @@ const focusClass = "_focus";
 const hideClass = "_hide";
 
 // stick
-// const stickBlockList = document.querySelectorAll("[data-stick-block]");
+const stickBlockList = document.querySelectorAll("[data-stick-block]");
 
-// if (stickBlockList) {
-// 	for (const stickBlock of stickBlockList) {
-// 		const stickHeadList = stickBlock.querySelectorAll("[data-stick-head]");
-// 		for (const stickHead of stickHeadList) {
-// 			stickBlock.addEventListener("scroll", () => {
-// 				if (stickHead.parentElement.scrollHeight + stickHead.parentElement.offsetTop - stickHead.scrollHeight > stickBlock.scrollTop && stickBlock.scrollTop > stickHead.parentElement.offsetTop) {
-// 					stickHead.style.transform = `translateY(${stickBlock.scrollTop - stickHead.parentElement.offsetTop}px)`;
-// 				}
-// 			});
-// 		}
-// 	}
-// }
+if (stickBlockList) {
+	for (const stickBlock of stickBlockList) {
+		const stickHeadList = stickBlock.querySelectorAll("[data-stick-head]");
+		for (const stickHead of stickHeadList) {
+			stickBlock.addEventListener("scroll", () => {
+				if (stickHead.parentElement.scrollHeight + stickHead.parentElement.offsetTop - stickHead.scrollHeight > stickBlock.scrollTop && stickBlock.scrollTop > stickHead.parentElement.offsetTop) {
+					stickHead.style.transform = `translateY(${stickBlock.scrollTop - stickHead.parentElement.offsetTop}px)`;
+				}
+			});
+		}
+	}
+}
 
 // menu-primary аккардион меню
 const menuDropControl = document.querySelectorAll("[data-drop-control]");
