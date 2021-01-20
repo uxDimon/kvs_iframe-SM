@@ -7,9 +7,6 @@
     <meta content="" name="keywords">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
-    <link rel="apple-touch-icon" href="assets/images/fav.png">
-    <link rel="stylesheet" type="text/css" href="assets/styles/swiper-bundle.min.css">
     <link rel="stylesheet" type="text/css" href="assets/styles/app.css">
   </head>
   <body>
@@ -23,8 +20,8 @@
         <div class="menu-primary__drop-list-wrap" data-drop-container="drop5" data-drop-active="false">
           <ul class="menu-primary__drop-list">
             <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="index.html">Обращения</a></li>
-            <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="index.html">Заявки на работы</a></li>
-            <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="index.html">Заказ платных услуг УК</a></li>
+            <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="request.html">Заявки на работы</a></li>
+            <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="request-pay.html">Заказ платных услуг УК</a></li>
             <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="pay-doc.html">Платежные документы</a></li>
             <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="give-evidence.html">Подать показания</a></li>
             <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="profile.html">Профиль собственника</a></li>
@@ -48,8 +45,8 @@
             <div class="menu-primary__drop-list-wrap" data-drop-container="drop1" data-drop-active="false">
               <ul class="menu-primary__drop-list">
                 <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="index.html">Обращения</a></li>
-                <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="index.html">Заявки на работы</a></li>
-                <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="index.html">Заказ платных услуг УК</a></li>
+                <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="request.html">Заявки на работы</a></li>
+                <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="request-pay.html">Заказ платных услуг УК</a></li>
               </ul>
             </div>
           </li>
@@ -465,6 +462,34 @@
       </div>
       <div class="popups__close-area" data-popups-close></div>
     </div>
+    <div class="popups" data-popups-container="give-evidence1">
+      <div class="popups__container-wrap">
+        <button class="popups__close" data-popups-close>
+          <svg width="20" height="20">
+            <use xlink:href="./assets/images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="popups__container">
+          <h2 class="popups__h">Подать показания по л/сч 01000103001</h2>
+          <form class="popups__inputs">
+            <label class="input">
+              <input type="number" name="name"><span class="input__placeholder">Холодное водоснабжение</span><span class="input__error">Пожалуйста, заполните поле</span>
+            </label>
+            <label class="input">
+              <input type="number" name="name"><span class="input__placeholder">Горячее водоснабжение</span><span class="input__error">Пожалуйста, заполните поле</span>
+            </label>
+            <label class="input">
+              <input type="number" name="name"><span class="input__placeholder">Электроэнергия</span><span class="input__error">Пожалуйста, заполните поле</span>
+            </label>
+            <label class="input input_date">
+              <input type="date" name="name"><span class="input__placeholder">Дата снятия показаний</span><span class="input__error">Пожалуйста, заполните поле</span>
+            </label>
+            <button class="button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+      <div class="popups__close-area" data-popups-close></div>
+    </div>
     <div class="popups" data-popups-container="popups2">
       <div class="popups__container-wrap">
         <button class="popups__close" data-popups-close>
@@ -479,10 +504,21 @@
       </div>
       <div class="popups__close-area" data-popups-close></div>
     </div>
+    <div class="popups" data-popups-container="request1">
+      <div class="popups__container-wrap">
+        <button class="popups__close" data-popups-close>
+          <svg width="20" height="20">
+            <use xlink:href="./assets/images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="popups__container">
+          <h2 class="popups__h">Заявку отменена</h2>
+          <p>Ваша заявка №254 от 17.11.2020 была отменена. Вы можете посмотреть ее в разделе закрытых сделок.</p>
+        </div>
+      </div>
+      <div class="popups__close-area" data-popups-close></div>
+    </div>
     <script src="assets/scripts/imask.min.js"></script>
-    <script src="assets/scripts/accordion.min.js"></script>
-    <script src="assets/scripts/swiper-bundle.min.js"></script>
-    <script src="assets/scripts/medium-zoom.min.js"></script>
     <script src="assets/scripts/focus-visible.js"></script>
     <script src="assets/scripts/main.js"></script>
   </body>

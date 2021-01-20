@@ -19,6 +19,13 @@ if (stickBlockList) {
 	}
 }
 
+// https://imask.js.org/
+document.querySelectorAll("input[type='tel']").forEach((item) => {
+	let telMask = IMask(item, {
+		mask: "+{7}(000)000-00-00",
+	});
+});
+
 // menu-primary аккардион меню
 const menuDropControl = document.querySelectorAll("[data-drop-control]");
 

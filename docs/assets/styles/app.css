@@ -265,7 +265,8 @@ body {
     color: #d20a30; }
   .input.active .input__placeholder,
   .input input:focus ~ .input__placeholder,
-  .input textarea:focus ~ .input__placeholder {
+  .input textarea:focus ~ .input__placeholder,
+  .input.input_date > .input__placeholder {
     top: 6px;
     transform: translateY(0);
     font-size: 12px;
@@ -914,7 +915,8 @@ a.chat-header__contact-linc:hover {
 .profile-content__input-wrap {
   display: grid;
   grid-template-columns: 1fr;
-  grid-row-gap: 28px; }
+  grid-row-gap: 28px;
+  margin-bottom: 18px; }
 
 .market-content__wrap {
   grid-column: 2 / -1;
@@ -940,7 +942,9 @@ a.chat-header__contact-linc:hover {
 
 .market-content__iten-img {
   border-radius: 4px;
-  margin-bottom: 6px; }
+  margin-bottom: 6px;
+  -o-object-fit: cover;
+     object-fit: cover; }
 
 .market-content h1,
 .market-content h2,
