@@ -1,14 +1,14 @@
 extends ../template
 
 block variables
-    - var title = 'Обращения'
+    - var title = 'Заказ платных услуг УК'
     - var contactForm = true
 
 block content
     main.main
         .menu-primery--mobile
             button(data-drop-control="drop5").menu-primary__linc.menu-primary__linc_control.active 
-                span Обращения
+                span Заявки на работы
                 svg(width="16", height="16")
                             use(xlink:href="./assets/images/sprite.svg#icon-arrow")
             div(data-drop-container="drop5", data-drop-active="false").menu-primary__drop-list-wrap
@@ -47,11 +47,11 @@ block content
                     div(data-drop-container="drop1", data-drop-active="true").menu-primary__drop-list-wrap
                         ul.menu-primary__drop-list
                             li.menu-primary__drop-item
-                                a(href="index.html").menu-primary__drop-linc.active Обращения
+                                a(href="index.html").menu-primary__drop-linc Обращения
                             li.menu-primary__drop-item
                                 a(href="request.html").menu-primary__drop-linc Заявки на работы
                             li.menu-primary__drop-item
-                                a(href="request-pay.html").menu-primary__drop-linc Заказ платных услуг УК
+                                a(href="request-pay.html").menu-primary__drop-linc.active Заказ платных услуг УК
 
                 li.menu-primary__item
                     a(href="pay-doc.html").menu-primary__linc Платежные документы
@@ -86,8 +86,8 @@ block content
                             span 12:25
                         .request-linc__status
                             svg(width="13", height="13")
-                                use(xlink:href="./assets/images/sprite.svg#icon-trash")
-                            span Отменена
+                                use(xlink:href="./assets/images/sprite.svg#icon-time")
+                            span Новая заявка
                 li.menu-secondary__iten
                     a(tabindex="0", data-tab-control-item="item3", data-name-control="name2").menu-secondary__linc.request-linc
                         span(data-name-get).request-linc__name № 354 Пояснение по расчету
@@ -96,8 +96,8 @@ block content
                             span 12:25
                         .request-linc__status
                             svg(width="13", height="13")
-                                use(xlink:href="./assets/images/sprite.svg#icon-ok")
-                            span Завершена
+                                use(xlink:href="./assets/images/sprite.svg#icon-time")
+                            span Новая заявка
 
         div(data-tab-conteiner="tab-conteiner1").content-wrap
             div(data-tab-conteiner-item="item1").chat
@@ -120,7 +120,7 @@ block content
                             span.chat-header__contact-text Телефон: 
                                 a(href="tel:+79213332211").chat-header__contact-linc +7 921 333 22 11
                     
-                    //- .burger
+                    .burger
                         button.burger__button
                             svg(width="5", height="21").burger__icon
                                 use(xlink:href="./assets/images/sprite.svg#icon-point")
@@ -131,14 +131,9 @@ block content
                                         use(xlink:href="./assets/images/sprite.svg#icon-trash")
                                     span Отменить заказ
                             li.burger__list-item
-                                a(href="#", data-popups-control='popups2').burger__list-linc
+                                a(href="#").burger__list-linc
                                     svg(width="13", height="13")
                                         use(xlink:href="./assets/images/sprite.svg#icon-ok")
-                                    span Завершить заявку
-                            li.burger__list-item
-                                a(href="#", data-popups-control='popups2').burger__list-linc
-                                    svg(width="13", height="13")
-                                        use(xlink:href="./assets/images/sprite.svg#icon-ok_or")
                                     span Оплатить заявку
 
                 .chat-body
@@ -193,14 +188,31 @@ block content
                                 span 12:25
                             .chat-header__status
                                 svg(width="13", height="13")
-                                    use(xlink:href="./assets/images/sprite.svg#icon-trash")
-                                span Отменена
+                                    use(xlink:href="./assets/images/sprite.svg#icon-time")
+                                span Новая заявка
                         
                         .chat-header__contact
                             span.chat-header__contact-text Адрес: 
                                 span.chat-header__contact-linc Дворцовая пл., д.3, кв.1
                             span.chat-header__contact-text Телефон: 
                                 a(href="tel:+79213332211").chat-header__contact-linc +7 921 333 22 11
+
+                    .burger
+                        button.burger__button
+                            svg(width="5", height="21").burger__icon
+                                use(xlink:href="./assets/images/sprite.svg#icon-point")
+                        ul.burger__list
+                            li.burger__list-item
+                                a(href="#").burger__list-linc
+                                    svg(width="13", height="13")
+                                        use(xlink:href="./assets/images/sprite.svg#icon-trash")
+                                    span Отменить заказ
+                            li.burger__list-item
+                                a(href="#").burger__list-linc
+                                    svg(width="13", height="13")
+                                        use(xlink:href="./assets/images/sprite.svg#icon-ok")
+                                    span Оплатить заявку
+
 
                 .chat-body
                     .chat-message
@@ -240,14 +252,31 @@ block content
                                 span 12:25
                             .chat-header__status
                                 svg(width="13", height="13")
-                                    use(xlink:href="./assets/images/sprite.svg#icon-ok")
-                                span Завершена
+                                    use(xlink:href="./assets/images/sprite.svg#icon-time")
+                                span Новая заявка
                         
                         .chat-header__contact
                             span.chat-header__contact-text Адрес: 
                                 span.chat-header__contact-linc Дворцовая пл., д.3, кв.1
                             span.chat-header__contact-text Телефон: 
                                 a(href="tel:+79213332211").chat-header__contact-linc +7 921 333 22 11
+
+                    .burger
+                        button.burger__button
+                            svg(width="5", height="21").burger__icon
+                                use(xlink:href="./assets/images/sprite.svg#icon-point")
+                        ul.burger__list
+                            li.burger__list-item
+                                a(href="#").burger__list-linc
+                                    svg(width="13", height="13")
+                                        use(xlink:href="./assets/images/sprite.svg#icon-trash")
+                                    span Отменить заказ
+                            li.burger__list-item
+                                a(href="#").burger__list-linc
+                                    svg(width="13", height="13")
+                                        use(xlink:href="./assets/images/sprite.svg#icon-ok")
+                                    span Оплатить заявку
+
 
                 .chat-body
                     .chat-message

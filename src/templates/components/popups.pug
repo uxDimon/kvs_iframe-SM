@@ -42,6 +42,38 @@
             
     
     div(data-popups-close).popups__close-area
+
+.popups(data-popups-container='give-evidence1')
+    .popups__container-wrap
+        button(data-popups-close).popups__close
+            svg(width="20", height="20")
+                use(xlink:href="./assets/images/sprite.svg#icon-close")
+
+        .popups__container
+            h2.popups__h Подать показания по л/сч 01000103001
+            form.popups__inputs
+                label.input
+                    input(type="number", name="name")
+                    span.input__placeholder Холодное водоснабжение
+                    span.input__error Пожалуйста, заполните поле
+                label.input
+                    input(type="number", name="name")
+                    span.input__placeholder Горячее водоснабжение
+                    span.input__error Пожалуйста, заполните поле
+                label.input
+                    input(type="number", name="name")
+                    span.input__placeholder Электроэнергия
+                    span.input__error Пожалуйста, заполните поле
+                
+                label.input.input_date
+                    input(type="date", name="name")
+                    span.input__placeholder Дата снятия показаний
+                    span.input__error Пожалуйста, заполните поле
+                
+                button(type="submit").button Отправить
+            
+    
+    div(data-popups-close).popups__close-area
     
 .popups(data-popups-container='popups2')
     .popups__container-wrap
@@ -51,6 +83,18 @@
 
         .popups__container
             h2.popups__h Создайте новое обращение
+            p Ваша заявка №254 от 17.11.2020 была отменена. Вы можете посмотреть ее в разделе закрытых сделок.
+    
+    div(data-popups-close).popups__close-area
+
+.popups(data-popups-container='request1')
+    .popups__container-wrap
+        button(data-popups-close).popups__close
+            svg(width="20", height="20")
+                use(xlink:href="./assets/images/sprite.svg#icon-close")
+
+        .popups__container
+            h2.popups__h Заявку отменена
             p Ваша заявка №254 от 17.11.2020 была отменена. Вы можете посмотреть ее в разделе закрытых сделок.
     
     div(data-popups-close).popups__close-area

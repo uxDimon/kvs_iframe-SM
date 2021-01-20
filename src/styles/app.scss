@@ -330,7 +330,8 @@ body {
 
 	&.active .input__placeholder,
 	& input:focus ~ .input__placeholder,
-	& textarea:focus ~ .input__placeholder {
+	& textarea:focus ~ .input__placeholder,
+	&.input_date > .input__placeholder {
 		top: 6px;
 		transform: translateY(0);
 		font-size: 12px;

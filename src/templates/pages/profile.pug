@@ -16,9 +16,9 @@ block content
                     li.menu-primary__drop-item
                         a(href="index.html").menu-primary__drop-linc Обращения
                     li.menu-primary__drop-item
-                        a(href="index.html").menu-primary__drop-linc Заявки на работы
+                        a(href="request.html").menu-primary__drop-linc Заявки на работы
                     li.menu-primary__drop-item
-                        a(href="index.html").menu-primary__drop-linc Заказ платных услуг УК
+                        a(href="request-pay.html").menu-primary__drop-linc Заказ платных услуг УК
                     li.menu-primary__drop-item
                         a(href="pay-doc.html").menu-primary__drop-linc Платежные документы
                     li.menu-primary__drop-item
@@ -45,9 +45,9 @@ block content
                             li.menu-primary__drop-item
                                 a(href="index.html").menu-primary__drop-linc Обращения
                             li.menu-primary__drop-item
-                                a(href="index.html").menu-primary__drop-linc Заявки на работы
+                                a(href="request.html").menu-primary__drop-linc Заявки на работы
                             li.menu-primary__drop-item
-                                a(href="index.html").menu-primary__drop-linc Заказ платных услуг УК
+                                a(href="request-pay.html").menu-primary__drop-linc Заказ платных услуг УК
 
                 li.menu-primary__item
                     a(href="pay-doc.html").menu-primary__linc Платежные документы
@@ -85,6 +85,40 @@ block content
                             use(xlink:href="./assets/images/sprite.svg#icon-arrow")
 
                     div(data-drop-container="cDrop9", data-drop-active="false").profile-content__content
+                        .profile-content__input-wrap
+                            label.input
+                                input(type="text", name="name", value="Константинопольский")
+                                span.input__placeholder Фамилия собственника
+                                span.input__error Пожалуйста, заполните поле
+                            label.input
+                                input(type="text", name="name", value="Константинопольский")
+                                span.input__placeholder Имя собственника
+                                span.input__error Пожалуйста, заполните поле
+                            label.input
+                                input(type="text", name="name", value="Константинопольский")
+                                span.input__placeholder Отчество собственника
+                                span.input__error Пожалуйста, заполните поле
+                            label.input
+                                input(type="text", name="name", value="example@mail.ru")
+                                span.input__placeholder E-mail
+                                span.input__error Пожалуйста, заполните поле
+                            label.input
+                                input(type="text", name="name", value="Дворцовая пл., д.3, кв.1")
+                                span.input__placeholder Адрес
+                                span.input__error Пожалуйста, заполните поле
+                            label.input
+                                input(type="text", name="name", value="75")
+                                span.input__placeholder Общая площадь помещения (м2)
+                                span.input__error Пожалуйста, заполните поле
+                            label.input
+                                input(type="text", name="name", value="3")
+                                span.input__placeholder Количество комнат
+                                span.input__error Пожалуйста, заполните поле
+                            label.input
+                                input(type="text", name="name", value="3")
+                                span.input__placeholder Количество прописанных
+                                span.input__error Пожалуйста, заполните поле
+                        
                         h3.profile-content__h Информация об автомобилях
                         table.content-table
                             tr.content-table__head
@@ -181,7 +215,6 @@ block content
                                 input(type="text", name="name", value="640")
                                 span.input__placeholder Площадь жилая
                                 span.input__error Пожалуйста, заполните поле
-
 
                 .profile-content__wrap
                     button(data-drop-control="cDrop7", data-stick-head).profile-content__head Об управляющей компании «КВС-Сервис»
