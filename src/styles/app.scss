@@ -474,8 +474,12 @@ body {
 	.button {
 		min-height: 40px;
 	}
-	.button__ghost {
-		background-color: transparent;
-		padding-bottom: 8px;
+	// .button__ghost {
+	// 	background-color: transparent;
+	// 	padding-bottom: 8px;
+	// }
+
+	.button_smol {
+		min-height: 28px;
 	}
 }

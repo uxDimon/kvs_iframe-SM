@@ -68,12 +68,10 @@ block content
                     a(tabindex="0", data-tab-control-item="item1", data-name-control="name2").menu-secondary__linc.profile-linc.active
                         .profile-linc__h(data-name-get) Л/сч 0100103001
                         .profile-linc__text Адрес: Дворцовая пл., д.3, кв.1
-                        button.button.button_smol Редактировать данные
                 li.menu-secondary__item
                     a(tabindex="0", data-tab-control-item="item2", data-name-control="name2").menu-secondary__linc.profile-linc
                         .profile-linc__h(data-name-get) Л/сч 0100103002
                         .profile-linc__text Адрес: Дворцовая пл., д.3, кв.1
-                        button.button.button_smol Редактировать данные
 
         div(data-tab-conteiner="tab-conteiner1", data-stick-block).content-wrap
             div(data-tab-conteiner-item="item1").profile-content
@@ -84,8 +82,8 @@ block content
                         svg(width="16", height="16")
                             use(xlink:href="./assets/images/sprite.svg#icon-arrow")
 
-                    div(data-drop-container="cDrop9", data-drop-active="false").profile-content__content
-                        .profile-content__input-wrap
+                    div(data-drop-container="cDrop9", data-drop-active="true").profile-content__content
+                        //- .profile-content__input-wrap
                             label.input
                                 input(type="text", name="name", value="Константинопольский")
                                 span.input__placeholder Фамилия собственника
@@ -118,75 +116,163 @@ block content
                                 input(type="text", name="name", value="3")
                                 span.input__placeholder Количество прописанных
                                 span.input__error Пожалуйста, заполните поле
+                        table.content-table
+                            tr
+                                td
+                                    div(data-edit-area-input="name1").edit-area__input
+                                        label.input
+                                            input(type="text", name="name", value="Константинопольский")
+                                            span.input__placeholder Фамилия собственника
+                                            span.input__error Пожалуйста, заполните поле
+                                    div(data-edit-area-input-value).edit-area__input-value-wrap
+                                        .edit-area__input-value-name Фамилия собственника
+                                        .edit-area__input-value Константинопольский
+                                td
+                                    button(data-edit-area-button="name1").edit-area
+                                        svg(width="16", height="16")
+                                            use(xlink:href="./assets/images/sprite.svg#icon-pencil")
+                                        span Редактировать
+                                    div(data-edit-area-button-wrap="name1").edit-area__button-wrap
+                                        button(data-edit-area-button-save="name1").button.button_smol Сохранить
+                                        button(data-edit-area-button-cancel="name1").button.button__ghost.button_smol Отменить
+                            tr
+                                td
+                                    div(data-edit-area-input="name2").edit-area__input
+                                        label.input
+                                            input(type="text", name="name", value="Константинопольский")
+                                            span.input__placeholder Имя собственника
+                                            span.input__error Пожалуйста, заполните поле
+                                    div(data-edit-area-input-value).edit-area__input-value-wrap
+                                        .edit-area__input-value-name Имя собственника
+                                        .edit-area__input-value Константинопольский
+                                td
+                                    button(data-edit-area-button="name2").edit-area
+                                        svg(width="16", height="16")
+                                            use(xlink:href="./assets/images/sprite.svg#icon-pencil")
+                                        span Редактировать
+                                    div(data-edit-area-button-wrap="name2").edit-area__button-wrap
+                                        button(data-edit-area-button-save="name2").button.button_smol Сохранить
+                                        button(data-edit-area-button-cancel="name2").button.button__ghost.button_smol Отменить
+                            tr
+                                td
+                                    div(data-edit-area-input="name3").edit-area__input
+                                        label.input
+                                            input(type="text", name="name", value="Константинопольский")
+                                            span.input__placeholder Отчество собственника
+                                            span.input__error Пожалуйста, заполните поле
+                                    div(data-edit-area-input-value).edit-area__input-value-wrap
+                                        .edit-area__input-value-name Отчество собственника
+                                        .edit-area__input-value Константинопольский
+                                td
+                                    button(data-edit-area-button="name3").edit-area
+                                        svg(width="16", height="16")
+                                            use(xlink:href="./assets/images/sprite.svg#icon-pencil")
+                                        span Редактировать
+                                    div(data-edit-area-button-wrap="name3").edit-area__button-wrap
+                                        button(data-edit-area-button-save="name3").button.button_smol Сохранить
+                                        button(data-edit-area-button-cancel="name3").button.button__ghost.button_smol Отменить
+                            tr
+                                td
+                                    div(data-edit-area-input="name4").edit-area__input
+                                        label.input
+                                            input(type="email", name="name", value="example@mail.ru")
+                                            span.input__placeholder E-mail
+                                            span.input__error Пожалуйста, заполните поле
+                                    div(data-edit-area-input-value).edit-area__input-value-wrap
+                                        .edit-area__input-value-name E-mail
+                                        .edit-area__input-value example@mail.ru
+                                td
+                                    button(data-edit-area-button="name4").edit-area
+                                        svg(width="16", height="16")
+                                            use(xlink:href="./assets/images/sprite.svg#icon-pencil")
+                                        span Редактировать
+                                    div(data-edit-area-button-wrap="name4").edit-area__button-wrap
+                                        button(data-edit-area-button-save="name4").button.button_smol Сохранить
+                                        button(data-edit-area-button-cancel="name4").button.button__ghost.button_smol Отменить
+                            tr
+                                td
+                                    div.edit-area__input-value-wrap
+                                        .edit-area__input-value-name Адрес
+                                        .edit-area__input-value Дворцовая пл., д.3, кв.1
+                                td
+                            tr
+                                td
+                                    div.edit-area__input-value-wrap
+                                        .edit-area__input-value-name Общая площадь помещения (м2)
+                                        .edit-area__input-value 75
+                                td
+                            tr
+                                td
+                                    div.edit-area__input-value-wrap
+                                        .edit-area__input-value-name Количество комнат
+                                        .edit-area__input-value 3
+                                td
+                            tr
+                                td
+                                    div.edit-area__input-value-wrap
+                                        .edit-area__input-value-name Количество прописанных
+                                        .edit-area__input-value 3
+                                td
                         
                         h3.profile-content__h Информация об автомобилях
                         table.content-table
                             tr.content-table__head
                                 th номер
                                 th марка
+                                th
                             tr
-                                td С 320 АВ
-                                td Honda Fit
+                                td
+                                    div(data-edit-area-input="area1").edit-area__input
+                                        label.input
+                                            input(type="text", name="name", value="С 320 АВ")
+                                            span.input__placeholder Номер
+                                            span.input__error Пожалуйста, заполните поле
+                                    div(data-edit-area-input-value).edit-area__input-value-wrap
+                                        .edit-area__input-value С 320 АВ
+                                td
+                                    div(data-edit-area-input="area1").edit-area__input
+                                        label.input
+                                            input(type="text", name="name", value="Honda Fit")
+                                            span.input__placeholder Марка
+                                            span.input__error Пожалуйста, заполните поле
+                                    div(data-edit-area-input-value).edit-area__input-value-wrap
+                                        .edit-area__input-value Honda Fit
+                                td
+                                    button(data-edit-area-button="area1").edit-area
+                                        svg(width="16", height="16")
+                                            use(xlink:href="./assets/images/sprite.svg#icon-pencil")
+                                        span Редактировать
+                                    div(data-edit-area-button-wrap="area1").edit-area__button-wrap
+                                        button(data-edit-area-button-save="area1").button.button_smol Сохранить
+                                        button(data-edit-area-button-cancel="area1").button.button__ghost.button_smol Отменить
                             tr
-                                td О 758 ОР
-                                td Toyota Corona
-                            tr
-                                td О 758 ОР
-                                td Toyota Corona
-                            tr
-                                td О 758 ОР
-                                td Toyota Corona
-                            tr
-                                td О 758 ОР
-                                td Toyota Corona
-                            tr
-                                td О 758 ОР
-                                td Toyota Corona
-                            tr
-                                td О 758 ОР
-                                td Toyota Corona
-                            tr
-                                td О 758 ОР
-                                td Toyota Corona
-                            tr
-                                td О 758 ОР
-                                td Toyota Corona
-                            tr
-                                td О 758 ОР
-                                td Toyota Corona
-                            tr
-                                td О 758 ОР
-                                td Toyota Corona
-                            tr
-                                td О 758 ОР
-                                td Toyota Corona
-                            tr
-                                td О 758 ОР
-                                td Toyota Corona
-                            tr
-                                td О 758 ОР
-                                td Toyota Corona
-                            tr
-                                td О 758 ОР
-                                td Toyota Corona
-                            tr
-                                td О 758 ОР
-                                td Toyota Corona
-                            tr
-                                td О 758 ОР
-                                td Toyota Corona
-                            tr
-                                td О 758 ОР
-                                td Toyota Corona
-                            tr
-                                td О 758 ОР
-                                td Toyota Corona
-                            tr
-                                td О 758 ОР
-                                td Toyota Corona
-                            tr
-                                td О 758 ОР
-                                td Toyota Corona
+                                td
+                                    div(data-edit-area-input="area2").edit-area__input
+                                        label.input
+                                            input(type="text", name="name", value="О 758 ОР")
+                                            span.input__placeholder Номер
+                                            span.input__error Пожалуйста, заполните поле
+                                    div(data-edit-area-input-value).edit-area__input-value-wrap
+                                        .edit-area__input-value О 758 ОР
+                                    
+
+                                td
+                                    div(data-edit-area-input="area2").edit-area__input
+                                        label.input
+                                            input(type="text", name="name", value="Toyota Corona")
+                                            span.input__placeholder Марка
+                                            span.input__error Пожалуйста, заполните поле
+                                    div(data-edit-area-input-value).edit-area__input-value-wrap
+                                        .edit-area__input-value Toyota Corona
+                                
+                                td
+                                    button(data-edit-area-button="area2").edit-area
+                                        svg(width="16", height="16")
+                                            use(xlink:href="./assets/images/sprite.svg#icon-pencil")
+                                        span Редактировать
+                                    div(data-edit-area-button-wrap="area2").edit-area__button-wrap
+                                        button(data-edit-area-button-save="area2").button.button_smol Сохранить
+                                        button(data-edit-area-button-cancel="area2").button.button__ghost.button_smol Отменить
                 
                 .profile-content__wrap
                     button(data-drop-control="cDrop8", data-stick-head).profile-content__head О доме Дворцовая пл., д.3

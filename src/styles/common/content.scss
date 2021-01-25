@@ -309,7 +309,11 @@ a.chat-header__contact-linc:hover {
 	}
 
 	td {
-		padding: 10px 25px;
+		padding: 16px 25px;
+	}
+
+	.burger_td {
+		padding: 2px 25px;
 	}
 }
 
@@ -329,6 +333,77 @@ a.chat-header__contact-linc:hover {
 
 .burger_td {
 	text-align: right;
+}
+
+.edit-area {
+	display: flex;
+	align-items: center;
+	border: none;
+	padding: 0;
+	margin: 0;
+	background: transparent;
+	cursor: pointer;
+	font-size: 14px;
+	line-height: 18px;
+	color: $color-Grey5;
+	text-align: right;
+	margin-left: auto;
+
+	svg {
+		margin-right: 10px;
+	}
+
+	&.active {
+		display: none;
+	}
+}
+
+.edit-area__input {
+	display: none;
+	margin: -10px 0 -10px -12px;
+
+	&.active {
+		display: block;
+	}
+
+	.input input {
+		min-width: auto;
+	}
+}
+
+.edit-area__input-value-wrap {
+	margin: -10px 0;
+	min-height: 48px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	&.active {
+		display: none;
+	}
+}
+
+.edit-area__input-value-name {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 12px;
+	letter-spacing: 0.02em;
+	color: $color-Grey5;
+}
+
+.edit-area__input-value {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.edit-area__button-wrap {
+	display: none;
+	grid-auto-flow: column;
+	grid-column-gap: 10px;
+
+	&.active {
+		display: grid;
+	}
 }
 
 // give-evidence
@@ -442,7 +517,11 @@ a.chat-header__contact-linc:hover {
 	font-weight: bold;
 	font-size: 16px;
 	line-height: 20px;
-	margin: 0 0 18px 0;
+	margin: 26px 0 18px 0;
+
+	&:first-child {
+		margin-top: 0;
+	}
 }
 
 .profile-content__input-wrap {
