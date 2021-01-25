@@ -17,7 +17,8 @@
   box-sizing: border-box;
   outline-offset: 4px; }
   *::-webkit-scrollbar {
-    width: 6px; }
+    width: 6px;
+    height: 6px; }
   *::-webkit-scrollbar-thumb {
     background-color: #dcdfe1; }
   *::-webkit-scrollbar-thumb:hover {
@@ -448,7 +449,7 @@ body {
   .menu-primery--mobile {
     position: relative;
     display: block;
-    z-index: 4; }
+    z-index: 13; }
     .menu-primery--mobile .menu-primary__linc {
       min-height: 50px; }
     .menu-primery--mobile .menu-primary__linc.active {
@@ -578,8 +579,7 @@ body {
 .profile-linc__text {
   font-size: 14px;
   line-height: 18px;
-  color: #68717b;
-  margin-bottom: 16px; }
+  color: #68717b; }
 
 .menu-secondary__btn {
   display: none; }
