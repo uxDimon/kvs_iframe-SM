@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Маркетплейс</title>
+    <title>Регистрация. Шаг 1</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,60 +10,35 @@
     <link rel="stylesheet" type="text/css" href="assets/styles/app.css">
   </head>
   <body>
-    <main class="main">
-      <div class="menu-primery--mobile">
-        <button class="menu-primary__linc menu-primary__linc_control active" data-drop-control="drop5"> <span>Маркетплейс</span>
-          <svg width="16" height="16">
-            <use xlink:href="./assets/images/sprite.svg#icon-arrow"></use>
+    <main class="login">
+      <div class="login-left">
+        <h1 class="login-left__h">Личный кабинет коммунальных услуг</h1>
+        <div class="login-left__img">
+          <svg width="530" height="430">
+            <use xlink:href="./assets/images/sprite.svg#icon-login"></use>
           </svg>
-        </button>
-        <div class="menu-primary__drop-list-wrap" data-drop-container="drop5" data-drop-active="false">
-          <ul class="menu-primary__drop-list">
-            <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="index.html">Обращения</a></li>
-            <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="request.html">Заявки на работы</a></li>
-            <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="request-pay.html">Заказ платных услуг УК</a></li>
-            <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="pay-doc.html">Платежные документы</a></li>
-            <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="give-evidence.html">Подать показания</a></li>
-            <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="profile.html">Профиль собственника</a></li>
-            <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="marker.html">Маркетплейс</a></li>
-          </ul>
         </div>
       </div>
-      <header class="header"> 
-        <div class="header__top"><a class="market-link-back" href="marker.html">
-            <svg width="16" height="16">
-              <use xlink:href="./assets/images/sprite.svg#icon-arrow"></use>
-            </svg><span>Назад</span></a></div>
-      </header>
-      <nav class="menu-primary">
-        <ul class="menu-primary__list">
-          <li class="menu-primary__item">
-            <button class="menu-primary__linc menu-primary__linc_control" data-drop-control="drop1">Диспетчеризация
-              <svg width="16" height="16">
-                <use xlink:href="./assets/images/sprite.svg#icon-arrow"></use>
-              </svg>
-            </button>
-            <div class="menu-primary__drop-list-wrap" data-drop-container="drop1" data-drop-active="false">
-              <ul class="menu-primary__drop-list">
-                <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="index.html">Обращения</a></li>
-                <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="request.html">Заявки на работы</a></li>
-                <li class="menu-primary__drop-item"><a class="menu-primary__drop-linc" href="request-pay.html">Заказ платных услуг УК</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="menu-primary__item"><a class="menu-primary__linc" href="pay-doc.html">Платежные документы</a></li>
-          <li class="menu-primary__item"><a class="menu-primary__linc" href="give-evidence.html">Подать показания</a></li>
-          <li class="menu-primary__item"><a class="menu-primary__linc" href="profile.html">Профиль собственника</a></li>
-          <li class="menu-primary__item"><a class="menu-primary__linc active" href="marker.html">Маркетплейс</a></li>
-        </ul>
-      </nav>
-      <div class="market-content__wrap">
-        <div class="market-content">
-          <h2>Прокат велосипедов</h2>
-          <p>Внимание жителей домов управляющей компании «КВС-Сервис»!</p>
-          <p>В течение всего лета с 01.06.202 по 31.08.2020 для вас действует скидка 5% на прокат велосипедов и самокатов по промокоду</p>
-          <p>KVSSERVIS</p>
-          <p>Скажите его на кассе и получите скидку 5%!</p><img class="market-content__img" src="./assets/images/img-2.jpg" alt="Прокат велосипедов" width="384" height="215">
+      <div class="login-right">
+        <div class="login-right__regist-h">
+          <h2 class="login-right__h">Регистрация</h2><span class="login-right__regist-step">Шаг 1</span>
+        </div>
+        <form class="login-right__form">
+          <label class="input">
+            <input type="tel" name="name"><span class="input__placeholder">Телефон</span><span class="input__error">Пожалуйста, заполните поле</span>
+          </label>
+          <label class="input">
+            <input type="text" name="name"><span class="input__placeholder">ФИО</span><span class="input__error">Пожалуйста, заполните поле</span>
+          </label>
+          <button class="button login-right__form-button" type="submit">Далее</button>
+          <div class="login-right__pers-data-wrap">
+            <label class="control control_checkbox">
+              <input class="control__input" type="checkbox" name="name"><span class="control-text">Согласие на обработку персональных данных</span>
+            </label><a class="login-right__linc login-right__linc_gray" href="#">Политика обработки персональных данных</a>
+          </div>
+        </form>
+        <div class="login-right__problem-wrap">
+          <div class="login-right__problem">Возникли проблемы с личным кабинетом?</div><a class="login-right__linc" href="#">Напишите нам</a>
         </div>
       </div>
     </main>

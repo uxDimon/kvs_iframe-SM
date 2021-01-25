@@ -32,7 +32,7 @@
       <header class="header"> 
         <div class="header__top">
           <h2 class="header__h">Профиль</h2>
-          <button class="button button__ghost">Подключить лицевой счет</button>
+          <button class="button button__ghost" data-popups-control="popups3">Подключить лицевой счет</button>
           <button class="button button__ghost">Выйти из личного кабинета</button>
         </div>
       </header>
@@ -67,12 +67,10 @@
         <ul class="menu-secondary__list" data-drop-container="drop3" data-drop-active="false">
           <li class="menu-secondary__item"><a class="menu-secondary__linc profile-linc active" tabindex="0" data-tab-control-item="item1" data-name-control="name2">
               <div class="profile-linc__h" data-name-get>Л/сч 0100103001</div>
-              <div class="profile-linc__text">Адрес: Дворцовая пл., д.3, кв.1</div>
-              <button class="button button_smol">Редактировать данные</button></a></li>
+              <div class="profile-linc__text">Адрес: Дворцовая пл., д.3, кв.1</div></a></li>
           <li class="menu-secondary__item"><a class="menu-secondary__linc profile-linc" tabindex="0" data-tab-control-item="item2" data-name-control="name2">
               <div class="profile-linc__h" data-name-get>Л/сч 0100103002</div>
-              <div class="profile-linc__text">Адрес: Дворцовая пл., д.3, кв.1</div>
-              <button class="button button_smol">Редактировать данные</button></a></li>
+              <div class="profile-linc__text">Адрес: Дворцовая пл., д.3, кв.1</div></a></li>
         </ul>
       </div>
       <div class="content-wrap" data-tab-conteiner="tab-conteiner1" data-stick-block>
@@ -83,122 +81,213 @@
                 <use xlink:href="./assets/images/sprite.svg#icon-arrow"></use>
               </svg>
             </button>
-            <div class="profile-content__content" data-drop-container="cDrop9" data-drop-active="false">
-              <div class="profile-content__input-wrap">
-                <label class="input">
-                  <input type="text" name="name" value="Константинопольский"><span class="input__placeholder">Фамилия собственника</span><span class="input__error">Пожалуйста, заполните поле</span>
-                </label>
-                <label class="input">
-                  <input type="text" name="name" value="Константинопольский"><span class="input__placeholder">Имя собственника</span><span class="input__error">Пожалуйста, заполните поле</span>
-                </label>
-                <label class="input">
-                  <input type="text" name="name" value="Константинопольский"><span class="input__placeholder">Отчество собственника</span><span class="input__error">Пожалуйста, заполните поле</span>
-                </label>
-                <label class="input">
-                  <input type="text" name="name" value="example@mail.ru"><span class="input__placeholder">E-mail</span><span class="input__error">Пожалуйста, заполните поле</span>
-                </label>
-                <label class="input">
-                  <input type="text" name="name" value="Дворцовая пл., д.3, кв.1"><span class="input__placeholder">Адрес</span><span class="input__error">Пожалуйста, заполните поле</span>
-                </label>
-                <label class="input">
-                  <input type="text" name="name" value="75"><span class="input__placeholder">Общая площадь помещения (м2)</span><span class="input__error">Пожалуйста, заполните поле</span>
-                </label>
-                <label class="input">
-                  <input type="text" name="name" value="3"><span class="input__placeholder">Количество комнат</span><span class="input__error">Пожалуйста, заполните поле</span>
-                </label>
-                <label class="input">
-                  <input type="text" name="name" value="3"><span class="input__placeholder">Количество прописанных</span><span class="input__error">Пожалуйста, заполните поле</span>
-                </label>
-              </div>
+            <div class="profile-content__content" data-drop-container="cDrop9" data-drop-active="true">
+              <table class="content-table">
+                <tr>
+                  <td>
+                    <div class="edit-area__input" data-edit-area-input="name1">
+                      <label class="input">
+                        <input type="text" name="name" value="Константинопольский"><span class="input__placeholder">Фамилия собственника</span><span class="input__error">Пожалуйста, заполните поле</span>
+                      </label>
+                    </div>
+                    <div class="edit-area__input-value-wrap" data-edit-area-input-value>
+                      <div class="edit-area__input-value-name">Фамилия собственника</div>
+                      <div class="edit-area__input-value">Константинопольский</div>
+                    </div>
+                  </td>
+                  <td>
+                    <button class="edit-area" data-edit-area-button="name1">
+                      <svg width="16" height="16">
+                        <use xlink:href="./assets/images/sprite.svg#icon-pencil"></use>
+                      </svg><span>Редактировать</span>
+                    </button>
+                    <div class="edit-area__button-wrap" data-edit-area-button-wrap="name1">
+                      <button class="button button_smol" data-edit-area-button-save="name1">Сохранить</button>
+                      <button class="button button__ghost button_smol" data-edit-area-button-cancel="name1">Отменить</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="edit-area__input" data-edit-area-input="name2">
+                      <label class="input">
+                        <input type="text" name="name" value="Константинопольский"><span class="input__placeholder">Имя собственника</span><span class="input__error">Пожалуйста, заполните поле</span>
+                      </label>
+                    </div>
+                    <div class="edit-area__input-value-wrap" data-edit-area-input-value>
+                      <div class="edit-area__input-value-name">Имя собственника</div>
+                      <div class="edit-area__input-value">Константинопольский</div>
+                    </div>
+                  </td>
+                  <td>
+                    <button class="edit-area" data-edit-area-button="name2">
+                      <svg width="16" height="16">
+                        <use xlink:href="./assets/images/sprite.svg#icon-pencil"></use>
+                      </svg><span>Редактировать</span>
+                    </button>
+                    <div class="edit-area__button-wrap" data-edit-area-button-wrap="name2">
+                      <button class="button button_smol" data-edit-area-button-save="name2">Сохранить</button>
+                      <button class="button button__ghost button_smol" data-edit-area-button-cancel="name2">Отменить</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="edit-area__input" data-edit-area-input="name3">
+                      <label class="input">
+                        <input type="text" name="name" value="Константинопольский"><span class="input__placeholder">Отчество собственника</span><span class="input__error">Пожалуйста, заполните поле</span>
+                      </label>
+                    </div>
+                    <div class="edit-area__input-value-wrap" data-edit-area-input-value>
+                      <div class="edit-area__input-value-name">Отчество собственника</div>
+                      <div class="edit-area__input-value">Константинопольский</div>
+                    </div>
+                  </td>
+                  <td>
+                    <button class="edit-area" data-edit-area-button="name3">
+                      <svg width="16" height="16">
+                        <use xlink:href="./assets/images/sprite.svg#icon-pencil"></use>
+                      </svg><span>Редактировать</span>
+                    </button>
+                    <div class="edit-area__button-wrap" data-edit-area-button-wrap="name3">
+                      <button class="button button_smol" data-edit-area-button-save="name3">Сохранить</button>
+                      <button class="button button__ghost button_smol" data-edit-area-button-cancel="name3">Отменить</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="edit-area__input" data-edit-area-input="name4">
+                      <label class="input">
+                        <input type="email" name="name" value="example@mail.ru"><span class="input__placeholder">E-mail</span><span class="input__error">Пожалуйста, заполните поле</span>
+                      </label>
+                    </div>
+                    <div class="edit-area__input-value-wrap" data-edit-area-input-value>
+                      <div class="edit-area__input-value-name">E-mail</div>
+                      <div class="edit-area__input-value">example@mail.ru</div>
+                    </div>
+                  </td>
+                  <td>
+                    <button class="edit-area" data-edit-area-button="name4">
+                      <svg width="16" height="16">
+                        <use xlink:href="./assets/images/sprite.svg#icon-pencil"></use>
+                      </svg><span>Редактировать</span>
+                    </button>
+                    <div class="edit-area__button-wrap" data-edit-area-button-wrap="name4">
+                      <button class="button button_smol" data-edit-area-button-save="name4">Сохранить</button>
+                      <button class="button button__ghost button_smol" data-edit-area-button-cancel="name4">Отменить</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="edit-area__input-value-wrap">
+                      <div class="edit-area__input-value-name">Адрес</div>
+                      <div class="edit-area__input-value">Дворцовая пл., д.3, кв.1</div>
+                    </div>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="edit-area__input-value-wrap">
+                      <div class="edit-area__input-value-name">Общая площадь помещения (м2)</div>
+                      <div class="edit-area__input-value">75</div>
+                    </div>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="edit-area__input-value-wrap">
+                      <div class="edit-area__input-value-name">Количество комнат</div>
+                      <div class="edit-area__input-value">3</div>
+                    </div>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="edit-area__input-value-wrap">
+                      <div class="edit-area__input-value-name">Количество прописанных</div>
+                      <div class="edit-area__input-value">3</div>
+                    </div>
+                  </td>
+                  <td></td>
+                </tr>
+              </table>
               <h3 class="profile-content__h">Информация об автомобилях</h3>
               <table class="content-table">
                 <tr class="content-table__head">
                   <th>номер</th>
                   <th>марка</th>
+                  <th></th>
                 </tr>
                 <tr>
-                  <td>С 320 АВ</td>
-                  <td>Honda Fit</td>
+                  <td>
+                    <div class="edit-area__input" data-edit-area-input="area1">
+                      <label class="input">
+                        <input type="text" name="name" value="С 320 АВ"><span class="input__placeholder">Номер</span><span class="input__error">Пожалуйста, заполните поле</span>
+                      </label>
+                    </div>
+                    <div class="edit-area__input-value-wrap" data-edit-area-input-value>
+                      <div class="edit-area__input-value">С 320 АВ</div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="edit-area__input" data-edit-area-input="area1">
+                      <label class="input">
+                        <input type="text" name="name" value="Honda Fit"><span class="input__placeholder">Марка</span><span class="input__error">Пожалуйста, заполните поле</span>
+                      </label>
+                    </div>
+                    <div class="edit-area__input-value-wrap" data-edit-area-input-value>
+                      <div class="edit-area__input-value">Honda Fit</div>
+                    </div>
+                  </td>
+                  <td>
+                    <button class="edit-area" data-edit-area-button="area1">
+                      <svg width="16" height="16">
+                        <use xlink:href="./assets/images/sprite.svg#icon-pencil"></use>
+                      </svg><span>Редактировать</span>
+                    </button>
+                    <div class="edit-area__button-wrap" data-edit-area-button-wrap="area1">
+                      <button class="button button_smol" data-edit-area-button-save="area1">Сохранить</button>
+                      <button class="button button__ghost button_smol" data-edit-area-button-cancel="area1">Отменить</button>
+                    </div>
+                  </td>
                 </tr>
                 <tr>
-                  <td>О 758 ОР</td>
-                  <td>Toyota Corona</td>
-                </tr>
-                <tr>
-                  <td>О 758 ОР</td>
-                  <td>Toyota Corona</td>
-                </tr>
-                <tr>
-                  <td>О 758 ОР</td>
-                  <td>Toyota Corona</td>
-                </tr>
-                <tr>
-                  <td>О 758 ОР</td>
-                  <td>Toyota Corona</td>
-                </tr>
-                <tr>
-                  <td>О 758 ОР</td>
-                  <td>Toyota Corona</td>
-                </tr>
-                <tr>
-                  <td>О 758 ОР</td>
-                  <td>Toyota Corona</td>
-                </tr>
-                <tr>
-                  <td>О 758 ОР</td>
-                  <td>Toyota Corona</td>
-                </tr>
-                <tr>
-                  <td>О 758 ОР</td>
-                  <td>Toyota Corona</td>
-                </tr>
-                <tr>
-                  <td>О 758 ОР</td>
-                  <td>Toyota Corona</td>
-                </tr>
-                <tr>
-                  <td>О 758 ОР</td>
-                  <td>Toyota Corona</td>
-                </tr>
-                <tr>
-                  <td>О 758 ОР</td>
-                  <td>Toyota Corona</td>
-                </tr>
-                <tr>
-                  <td>О 758 ОР</td>
-                  <td>Toyota Corona</td>
-                </tr>
-                <tr>
-                  <td>О 758 ОР</td>
-                  <td>Toyota Corona</td>
-                </tr>
-                <tr>
-                  <td>О 758 ОР</td>
-                  <td>Toyota Corona</td>
-                </tr>
-                <tr>
-                  <td>О 758 ОР</td>
-                  <td>Toyota Corona</td>
-                </tr>
-                <tr>
-                  <td>О 758 ОР</td>
-                  <td>Toyota Corona</td>
-                </tr>
-                <tr>
-                  <td>О 758 ОР</td>
-                  <td>Toyota Corona</td>
-                </tr>
-                <tr>
-                  <td>О 758 ОР</td>
-                  <td>Toyota Corona</td>
-                </tr>
-                <tr>
-                  <td>О 758 ОР</td>
-                  <td>Toyota Corona</td>
-                </tr>
-                <tr>
-                  <td>О 758 ОР</td>
-                  <td>Toyota Corona</td>
+                  <td>
+                    <div class="edit-area__input" data-edit-area-input="area2">
+                      <label class="input">
+                        <input type="text" name="name" value="О 758 ОР"><span class="input__placeholder">Номер</span><span class="input__error">Пожалуйста, заполните поле</span>
+                      </label>
+                    </div>
+                    <div class="edit-area__input-value-wrap" data-edit-area-input-value>
+                      <div class="edit-area__input-value">О 758 ОР</div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="edit-area__input" data-edit-area-input="area2">
+                      <label class="input">
+                        <input type="text" name="name" value="Toyota Corona"><span class="input__placeholder">Марка</span><span class="input__error">Пожалуйста, заполните поле</span>
+                      </label>
+                    </div>
+                    <div class="edit-area__input-value-wrap" data-edit-area-input-value>
+                      <div class="edit-area__input-value">Toyota Corona</div>
+                    </div>
+                  </td>
+                  <td>
+                    <button class="edit-area" data-edit-area-button="area2">
+                      <svg width="16" height="16">
+                        <use xlink:href="./assets/images/sprite.svg#icon-pencil"></use>
+                      </svg><span>Редактировать</span>
+                    </button>
+                    <div class="edit-area__button-wrap" data-edit-area-button-wrap="area2">
+                      <button class="button button_smol" data-edit-area-button-save="area2">Сохранить</button>
+                      <button class="button button__ghost button_smol" data-edit-area-button-cancel="area2">Отменить</button>
+                    </div>
+                  </td>
                 </tr>
               </table>
             </div>
@@ -394,6 +483,26 @@
         <div class="popups__container">
           <h2 class="popups__h">Заявку отменена</h2>
           <p>Ваша заявка №254 от 17.11.2020 была отменена. Вы можете посмотреть ее в разделе закрытых сделок.</p>
+        </div>
+      </div>
+      <div class="popups__close-area" data-popups-close></div>
+    </div>
+    <div class="popups" data-popups-container="popups3">
+      <div class="popups__container-wrap">
+        <button class="popups__close" data-popups-close>
+          <svg width="20" height="20">
+            <use xlink:href="./assets/images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="popups__container">
+          <h2 class="popups__h">Добавить лицевой счет</h2>
+          <p>Введите номер лицевого счета</p>
+          <form class="popups__inputs">
+            <label class="input">
+              <input type="number" name="name"><span class="input__placeholder">Номерсчета</span><span class="input__error">Пожалуйста, заполните поле</span>
+            </label>
+            <button class="button" type="submit">Подключить</button>
+          </form>
         </div>
       </div>
       <div class="popups__close-area" data-popups-close></div>

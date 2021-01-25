@@ -223,3 +223,42 @@ if (nameControl) {
 		}
 	}
 }
+
+// edit-area
+const editAreaList = document.querySelectorAll("[data-edit-area-button]");
+if (editAreaList) {
+	for (const editAreaButton of editAreaList) {
+		const editAreaButtonWrap = document.querySelector(`[data-edit-area-button-wrap=${editAreaButton.dataset.editAreaButton}]`);
+		const editAreaInputList = document.querySelectorAll(`[data-edit-area-input=${editAreaButton.dataset.editAreaButton}]`);
+		const editAreaButtonSave = document.querySelector(`[data-edit-area-button-save=${editAreaButton.dataset.editAreaButton}]`);
+		const editAreaButtonCancel = document.querySelector(`[data-edit-area-button-cancel=${editAreaButton.dataset.editAreaButton}]`);
+
+		function toggleClass() {
+			editAreaButton.classList.toggle(activeClass);
+			editAreaButtonWrap.classList.toggle(activeClass);
+			for (const editAreaInput of editAreaInputList) {
+				const editAreaInputValue = editAreaInput.parentElement.querySelector("[data-edit-area-input-value]");
+				editAreaInput.classList.toggle(activeClass);
+				editAreaInputValue.classList.toggle(activeClass);
+			}
+		}
+
+		editAreaButton.addEventListener("click", () => {
+			toggleClass();
+		});
+
+		editAreaButtonSave.addEventListener("click", () => {
+			for (const editAreaInput of editAreaInputList) {
+				const editAreaInputInput = editAreaInput.querySelector(".input > input");
+				const editAreaInputValue = editAreaInput.parentElement.querySelector("[data-edit-area-input-value] .edit-area__input-value");
+
+				editAreaInputValue.innerHTML = editAreaInputInput.value;
+			}
+			toggleClass();
+		});
+
+		editAreaButtonCancel.addEventListener("click", () => {
+			toggleClass();
+		});
+	}
+}
