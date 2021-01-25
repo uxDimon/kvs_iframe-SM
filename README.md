@@ -1,4 +1,4 @@
-# Демо https://uxdimon.github.io/kvs_iframe-SM/map.html
+# Демо https://uxdimon.github.io/kvs_iframe-SM/map1.html
 
 ## Использование
 
