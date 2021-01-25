@@ -482,6 +482,9 @@ a.chat-header__contact-linc:hover {
 	transition: background-color 200ms ease-in-out 0ms;
 	z-index: 10;
 
+	position: sticky;
+	top: 0;
+
 	&:hover {
 		background-color: $color-Grey2;
 	}

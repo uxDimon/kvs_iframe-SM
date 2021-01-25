@@ -3,22 +3,6 @@ const activeClass = "active";
 const focusClass = "_focus";
 const hideClass = "_hide";
 
-// stick
-const stickBlockList = document.querySelectorAll("[data-stick-block]");
-
-if (stickBlockList) {
-	for (const stickBlock of stickBlockList) {
-		const stickHeadList = stickBlock.querySelectorAll("[data-stick-head]");
-		for (const stickHead of stickHeadList) {
-			stickBlock.addEventListener("scroll", () => {
-				if (stickHead.parentElement.scrollHeight + stickHead.parentElement.offsetTop - stickHead.scrollHeight > stickBlock.scrollTop && stickBlock.scrollTop > stickHead.parentElement.offsetTop) {
-					stickHead.style.transform = `translateY(${stickBlock.scrollTop - stickHead.parentElement.offsetTop}px)`;
-				}
-			});
-		}
-	}
-}
-
 // https://imask.js.org/
 document.querySelectorAll("input[type='tel']").forEach((item) => {
 	let telMask = IMask(item, {

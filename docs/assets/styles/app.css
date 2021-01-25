@@ -1145,7 +1145,10 @@ a.chat-header__contact-linc:hover {
   cursor: pointer;
   position: relative;
   transition: background-color 200ms ease-in-out 0ms;
-  z-index: 10; }
+  z-index: 10;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0; }
   .profile-content__head:hover {
     background-color: #ebedee; }
   .profile-content__head svg {
