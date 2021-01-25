@@ -1,0 +1,36 @@
+extends ../template
+
+block variables
+    - var title = 'Регистрация. Шаг 2'
+    - var contactForm = true
+
+block content
+    main.login
+        .login-left
+            h1.login-left__h Личный кабинет коммунальных услуг
+            .login-left__img
+                svg(width="530", height="430")
+                    use(xlink:href="./assets/images/sprite.svg#icon-login")
+        .login-right
+            .login-right__regist-h
+                h2.login-right__h Регистрация
+                span.login-right__regist-step Шаг 2
+
+            form.login-right__form
+                label.input
+                    input(type="text", name="name")
+                    span.input__placeholder Код доступа
+                    span.input__error Пожалуйста, заполните поле
+                
+                .login-right__form-text Чтобы получить код доступа нажмите «Запросить звонок с кодом». Вам позвонит робот на номер +7 (913) 227 01 84 и сообщит код.
+                
+                .login-right__form-button-wrap
+                    button.button Запросить код доступа
+                    button(type="submit", disabled).button Далее
+                            
+            .login-right__problem-wrap
+                
+                .login-right__problem Возникли проблемы?
+                    a(href="#").login-right__linc.login-right__problem-linc Напишите нам
+
+                a(href="#").login-right__linc Войти

@@ -1,0 +1,24 @@
+extends ../template
+
+block variables
+    - var title = 'Карта'
+    - var contactForm = true
+
+block content
+    main.login
+        .login-left
+            h1.login-left__h Навигация по верески
+            .login-left__img
+                svg(width="530", height="430")
+                    use(xlink:href="./assets/images/sprite.svg#icon-login")
+        .login-right
+            ul.map-list
+                li
+                    a(href="logIn.html") Вход по номеру телефона
+                li
+                    a(href="regist-1.html") Регистрация 1
+                li
+                    a(href="regist-2.html") Регистрация 2
+                li
+                    a(href="regist-3.html") Регистрация 3
+

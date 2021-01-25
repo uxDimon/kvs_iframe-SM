@@ -1,0 +1,36 @@
+extends ../template
+
+block variables
+    - var title = 'Вход по номеру телефона'
+    - var contactForm = true
+
+block content
+    main.login
+        .login-left
+            h1.login-left__h Личный кабинет коммунальных услуг
+            .login-left__img
+                svg(width="530", height="430")
+                    use(xlink:href="./assets/images/sprite.svg#icon-login")
+        .login-right
+            .login-right__text-wrap
+                h2.login-right__h Вход по номеру телефона
+                p.login-right__text Если Вы ранее входили по № лицевого счета или логину, зарегестрируйтесь по номеру телефона и подключите свой лицевой счет
+            form.login-right__form
+                label.input
+                    input(type="tel", name="name")
+                    span.input__placeholder Телефон
+                    span.input__error Пожалуйста, заполните поле
+                label.input
+                    input(type="password", name="name")
+                    span.input__placeholder Пароль
+                    span.input__error Пожалуйста, заполните поле
+                
+                button(type="submit").button.login-right__form-button Войти
+            .login-right__info-linc
+                a(href="#").login-right__linc.login-right__linc_gray Забыли пароль?
+                a(href="#").login-right__linc Зарегистрироваться
+            
+            .login-right__problem-wrap
+                .login-right__problem Возникли проблемы с личным кабинетом?
+
+                a(href="#").login-right__linc Напишите нам

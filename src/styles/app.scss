@@ -107,6 +107,13 @@ body {
 	padding: 0 12px;
 }
 
+.button:disabled {
+	cursor: default;
+	background-color: $color-Grey2;
+	border-color: $color-Grey2;
+	color: $color-Grey4;
+}
+
 // burger
 .burger {
 	position: relative;
@@ -360,8 +367,80 @@ body {
 	}
 }
 
+// control
+.control {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.control__input {
+	margin-right: 8px;
+	width: 20px;
+	height: 20px;
+	appearance: none;
+}
+
+.control_checkbox .control__input {
+	position: relative;
+	flex-shrink: 0;
+
+	&::before,
+	&::after {
+		display: block;
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		transition: 100ms ease-in-out 0ms;
+		cursor: pointer;
+	}
+
+	&::before {
+		background-color: $color-Grey2;
+		box-shadow: inset 1px 2px 6px rgba(0, 0, 0, 0.04);
+		border-radius: 2px;
+		transition-property: background-color;
+		z-index: 1;
+	}
+
+	&::after {
+		background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.5 9.5L8 13L16 5' stroke='%23ffffff' stroke-width='2'/%3E%3C/svg%3E");
+		background-size: 20px;
+		background-color: transparent;
+		opacity: 0;
+		transition-property: opacity;
+		z-index: 2;
+	}
+
+	&:checked {
+		&::before {
+			background-color: $color-Orange;
+		}
+
+		&::after {
+			opacity: 1;
+		}
+	}
+}
+
+// Удоли
+.map-list {
+	color: $color-Orange;
+	font-size: 18px;
+	display: grid;
+	grid-row-gap: 6px;
+
+	a {
+		color: $color-Orange;
+	}
+}
+
 @import "./common/menu-primary.scss";
 @import "./common/menu-secondary.scss";
+@import "./common/login.scss";
 @import "./common/content.scss";
 @import "./common/header.scss";
 @import "./common/popups.scss";

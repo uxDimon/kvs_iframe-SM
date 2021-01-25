@@ -1,0 +1,201 @@
+// Цвета
+$color-Black: #232930;
+$color-Grey5: #68717b;
+$color-Grey4: #969ba0;
+$color-Grey3: #dcdfe1;
+$color-Grey2: #ebedee;
+$color-Grey1: #f4f5f6;
+$color-wheat: #ffffff;
+$color-Orange: #f4691b;
+$color-Orange2: #ff8635;
+$color-Green: #99a30e;
+
+// Шрифт
+$font-family-root: "PT Root UI", sans-serif;
+
+.login {
+	display: grid;
+	grid-template-columns: 1fr minmax(420px, 1fr);
+	height: 100%;
+	background-color: $color-wheat;
+}
+
+// login-left
+.login-left {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	overflow: hidden;
+	border-right: 1px solid $color-Grey3;
+}
+
+.login-left__h {
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 1.25;
+	color: $color-Orange;
+	margin: 90px 60px 65px 60px;
+}
+
+.login-left__img {
+	width: 100%;
+	height: 400px;
+	position: relative;
+	margin-top: auto;
+
+	svg {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+// login-right
+.login-right {
+	padding: 60px;
+	display: flex;
+	flex-direction: column;
+	overflow-y: auto;
+}
+
+.login-right__h {
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 1.2;
+	margin: 0 0 18px;
+}
+
+.login-right__text {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	margin: 12px 0;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
+.login-right__form {
+	margin: 38px 0 20px;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-row-gap: 28px;
+	width: 100%;
+	max-width: 450px;
+}
+
+.login-right__form-button {
+	margin-top: 6px;
+}
+
+.login-right__info-linc {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 450px;
+}
+
+.login-right__linc {
+	font-size: 16px;
+	line-height: 1.5;
+	color: $color-Orange;
+}
+
+.login-right__linc_gray {
+	color: $color-Grey5;
+	// margin-bottom: 20px;
+}
+
+.login-right__problem-wrap {
+	margin-top: auto;
+	display: grid;
+	grid-row-gap: 10px;
+}
+
+.login-right__problem {
+	position: relative;
+	padding-left: 30px;
+	display: inline-block;
+	line-height: 24px;
+
+	&::before {
+		display: block;
+		content: "?";
+		position: absolute;
+		left: 0;
+		top: 2px;
+		width: 20px;
+		height: 20px;
+		border-radius: 20px;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 20px;
+		text-align: center;
+		color: $color-wheat;
+		background-color: $color-Orange;
+	}
+
+	> a {
+		margin-left: 20px;
+	}
+}
+
+.login-right__regist-h {
+	display: flex;
+	align-items: baseline;
+	flex-wrap: wrap;
+
+	> * {
+		margin-bottom: 0;
+	}
+}
+
+.login-right__regist-step {
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 18px;
+	color: $color-Grey5;
+	margin-left: 20px;
+}
+
+.login-right__pers-data-wrap {
+	display: grid;
+	grid-row-gap: 12px;
+}
+
+.login-right__form-text {
+	font-size: 16px;
+	line-height: 1.5;
+	color: $color-Grey5;
+}
+
+.login-right__form-button-wrap {
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: 1fr;
+	grid-column-gap: 30px;
+	grid-row-gap: 20px;
+}
+
+@media screen and (max-width: 860px) {
+	.login {
+		grid-template-columns: 1fr;
+	}
+
+	.login-left {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 470px) {
+	.login-right {
+		padding: 16px;
+	}
+}

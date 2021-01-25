@@ -1,0 +1,37 @@
+extends ../template
+
+block variables
+    - var title = 'Регистрация. Шаг 3'
+    - var contactForm = true
+
+block content
+    main.login
+        .login-left
+            h1.login-left__h Личный кабинет коммунальных услуг
+            .login-left__img
+                svg(width="530", height="430")
+                    use(xlink:href="./assets/images/sprite.svg#icon-login")
+        .login-right
+            .login-right__regist-h
+                h2.login-right__h Регистрация
+                span.login-right__regist-step Шаг 3
+
+            form.login-right__form
+                label.input
+                    input(type="password", name="name")
+                    span.input__placeholder Создайте пароль
+                    span.input__error Пожалуйста, заполните поле
+                
+                label.input
+                    input(type="password", name="name")
+                    span.input__placeholder Подтвердите пароль
+                    span.input__error Пожалуйста, заполните поле
+                                
+                button(type="submit").button Зарегистрироваться
+                            
+            .login-right__problem-wrap
+                
+                .login-right__problem Возникли проблемы?
+                    a(href="#").login-right__linc.login-right__problem-linc Напишите нам
+
+                a(href="#").login-right__linc Войти
