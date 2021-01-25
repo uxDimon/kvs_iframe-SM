@@ -99,4 +99,23 @@
     
     div(data-popups-close).popups__close-area
     
-        
+.popups(data-popups-container='popups3')
+    .popups__container-wrap
+        button(data-popups-close).popups__close
+            svg(width="20", height="20")
+                use(xlink:href="./assets/images/sprite.svg#icon-close")
+
+        .popups__container
+            h2.popups__h Добавить лицевой счет
+            p Введите номер лицевого счета
+
+            form.popups__inputs
+                label.input
+                    input(type="number", name="name")
+                    span.input__placeholder Номерсчета
+                    span.input__error Пожалуйста, заполните поле
+                
+                button(type="submit").button Подключить
+
+    
+    div(data-popups-close).popups__close-area
