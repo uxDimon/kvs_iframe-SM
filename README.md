@@ -1,4 +1,4 @@
-# Демо https://uxdimon.github.io/kvs_iframe-SM/
+# Демо https://uxdimon.github.io/kvs_iframe-SM/map.html
 
 ## Использование
 
@@ -23,11 +23,5 @@ gulp prod
 ## Используемые библиотеки
 
 https://imask.js.org
-
-https://github.com/michu2k/Accordion
-
-https://swiperjs.com/
-
-https://github.com/francoischalifour/medium-zoom
 
 https://github.com/WICG/focus-visible
