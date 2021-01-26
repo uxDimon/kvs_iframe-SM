@@ -113,10 +113,18 @@ $font-family-root: "PT Root UI", sans-serif;
 	// margin-bottom: 20px;
 }
 
+.login-right__problem-wrap-right,
 .login-right__problem-wrap {
-	margin-top: auto;
 	display: grid;
 	grid-row-gap: 10px;
+}
+
+.login-right__problem-wrap-right {
+	margin-top: 38px;
+}
+
+.login-right__problem-wrap {
+	margin-top: auto;
 }
 
 .login-right__problem {

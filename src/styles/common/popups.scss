@@ -92,6 +92,17 @@ $font-family-root: "PT Root UI", sans-serif;
 	opacity: 1;
 }
 
+.popups__text-grey {
+	margin: 28px 0 36px;
+
+	p {
+		font-size: 14px;
+		line-height: 1.4;
+		margin: 8px 0;
+		color: $color-Grey5;
+	}
+}
+
 @media screen and (max-width: 768px) {
 	.popups__container-wrap {
 		padding: 0 16px;
